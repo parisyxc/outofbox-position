@@ -2,6 +2,8 @@
 
 Daily pipeline: proprietary screener image → fundamentals verification (momentum-verify-fundamentals) → 7 picks → trading plan → ParisYoung's-Position-style report → scored ledger → site.
 
+**Every command, and what it does: [`COMMANDS.md`](COMMANDS.md).**
+
 Start here: `PLAN.md` (architecture) → `CLAUDE.md` (agent rules) → `.claude/commands/daily.md` (the run).
 Sample run: `reports/2026-09-04/2026-09-04.md` · state: `data/ledger.json` · site IA: `site/SITE_STRUCTURE.md`.
 
