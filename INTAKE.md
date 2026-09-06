@@ -31,6 +31,19 @@ The ledger is a published-before-outcome record, so **live runs must go in date 
   **Continuing** (auto-priced), not new.
 - **Normal daily use (next trading day and onward):** just `/daily YYYY-MM-DD` after the close.
 
+## Trading days with no image
+Some sessions you will not have a screener image. Run `/daily YYYY-MM-DD` anyway — with no image it
+switches to **reprice-only**: it skips triage, selection and the report, reprices every open position,
+fires any stop-out, and prints the table. `./scripts/daily_reprice.sh` does the same thing directly.
+
+Do this on every trading day you skip, not just when you remember. `reprice.py` tests the stop against
+the **closing** price on the day it runs, so a position that breaks its stop on an unpriced session and
+recovers before the next run never enters the record — and "entry and exit both disclosed" is the claim
+the site is built on.
+
+An exit found this way appears on `/position` and `/record` at the next site build, and in the next
+session's report under Section III.
+
 ## What a run produces
 `data/inputs/DATE.csv` · `data/cards/DATE/*.md` · `reports/DATE/DATE.md` · updated `data/ledger.json` (live only)
 · optional `reports/DATE/*.docx`.
