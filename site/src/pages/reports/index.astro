@@ -1,0 +1,50 @@
+---
+import Base from '../../layouts/Base.astro';
+import manifest from '../../generated/manifest.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const reports = manifest.reports ?? [];
+---
+<Base title="Reports" description="Full Momentum Verification Analyses — the five-page workup behind each selected name.">
+  <h1>Verification analyses</h1>
+  <p class="lede">
+    The full workup behind a selected name: the three-part score with the evidence for each part, the
+    divisional read, the peer comparison and the technical picture. One is produced per pick, and each is
+    readable here in full as well as downloadable as the original document.
+  </p>
+  <ul class="list">
+    {reports.map((r: any) => (
+      <li>
+        <a class="row panel" href={`${base}/reports/${r.slug}`}>
+          <div class="row__l">
+            <div class="row__hd">
+              <span class="num row__t">{r.ticker}</span>
+              <span class="num dim">{r.date}</span>
+            </div>
+            {r.company && <p class="row__c">{r.company}{r.sector && <span class="dim"> · {r.sector}</span>}</p>}
+            {r.verdict && <p class="row__v">{r.verdict}</p>}
+          </div>
+          <div class="row__r">
+            {r.score != null && <span class="num row__s">{r.score.toFixed(1)}<span class="dim">/3.0</span></span>}
+            <span class="dim row__k">{r.sizeKb} KB docx</span>
+            <span class="row__go">Read →</span>
+          </div>
+        </a>
+      </li>
+    ))}
+    {reports.length === 0 && <li class="dim">No verification analyses generated yet.</li>}
+  </ul>
+</Base>
+<style>
+  .lede { color: var(--muted); max-width: 74ch; margin: 0 0 2rem; }
+  .list { list-style: none; padding: 0; margin: 0; display: grid; gap: .7rem; }
+  .row { display: flex; justify-content: space-between; gap: 1.5rem; padding: 1.1rem 1.2rem; align-items: flex-start; flex-wrap: wrap; }
+  .row:hover { border-color: color-mix(in srgb, var(--entry) 35%, var(--line)); }
+  .row__hd { display: flex; align-items: baseline; gap: .6rem; }
+  .row__t { font-size: 1.1rem; font-weight: 650; letter-spacing: .02em; }
+  .row__c { margin: .3rem 0 0; font-size: .84rem; }
+  .row__v { margin: .35rem 0 0; font-size: .8rem; color: var(--entry); max-width: 60ch; }
+  .row__r { display: flex; flex-direction: column; align-items: flex-end; gap: .2rem; }
+  .row__s { font-size: 1.3rem; font-weight: 600; }
+  .row__k { font-size: .7rem; }
+  .row__go { font-size: .78rem; color: var(--exit); margin-top: .3rem; }
+</style>

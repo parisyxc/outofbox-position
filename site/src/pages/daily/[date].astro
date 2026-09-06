@@ -13,6 +13,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const hasScreener = manifest.screener.some((s: any) => s.date === post.id);
+const reports = (manifest.reports ?? []).filter((r: any) => r.date === post.id);
 
 const all = (await getCollection('daily')).sort((a, b) => +a.data.date - +b.data.date);
 const i = all.findIndex((p) => p.id === post.id);
@@ -37,7 +38,9 @@ const next = all[i + 1];
 
     <div class="links">
       {hasScreener && <a href={`${base}/screener/${post.id}`}>Full screener for this day →</a>}
-      {post.data.docx.map((d) => <span class="dim">{d} <span class="tag">docx · v2</span></span>)}
+      {reports.map((r: any) => (
+        <a href={`${base}/reports/${r.slug}`}>Full {r.ticker} verification analysis →</a>
+      ))}
     </div>
 
     <div class="prose"><Content /></div>

@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.3.1"
+    "astro": "^7.3.1",
+    "mammoth": "^1.12.2"
   }
 }

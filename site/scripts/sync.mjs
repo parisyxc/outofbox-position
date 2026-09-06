@@ -2,10 +2,13 @@
 // source of truth inside src/. Run by `npm run dev` and `npm run build` (and by CI),
 // so the site never reads across the project root at request time.
 //
-// Reads:  ../data/ledger.json · ../data/inputs/*.csv · ../data/cards/DATE/*.md · ../reports/DATE/DATE.md
-// Writes: src/generated/{ledger.json, manifest.json, screener/DATE.json, daily/DATE.md}
+// Reads:  ../data/ledger.json · ../data/inputs/*.csv · ../data/cards/DATE/*.md
+//          ../reports/DATE/DATE.md · ../reports/DATE/*.docx
+// Writes: src/generated/{ledger.json, manifest.json, screener/DATE.json, daily/DATE.md, reports/SLUG.json}
+//         public/reports/DATE/*.docx  (served for download)
 
-import { readFile, writeFile, readdir, mkdir, rm } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir, rm, copyFile } from 'node:fs/promises';
+import mammoth from 'mammoth';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -13,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 const SITE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ROOT = path.resolve(SITE, '..');
 const OUT = path.join(SITE, 'src/generated');
+const PUB = path.join(SITE, 'public/reports');
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const num = (s) => (s == null || s === '' ? null : Number(String(s).replace(/[$,%+\s]/g, '')));
@@ -103,6 +107,33 @@ function parseReport(date, md) {
 const fm = (v) =>
   typeof v === 'string' ? JSON.stringify(v) : Array.isArray(v) ? `[${v.map(fm).join(', ')}]` : JSON.stringify(v);
 
+// ── verification docx ───────────────────────────────────────────────────────────
+// The generator (skill/scripts/generate_report.js) uses direct run formatting, not named
+// paragraph styles, so mammoth cannot infer structure. Two reliable signals recover it:
+//   · a top-level paragraph that is *wholly* bold is a section heading
+//   · a table with a <thead> is real data; one without is a layout banner
+function docxHtmlToPage(html) {
+  const tables = [];
+  // stash tables first so the heading rule only ever sees top-level paragraphs
+  let out = html.replace(/<table>[\s\S]*?<\/table>/g, (t) => {
+    tables.push(t);
+    return `\u0000T${tables.length - 1}\u0000`;
+  });
+  out = out.replace(/<p><strong>([\s\S]*?)<\/strong><\/p>/g, (m, inner) =>
+    inner.includes('<strong>') ? m : `<h2>${inner}</h2>`
+  );
+  out = out.replace(/\u0000T(\d+)\u0000/g, (_, i) => {
+    const t = tables[Number(i)];
+    if (t.includes('<thead>')) return `<div class="scroll-x">${t}</div>`;
+    // layout banner: unwrap the cells into a callout, keeping each cell as a column
+    const cells = [...t.matchAll(/<td>([\s\S]*?)<\/td>/g)].map((m) => m[1]);
+    return `<div class="dcall" data-cols="${cells.length}">${cells.map((c) => `<div>${c}</div>`).join('')}</div>`;
+  });
+  return out;
+}
+
+const strip = (h) => h.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+
 // ── run ─────────────────────────────────────────────────────────────────────────
 await rm(OUT, { recursive: true, force: true });
 await mkdir(path.join(OUT, 'screener'), { recursive: true });
@@ -179,15 +210,49 @@ for (const dir of reportDirs.filter((d) => DATE_RE.test(d))) {
   dailyDates.push({ date: dir, picks: r.picks.length, docx: docx.length });
 }
 
+// verification analyses: reports/DATE/*.docx → readable HTML + a downloadable copy
+await mkdir(path.join(OUT, 'reports'), { recursive: true });
+await rm(PUB, { recursive: true, force: true });
+const reportDocs = [];
+for (const dir of reportDirs.filter((d) => DATE_RE.test(d))) {
+  const files = (await readdir(path.join(ROOT, 'reports', dir))).filter((f) => f.endsWith('.docx'));
+  for (const file of files) {
+    const src = path.join(ROOT, 'reports', dir, file);
+    const { value, messages } = await mammoth.convertToHtml({ path: src });
+    for (const m of messages) console.warn(`  docx ${file}: ${m.type} — ${m.message}`);
+    const html = docxHtmlToPage(value);
+    const head = strip(value.match(/<table>[\s\S]*?<\/table>/)?.[0] ?? '');
+    const banner = strip(value.match(/<table>[\s\S]*?<\/table>/g)?.[1] ?? '');
+    const ticker = file.split('_')[0];
+    const slug = `${ticker}-${dir}`;
+    const size = (await readFile(src)).length;
+    await copyFile(src, path.join(await mkdir(path.join(PUB, dir), { recursive: true }).then(() => path.join(PUB, dir)), file));
+    const doc = {
+      slug, ticker, date: dir, file,
+      download: `/reports/${dir}/${file}`,
+      sizeKb: Math.round(size / 1024),
+      company: head.match(/—\s*([^|]+?)\s{2,}/)?.[1]?.trim() ?? head.match(/—\s*(.+?)\s+(?:Health|Energy|Financ|Consumer|Indust|Materi|Techno|Utilit|Real)/)?.[1]?.trim() ?? null,
+      sector: head.match(/\b(Health Care|Energy|Financials|Consumer Discretionary|Consumer Staples|Industrials|Materials|Technology|Utilities|Real Estate|Communication Services)\b/)?.[1] ?? null,
+      verdict: banner.match(/VERDICT:\s*([^|]+?)\s+FRAMEWORK/)?.[1]?.trim() ?? null,
+      score: Number(banner.match(/FRAMEWORK SCORE:\s*([\d.]+)\s*\/\s*3/)?.[1] ?? NaN) || null,
+      html,
+    };
+    await writeFile(path.join(OUT, 'reports', `${slug}.json`), JSON.stringify(doc, null, 2));
+    reportDocs.push({ slug: doc.slug, ticker, date: dir, file, sizeKb: doc.sizeKb, score: doc.score, verdict: doc.verdict, company: doc.company, sector: doc.sector });
+  }
+}
+
 const manifest = {
   generatedAt: new Date().toISOString(),
   screener: screenerDates.sort((a, b) => b.date.localeCompare(a.date)),
   daily: dailyDates.sort((a, b) => b.date.localeCompare(a.date)),
+  reports: reportDocs.sort((a, b) => b.date.localeCompare(a.date) || a.ticker.localeCompare(b.ticker)),
 };
 await writeFile(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 2));
 
 console.log(
   `sync → ${manifest.daily.length} daily report(s), ${manifest.screener.length} screener day(s), ` +
+  `${manifest.reports.length} verification docx, ` +
   `${ledger.stats.openNow} open position(s), ${ledger.stats.closed} closed` +
   (ledger.stats.excludedBookkeeping ? ` (${ledger.stats.excludedBookkeeping} bookkeeping exit excluded)` : '')
 );

@@ -1,0 +1,74 @@
+---
+import Base from '../../layouts/Base.astro';
+import DisclaimerBlock from '../../components/DisclaimerBlock.astro';
+import manifest from '../../generated/manifest.json';
+
+export async function getStaticPaths() {
+  const files = import.meta.glob('../../generated/reports/*.json', { eager: true, import: 'default' });
+  return Object.values(files).map((doc: any) => ({ params: { slug: doc.slug }, props: { doc } }));
+}
+
+const { doc } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const hasNote = manifest.daily.some((d: any) => d.date === doc.date);
+---
+<Base title={`${doc.ticker} verification`} description={doc.verdict ?? `Momentum Verification Analysis for ${doc.ticker}, ${doc.date}.`}>
+  <p class="kicker num">{doc.date} · verification analysis</p>
+  <h1>{doc.ticker} <span class="dim h1sub">{doc.company}</span></h1>
+
+  <div class="bar">
+    {doc.score != null && <span class="bar__score num">{doc.score.toFixed(1)}<span class="dim">/3.0</span></span>}
+    {doc.sector && <span class="tag">{doc.sector}</span>}
+    <a class="dl" href={`${base}${doc.download}`} download>Download .docx <span class="dim">{doc.sizeKb} KB</span></a>
+    {hasNote && <a class="lk" href={`${base}/daily/${doc.date}`}>The day's note →</a>}
+    <a class="lk" href={`${base}/screener/${doc.date}`}>Screener →</a>
+  </div>
+
+  <!-- Produced by skill/scripts/generate_report.js in this repo, converted from the .docx at build time. -->
+  <div class="docx" set:html={doc.html} />
+
+  <DisclaimerBlock />
+  <p class="back"><a href={`${base}/reports`}>← All verification analyses</a></p>
+</Base>
+<style>
+  .kicker { font-size: .78rem; letter-spacing: .1em; color: var(--muted); margin: 0 0 .3rem; text-transform: uppercase; }
+  .h1sub { font-size: .9rem; font-weight: 400; letter-spacing: 0; }
+  .bar { display: flex; align-items: center; gap: .9rem; flex-wrap: wrap; margin: 0 0 1.8rem; padding-bottom: 1.1rem; border-bottom: 1px solid var(--line); }
+  .bar__score { font-size: 1.35rem; font-weight: 600; color: var(--entry); }
+  .dl { border: 1px solid color-mix(in srgb, var(--entry) 45%, transparent); color: var(--entry); border-radius: 7px; padding: .4rem .8rem; font-size: .8rem; }
+  .dl:hover { background: #ffffff0a; }
+  .lk { font-size: .8rem; color: var(--exit); }
+  .lk:hover { text-decoration: underline; }
+  .back { margin-top: 1.6rem; font-size: .82rem; }
+  .back a { color: var(--exit); }
+
+  /* converted document */
+  .docx { max-width: 82ch; font-size: .9rem; }
+  .docx :global(h2) {
+    margin: 2.4rem 0 .9rem; padding-top: 1.3rem; border-top: 1px solid var(--line);
+    font-family: var(--mono); font-size: 1rem; color: var(--entry);
+    text-transform: none; letter-spacing: 0;
+  }
+  .docx :global(p) { color: var(--muted); line-height: 1.65; }
+  .docx :global(strong) { color: var(--text); }
+  .docx :global(em) { color: var(--muted); }
+  /* banner blocks from the document's layout tables */
+  .docx :global(.dcall) {
+    display: grid; gap: .9rem 1.4rem;
+    background: var(--panel); border: 1px solid var(--line);
+    border-left: 2px solid var(--entry);
+    border-radius: 8px; padding: .9rem 1.1rem; margin: 1.2rem 0;
+  }
+  .docx :global(.dcall[data-cols="2"]) { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .docx :global(.dcall[data-cols="3"]) { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+  .docx :global(.dcall p) { margin: 0 0 .4rem; font-size: .85rem; }
+  .docx :global(.dcall p:last-child) { margin-bottom: 0; }
+  .docx :global(.dcall > div > p:first-child > strong) { color: var(--entry); }
+  /* real data tables */
+  .docx :global(table) { width: 100%; border-collapse: collapse; font-size: .82rem; margin: 1rem 0; }
+  .docx :global(th), .docx :global(td) { padding: .5rem .6rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  .docx :global(thead th) { background: var(--panel-2); color: var(--muted); font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }
+  .docx :global(tbody tr:hover) { background: #ffffff05; }
+  .docx :global(td p) { margin: 0; }
+  .docx :global(.scroll-x) { margin: 1rem 0; }
+</style>
