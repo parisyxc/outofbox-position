@@ -125,7 +125,11 @@ Worked example: the 2026-09-06 LNG re-score, 3.0 → 2.5. The ledger carries 2.5
 with the correction dated beneath it. `site/scripts/sync.mjs` parses that card line so `/screener`
 marks the score `3.0*` rather than silently disagreeing with `/position`.
 
-## Invariants worth testing before publishing
+## Invariants — enforced by `scripts/check_ledger.py`
+
+`python3 scripts/check_ledger.py` asserts all of these and exits non-zero if any breaks.
+It runs in CI before the site builds, so a ledger that violates its own rules cannot be
+published. Pass a path to check another file: `check_ledger.py /tmp/ledger.preview.json`.
 
 - `entry_price` for a given `(ticker, entry_date)` never changes across git history.
 - No row appears in both `positions` and `history`.

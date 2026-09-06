@@ -56,6 +56,13 @@ Change the field, append the dated reason to `notes`, and record a score change 
 (`[{date, score, basis}]`). Leave the originally published figure standing where it was published,
 with a dated `Re-verified YYYY-MM-DD` line beside it — appended and labelled, never overwritten.
 
+## Before committing a ledger change
+
+`python3 scripts/check_ledger.py` — 33 invariants from [`ledger.schema.md`](ledger.schema.md),
+exit 0 or 1. It also runs in CI before the site builds. The checks that matter are the ones
+nobody would notice failing: an entry price that moved, a phantom trade in the win rate, a
+0% win rate printed off zero closed trades.
+
 ## Report derivations
 - Header line: the best-performing `tracking` name → `📈 TICKER tracking +X.XX% (added DATE)`.
 - Section I (New) = status `new` today. Section II (Continuing) = `tracking`. Section III (Exited) = moved to history today.

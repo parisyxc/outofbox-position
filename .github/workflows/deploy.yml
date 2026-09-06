@@ -26,6 +26,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # full history — check_ledger.py replays every ledger commit to prove no
+          # entry_price was ever rewritten. A shallow clone would see one commit and
+          # pass vacuously.
+          fetch-depth: 0
+      # Refuse to publish a record that violates its own invariants: a moved entry
+      # price, a phantom trade in the win rate, a 0% win rate off zero closed trades.
+      - name: Check the ledger
+        run: python3 scripts/check_ledger.py
       - uses: actions/setup-node@v4
         with:
           node-version: 22
