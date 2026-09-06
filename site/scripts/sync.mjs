@@ -144,8 +144,14 @@ await rm(OUT, { recursive: true, force: true });
 await mkdir(path.join(OUT, 'screener'), { recursive: true });
 await mkdir(path.join(OUT, 'daily'), { recursive: true });
 
-// ledger
-const ledger = JSON.parse(await readFile(path.join(ROOT, 'data/ledger.json'), 'utf8'));
+// ledger. OUTOFBOX_LEDGER points the build at an alternative ledger file so a
+// hypothetical (a closed pick, a stop-out) can be previewed on the real pages
+// without writing anything into the published record.
+const LEDGER_PATH = process.env.OUTOFBOX_LEDGER
+  ? path.resolve(process.env.OUTOFBOX_LEDGER)
+  : path.join(ROOT, 'data/ledger.json');
+if (process.env.OUTOFBOX_LEDGER) console.warn(`  ⚠ PREVIEW LEDGER: ${LEDGER_PATH} — not the published record`);
+const ledger = JSON.parse(await readFile(LEDGER_PATH, 'utf8'));
 // A "bookkeeping" exit is a re-derivation artefact, not a trade that was ever live.
 // Counting it would publish a real win rate off a position that never closed. See CLAUDE.md.
 const closed = (ledger.history ?? []).filter((h) => h.pnl_pct != null && !h.bookkeeping);
