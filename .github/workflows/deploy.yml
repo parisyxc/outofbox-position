@@ -44,8 +44,13 @@ jobs:
         with:
           path: site/dist
 
+  # GitHub Pages cannot serve a private repository on a free personal account, and
+  # deploy-pages 404s if Pages was never enabled. Gating on visibility keeps the build
+  # green (and still verified) until the repo is made public — at which point this runs
+  # on its own, provided Settings → Pages → Source is set to "GitHub Actions".
   deploy:
     needs: build
+    if: github.event.repository.private == false
     runs-on: ubuntu-latest
     environment:
       name: github-pages
