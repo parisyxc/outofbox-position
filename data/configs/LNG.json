@@ -1,0 +1,726 @@
+{
+  "ticker": "LNG",
+  "company": "Cheniere Energy, Inc.",
+  "sector": "Energy  |  LNG Liquefaction & Export (Sabine Pass, Corpus Christi)",
+  "date": "Friday, September 4, 2026",
+  "verdict": {
+    "headline": "BUY / ADD — CONTRACTED CASH FLOW COMPOUNDING BEHIND A VOLATILE GAAP HEADLINE",
+    "score": "2.5 / 3.0",
+    "tone": "bull",
+    "subhead": "QUALITY 0.5  |  GROWTH 1.0  |  PEER 1.0      |      TECHNICALS CONSTRUCTIVE — UPTREND INTACT, TARGET ABOVE PRICE",
+    "summary": "LNG scores 2.5/3.0 — a downgrade from the 3.0 carried on the triage card, and the reason is worth stating plainly. The business is producing records: Q2 exports of 672 TBtu across 184 cargoes, up 20% year on year, and management raised full-year guidance for the second consecutive quarter — consolidated adjusted EBITDA to $7.9–8.4B (midpoint +$650M) and distributable cash flow to $5.3–5.8B (midpoint +$550M), with the new low end above the old high end. What a screener cannot see is that GAAP is unusable here: a −$3.50B loss in Q1 2026 and a +$3.07B profit in Q2 on steadily rising revenue leave six-month net income at −$434M, while six-month adjusted EBITDA rose 26% to $4.14B. Quality scores 0.5 rather than 1.0 because no reported margin series is expanding — gross margin has gone 83.87% (FY23) to 36.85% (ttm) — and free cash flow has fallen to $2.79B from $6.30B in FY23. The FCF decline is deliberate growth capex on Corpus Christi Stage 3 and is defensible, but the rubric asks whether margins are clearly expanding off a healthy base, and on the reported numbers they are not. Growth and peer position both earn a full 1.0. At 2.5 with a constructive overlay and a consensus target 6.2% above the entry, the plan is unchanged: LONG STOCK, no calls."
+  },
+  "zones": [
+    {
+      "label": "ACCUMULATE ZONE",
+      "value": "$282 - $292",
+      "note": "Above the 50-day at $265.99; the −1.69% screener session is the entry. Do not chase above $295",
+      "tone": "bull"
+    },
+    {
+      "label": "HARD STOP",
+      "value": "~ $268",
+      "note": "Just below the 50-day moving average at $265.99 — a close beneath it breaks the trend the entry rests on",
+      "tone": "caution"
+    },
+    {
+      "label": "TARGET",
+      "value": "$309 consensus / $340 Street high",
+      "note": "Consensus implies +6.2%; the range across 22 analysts is $255 to $340",
+      "tone": "info"
+    }
+  ],
+  "divergence": {
+    "title": "The Real Divergence: GAAP Net Income vs. Contracted Cash Flow",
+    "tech": {
+      "title": "TECHNICAL PICTURE — UPTREND INTACT",
+      "tone": "bull",
+      "bullets": [
+        "Price $290.85 at the September 4 screener close; $292.00 last, 3.3% below the 52-week high of $300.89",
+        "Trades 9.3% above the 50-day moving average ($265.99) and 21.0% above the 200-day ($240.34)",
+        "Up 21.98% over the past 52 weeks, against a 52-week low of $186.20",
+        "The screener session itself closed −1.69% — this is a pullback entry, not a breakout chase",
+        "Consensus target $308.90 sits 6.2% above the entry; 22 analysts, consensus Strong Buy",
+        "RSI(14) could not be verified from an accessible source and is deliberately omitted rather than estimated"
+      ]
+    },
+    "fund": {
+      "title": "FUNDAMENTAL PICTURE — STRONG, MASKED BY DERIVATIVE MARKS",
+      "tone": "bull",
+      "bullets": [
+        "Q2 2026 revenue $5.73B, +24% YoY; consolidated adjusted EBITDA $1.80B against $1.42B",
+        "Q2 GAAP net income $3.07B — but Q1 2026 was −$3.50B; six-month GAAP is −$434M",
+        "Six-month adjusted EBITDA $4.14B vs $3.29B, +26% — the measure that tracks the business",
+        "FY26 guidance raised twice: adjusted EBITDA $7.9–8.4B, distributable cash flow $5.3–5.8B",
+        "ROE 39.12%, ROIC 14.27%; EV/EBITDA 11.13x on $7.83B of trailing EBITDA",
+        "Reported gross margin 36.85% ttm vs 53.22% in FY25 — mark-to-market, not liquefaction economics"
+      ]
+    },
+    "assessment": {
+      "heading": "ASSESSMENT: THE DIVERGENCE IS INSIDE THE INCOME STATEMENT, NOT BETWEEN PRICE AND FUNDAMENTALS",
+      "tone": "info",
+      "text": "The usual actionable setups are strong fundamentals against a weak tape, or a strong tape against deteriorating fundamentals. Cheniere is neither. Price and operations are pointing the same way — the tape is in an uptrend and adjusted EBITDA, distributable cash flow and export volumes are all rising. The divergence is between two lines of the same income statement: GAAP net income, which swung $6.57B between Q1 and Q2 2026 on the fair value of IFM derivative positions, and consolidated adjusted EBITDA, which rose 26% over the same six months. Anyone screening on reported earnings, trailing P/E or GAAP margin gets a false reading of this company in both directions — spectacular in Q2, catastrophic in Q1. That is a reason to score Quality honestly at 0.5 while still buying the operating business, not a reason to treat the GAAP figures as the signal."
+    }
+  },
+  "catalyst": {
+    "title": "The US LNG Export Buildout — Is Cheniere Still the Right Horse?",
+    "left": {
+      "title": "THE OPPORTUNITY (today's leader, and it is producing)",
+      "tone": "bull",
+      "blocks": [
+        {
+          "heading": "1. Stage 3 is converting capex into volume, on schedule",
+          "bullets": [
+            "Substantial completion of the sixth train was achieved in June 2026, and first LNG production from the seventh train was described as expected imminently. Q2 exports reached 672 TBtu across 184 cargoes, up 20% year on year, with management crediting Stage 3 acceleration and improved reliability."
+          ]
+        },
+        {
+          "heading": "2. Guidance raised twice in a single year",
+          "bullets": [
+            "Consolidated adjusted EBITDA guidance went from $7.25–7.75B to $7.9–8.4B, and distributable cash flow from $4.75–5.25B to $5.3–5.8B. The new low end sits above the previous high end on both measures — the strongest single signal in the rubric."
+          ]
+        },
+        {
+          "heading": "3. Capacity leadership is real, and operating",
+          "bullets": [
+            "Roughly 56 mtpa across Sabine Pass and Corpus Christi with about 5 mtpa more under construction. Unlike most of the peer set, this capacity is exporting cargoes today rather than awaiting a 2027–28 start date."
+          ]
+        },
+        {
+          "heading": "4. Cash is being returned, not merely earned",
+          "bullets": [
+            "$3.19B of buybacks over the trailing twelve months against a $60.31B market cap, plus $461M of dividends. The payout ratio is 16.32% and the dividend rose 11% to $2.22 — the return is funded, not stretched."
+          ]
+        }
+      ]
+    },
+    "right": {
+      "title": "THE CATCH (real, and mostly about 2030)",
+      "tone": "caution",
+      "blocks": [
+        {
+          "heading": "1. Venture Global is built to overtake it",
+          "bullets": [
+            "VG reports over 100 mtpa in production, construction or development against Cheniere's ~56 mtpa, and industry coverage projects it to pass Cheniere as the largest US exporter by 2030. Cheniere leads today; it is not obviously the structural winner of the next decade."
+          ]
+        },
+        {
+          "heading": "2. The GAAP headline will keep swinging",
+          "bullets": [
+            "−$3.50B in Q1, +$3.07B in Q2. Any screen, index rule or valuation model keyed to reported earnings or trailing P/E will misprice this company periodically in both directions, which can move the stock for reasons unrelated to the business."
+          ]
+        },
+        {
+          "heading": "3. Free cash flow has halved while the trains are built",
+          "bullets": [
+            "$2.79B ttm against $6.30B in FY23, on $3.35B of trailing capex. FCF margin is 13.34% versus 20.42% in FY24. This is a defensible growth investment, but it is not yet a cash-return story, and it leans on a levered balance sheet — $27.97B of debt, D/E 2.43, current ratio 0.87."
+          ]
+        },
+        {
+          "heading": "4. Consensus is already close to the price",
+          "bullets": [
+            "The $308.90 average target is only 6.2% above the entry, and the low target of $255 sits 12.3% below it. The Street high of $340 is the stretch case, not the base case — this is a position to size, not to press."
+          ]
+        }
+      ]
+    },
+    "verdict": {
+      "tone": "navy",
+      "text": "LNG VERDICT: STILL THE RIGHT HORSE FOR 2026 — NOT AUTOMATICALLY FOR 2030. Cheniere is the largest operating US LNG exporter, it is the one converting construction into cargoes right now, and it raised guidance twice this year while buying back $3.19B of stock. That is what the screener caught. The honest caveats are that Venture Global's development pipeline is roughly twice Cheniere's operating capacity and is projected to overtake it by 2030, that reported margins and free cash flow are both falling on the numbers as published, and that consensus sits only 6.2% above the entry."
+    }
+  },
+  "earnings": {
+    "title": "Q2 2026 Earnings Performance (quarter ended June 30, 2026)",
+    "widths": [
+      2400,
+      1800,
+      2360,
+      2800
+    ],
+    "headers": [
+      "Metric",
+      "Q2 2026",
+      "vs Q2 2025",
+      "FY 2026 Guidance / Context"
+    ],
+    "rows": [
+      [
+        {
+          "t": "Total Revenue",
+          "bold": true
+        },
+        {
+          "t": "$5.73B",
+          "bold": true
+        },
+        "+24% (from $4.64B)",
+        "Consensus FY26 revenue $22.78B"
+      ],
+      [
+        {
+          "t": "Consolidated Adj. EBITDA",
+          "bold": true
+        },
+        {
+          "t": "$1.80B",
+          "bold": true,
+          "tone": "bull"
+        },
+        "vs $1.42B — the usable measure",
+        {
+          "t": "RAISED to $7.9 - $8.4B",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Distributable Cash Flow",
+          "bold": true
+        },
+        {
+          "t": "$1.17B",
+          "bold": true,
+          "tone": "bull"
+        },
+        "six-month $2.84B",
+        {
+          "t": "RAISED to $5.3 - $5.8B",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Prior guidance",
+          "bold": true
+        },
+        "—",
+        "—",
+        "Adj. EBITDA $7.25-7.75B; DCF $4.75-5.25B"
+      ],
+      [
+        {
+          "t": "GAAP Net Income",
+          "bold": true
+        },
+        {
+          "t": "$3.07B",
+          "bold": true
+        },
+        "vs $1.63B",
+        {
+          "t": "six-month: −$434M (Q1 was −$3.50B)",
+          "tone": "bear"
+        }
+      ],
+      [
+        {
+          "t": "Diluted EPS",
+          "bold": true
+        },
+        "$14.65",
+        "vs $7.30",
+        "Q1 2026 was −$16.66 — marks, not operations"
+      ],
+      [
+        {
+          "t": "LNG Exported",
+          "bold": true
+        },
+        {
+          "t": "672 TBtu",
+          "bold": true,
+          "tone": "bull"
+        },
+        "+20% — 184 cargoes",
+        "six-month 1,360 TBtu / 371 cargoes"
+      ],
+      [
+        {
+          "t": "Gross Margin (GAAP)",
+          "bold": true
+        },
+        "83.02%",
+        "vs 64.06%",
+        {
+          "t": "ttm only 36.85% — mark-driven",
+          "tone": "caution"
+        }
+      ],
+      [
+        {
+          "t": "Corpus Christi Stage 3",
+          "bold": true
+        },
+        "Train 6 complete",
+        "Substantial completion June 2026",
+        {
+          "t": "Train 7 first LNG expected imminently",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Buybacks (six months)",
+          "bold": true
+        },
+        "$1.1B",
+        "4.9M shares",
+        "$3.19B trailing twelve months"
+      ],
+      [
+        {
+          "t": "Dividends (six months)",
+          "bold": true
+        },
+        "$233M",
+        "—",
+        "$2.22/sh annual, +11%, 16.32% payout"
+      ],
+      [
+        {
+          "t": "Debt repayment (six months)",
+          "bold": true
+        },
+        "$253M",
+        "—",
+        "Total debt $27.97B; D/E 2.43"
+      ]
+    ]
+  },
+  "parts": [
+    {
+      "title": "Part 1 — Quality Check (Margins & Profitability)",
+      "question": "Is the price move supported by margin trends?",
+      "rows": [
+        [
+          {
+            "t": "Gross Margin Trend",
+            "bold": true
+          },
+          {
+            "t": "CONTRACTING AS REPORTED — 83.87% (FY23) to 49.02% (FY24) to 53.22% (FY25) to 36.85% (ttm). The swing is IFM derivative marks rather than liquefaction economics, but no reported margin series shows expansion.",
+            "tone": "caution"
+          }
+        ],
+        [
+          {
+            "t": "Operating Margin",
+            "bold": true
+          },
+          {
+            "t": "78.42% (FY23) to 39.39% (FY24) to 46.99% (FY25) to 30.53% (ttm). Same distortion, same direction.",
+            "tone": "caution"
+          }
+        ],
+        [
+          {
+            "t": "Adjusted EBITDA",
+            "bold": true
+          },
+          {
+            "t": "THE USABLE MEASURE — $7.83B ttm. Six-month $4.14B against $3.29B, +26%. FY26 guidance raised twice to $7.9-8.4B.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "Free Cash Flow",
+            "bold": true
+          },
+          {
+            "t": "$2.79B ttm against $3.16B (FY24) and $6.30B (FY23), on $3.35B of capex. FCF margin 13.34% vs 20.42% in FY24 — deliberate Stage 3 investment, but a real decline.",
+            "tone": "caution"
+          }
+        ],
+        [
+          {
+            "t": "Returns on Capital",
+            "bold": true
+          },
+          {
+            "t": "ROE 39.12%, ROIC 14.27%, ROA 8.63% — strong, though flattered by leverage: $27.97B debt, D/E 2.43, current ratio 0.87.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "Why margins moved",
+            "bold": true
+          },
+          "Volume and mark-to-market, not pricing power. Production rose 20% YoY; management cites reliability, Stage 3 acceleration and locked-in optimization rather than realised price."
+        ]
+      ],
+      "scoreLabel": "QUALITY SCORE",
+      "score": "0.5 / 1.0 — OPERATING CASH FLOW IS GROWING, BUT NO REPORTED MARGIN SERIES IS EXPANDING AND FCF HAS FALLEN",
+      "scoreTone": "caution"
+    },
+    {
+      "title": "Part 2 — Growth Check (Volume, Guidance & the Named Engine)",
+      "question": "Which division is driving growth? Is it sustainable?",
+      "rows": [
+        [
+          {
+            "t": "Growth Type",
+            "bold": true
+          },
+          {
+            "t": "VOLUME-LED, BUT CONTRACTED AND SECULAR — new liquefaction trains coming online, not a commodity price cycle. Closer to infrastructure coming into service than to cyclical demand.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "Revenue Growth",
+            "bold": true
+          },
+          {
+            "t": "+22.73% YoY in Q2 2026; +14.75% ttm. Six-month revenue $11.60B against $10.09B.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "Named Engine",
+            "bold": true
+          },
+          {
+            "t": "Corpus Christi Stage 3. Sixth train substantially complete in June 2026; first LNG from the seventh expected imminently. The engine is identifiable and already producing.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "Volume vs Price",
+            "bold": true
+          },
+          {
+            "t": "Exports 672 TBtu across 184 cargoes in Q2, +20% YoY. Management also credits improved margin capture and optimization locked in year to date.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "Guidance",
+            "bold": true
+          },
+          {
+            "t": "RAISED TWICE IN 2026 — adjusted EBITDA midpoint +$650M, DCF midpoint +$550M, with the new low end above the old high end on both. The rubric treats raised guidance as a bull signal; twice in one year is emphatic.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "Durability",
+            "bold": true
+          },
+          "Roughly 56 mtpa operating with about 5 mtpa under construction. Growth continues while trains are being commissioned; beyond that it depends on the next sanctioned project."
+        ]
+      ],
+      "scoreLabel": "GROWTH SCORE",
+      "score": "1.0 / 1.0 — DOUBLE-DIGIT GROWTH, GUIDANCE RAISED TWICE, WITH A NAMED AND VISIBLE ENGINE",
+      "scoreTone": "bull"
+    },
+    {
+      "title": "Part 3 — Peer Check (Relative Position in US LNG Export)",
+      "question": "Is Cheniere the leader in the trend it is being bought for, or a follower?",
+      "widths": [
+        1900,
+        2700,
+        2300,
+        2460
+      ],
+      "headers": [
+        "Player",
+        "Position in US LNG export",
+        "Share trend",
+        "Note"
+      ],
+      "rows": [
+        [
+          {
+            "t": "Cheniere (LNG)",
+            "bold": true
+          },
+          {
+            "t": "LARGEST US EXPORTER — ~56 mtpa operating",
+            "tone": "bull"
+          },
+          {
+            "t": "Leader; ~5 mtpa more building",
+            "tone": "bull"
+          },
+          "The only name at this scale already converting trains into cargoes and cash"
+        ],
+        [
+          {
+            "t": "Venture Global (VG)",
+            "bold": true
+          },
+          {
+            "t": "100+ mtpa in production, construction or development",
+            "tone": "caution"
+          },
+          {
+            "t": "GAINING — projected to pass Cheniere by 2030",
+            "tone": "caution"
+          },
+          "$36.05B cap on $16.95B ttm revenue; Buy, target $16.47 (+14.2%)"
+        ],
+        [
+          {
+            "t": "NextDecade (NEXT)",
+            "bold": true
+          },
+          "Rio Grande Phase 1, 17 mtpa",
+          "Not yet exporting — start 2027-28",
+          "Development stage; not a 2026 competitor for volume"
+        ],
+        [
+          {
+            "t": "Sempra (SRE)",
+            "bold": true
+          },
+          "Port Arthur Phase 1, 13 mtpa",
+          "Not yet exporting — start 2027-28",
+          "Diversified utility; LNG is one segment, not the company"
+        ],
+        [
+          {
+            "t": "Relative strength",
+            "bold": true
+          },
+          {
+            "t": "LNG +21.98% over 52 weeks",
+            "tone": "bull"
+          },
+          "Strong Buy across 22 analysts",
+          "Consensus upside 6.2% vs VG's 14.2% — from a far more proven base"
+        ]
+      ],
+      "boxes": [
+        {
+          "title": "WHY THIS IS A 1.0",
+          "tone": "bull",
+          "bullets": [
+            "Cheniere is not a peripheral beneficiary of the US LNG export trend — it is the largest operator of it.",
+            "It is the only member of the peer group with meaningful capacity both operating and expanding today; NextDecade and Sempra do not export until 2027-28.",
+            "Guidance raised twice while volumes grew 20% is share being converted to cash, not a claim about the future."
+          ]
+        },
+        {
+          "title": "WHAT WOULD MAKE IT A 0.5",
+          "tone": "caution",
+          "bullets": [
+            "Venture Global's pipeline is roughly double Cheniere's operating capacity and is projected to overtake it by 2030.",
+            "If Cheniere does not sanction the next expansion, growth ends when Stage 3 finishes and the leadership becomes a legacy position.",
+            "Watch for new long-term SPA signings — none were disclosed in the Q2 release."
+          ]
+        }
+      ],
+      "scoreLabel": "PEER SCORE",
+      "score": "1.0 / 1.0 — CLEAR LEADER IN OPERATING CAPACITY TODAY, WITH A CREDIBLE DATED CHALLENGER",
+      "scoreTone": "bull"
+    }
+  ],
+  "technicals": {
+    "title": "Technical Analysis — Uptrend Intact, Consensus Close Above",
+    "widths": [
+      2600,
+      3200,
+      3560
+    ],
+    "headers": [
+      "Indicator",
+      "Value (September 4, 2026)",
+      "Signal"
+    ],
+    "rows": [
+      [
+        {
+          "t": "Price (entry reference)",
+          "bold": true
+        },
+        {
+          "t": "$290.85",
+          "bold": true
+        },
+        "Screener close — the ledger entry price"
+      ],
+      [
+        {
+          "t": "Last",
+          "bold": true
+        },
+        "$292.00",
+        {
+          "t": "+0.40% against the entry",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "52-week range",
+          "bold": true
+        },
+        "$186.20 - $300.89",
+        "3.3% below the high — room, not froth"
+      ],
+      [
+        {
+          "t": "50-day MA",
+          "bold": true
+        },
+        "$265.99",
+        {
+          "t": "Price 9.3% above — uptrend",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "200-day MA",
+          "bold": true
+        },
+        "$240.34",
+        {
+          "t": "Price 21.0% above — uptrend",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "52-week change",
+          "bold": true
+        },
+        "+21.98%",
+        "Outperforming, without being extended"
+      ],
+      [
+        {
+          "t": "Consensus target",
+          "bold": true
+        },
+        "$308.90",
+        {
+          "t": "+6.2% above the entry",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Street high / low",
+          "bold": true
+        },
+        "$340.00 / $255.00",
+        {
+          "t": "Low target sits 12.3% below the price",
+          "tone": "caution"
+        }
+      ],
+      [
+        {
+          "t": "Analyst coverage",
+          "bold": true
+        },
+        "22 analysts, Strong Buy",
+        "Broad coverage, consistent rating"
+      ],
+      [
+        {
+          "t": "EV/EBITDA",
+          "bold": true
+        },
+        "11.13x on $7.83B ttm",
+        "Undemanding for the growth rate"
+      ],
+      [
+        {
+          "t": "P/E (GAAP ttm)",
+          "bold": true
+        },
+        "21.47",
+        {
+          "t": "Distorted by derivative marks — see Part 1",
+          "tone": "caution"
+        }
+      ],
+      [
+        {
+          "t": "Forward P/E",
+          "bold": true
+        },
+        "16.77",
+        "On FY26 consensus EPS of $22.80"
+      ],
+      [
+        {
+          "t": "RSI(14)",
+          "bold": true
+        },
+        {
+          "t": "Not verified",
+          "tone": "neutral"
+        },
+        "No accessible source at time of writing; omitted rather than estimated"
+      ]
+    ]
+  },
+  "summary": {
+    "rows": [
+      [
+        "Part 1: Quality Check (Margins & Profitability)",
+        {
+          "t": "0.5 / 1.0",
+          "tone": "caution",
+          "bold": true
+        }
+      ],
+      [
+        "Part 2: Growth Check (Volume, Guidance & Engine)",
+        {
+          "t": "1.0 / 1.0",
+          "tone": "bull",
+          "bold": true
+        }
+      ],
+      [
+        "Part 3: Peer Check (US LNG Export Leadership)",
+        {
+          "t": "1.0 / 1.0",
+          "tone": "bull",
+          "bold": true
+        }
+      ]
+    ],
+    "total": "2.5 / 3.0",
+    "overlay": "CONSTRUCTIVE — above a rising 50-day and 200-day, 3.3% below the 52-week high, consensus target 6.2% above the entry",
+    "overlayTone": "bull"
+  },
+  "finalVerdict": {
+    "headline": "VERDICT: BUY / ADD — LONG STOCK, NO CALLS",
+    "tone": "bull",
+    "lines": [
+      {
+        "label": "ACCUMULATE",
+        "text": "$282 - $292. The −1.69% screener session is the entry; do not chase above $295."
+      },
+      {
+        "label": "HARD STOP",
+        "text": "$268, just below the 50-day at $265.99. A close beneath it breaks the trend the entry rests on."
+      },
+      {
+        "label": "TARGET",
+        "text": "$308.90 consensus (+6.2%); $340 Street high (+16.9%) as the stretch, not the base case."
+      },
+      {
+        "label": "SIZE",
+        "text": "No more than 5% of the account, and no more than 20% in Energy in total."
+      },
+      {
+        "label": "NO CALLS",
+        "text": "The rubric permits long calls only at 2.5 or better WITH a dated catalyst inside 90 days. Train 7 first LNG is described as imminent but carries no published date, and no Q3 reporting date has been announced. Stock only."
+      }
+    ],
+    "reasoning": "The score fell from 3.0 on the triage card to 2.5 on full verification, entirely in Part 1. That is the finding of this report, not a rounding difference: Cheniere's reported gross margin has compressed from 83.87% in FY23 to 36.85% trailing, and free cash flow has fallen from $6.30B to $2.79B. Both are explicable — the margin swing is mark-to-market on IFM derivative positions, and the cash flow decline is $3.35B of growth capex on Corpus Christi Stage 3 — but the rubric asks whether margins are clearly expanding off a healthy base, and no reported series says they are. At 2.5 with a constructive overlay the plan does not change: this remains a LONG STOCK position at the same entry, stop and target. What changes is the honesty of the file. If Stage 3 completes and free cash flow recovers toward the FY23 level while adjusted EBITDA holds the raised guidance, Part 1 returns to 1.0 on the next re-verification. If Venture Global's pipeline starts converting while Cheniere sanctions nothing new, Part 3 is the score that falls next."
+  }
+}
