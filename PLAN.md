@@ -3,14 +3,14 @@
 > **Thesis:** your proprietary "Out of the Box" screener is the *Identify with Momentum* layer.
 > The `momentum-verify-fundamentals` skill is the *Verify with Fundamentals* layer.
 > The agent's job is to run the second on the first, every day, pick 7, publish a
-> Balder's-Position-style report with a trading plan, and keep a scored ledger.
+> ParisYoung's-Position-style report with a trading plan, and keep a scored ledger.
 
 ## 0. The structural assets you are building (Owner Layer)
 
 | Asset | Why it compounds |
 |---|---|
 | **Scored ledger** (`data/ledger.json`) | Every pick with entry date/price, exit, P&L → a public *track record*. This is the product, not the picks. |
-| **Report archive** (`reports/YYYY-MM-DD.md`) | Daily dated posts = SEO + credibility; balder-ai.com's moat is "entry and exit both disclosed". |
+| **Report archive** (`reports/YYYY-MM-DD.md`) | Daily dated posts = SEO + credibility; the moat is "entry and exit both disclosed". |
 | **Rubric-as-code** (skill + `pipeline/*.md`) | The method is written down → replicable, auditable, improvable. |
 | **Distribution surface** (`site/`) | Your own domain, your own data. X/Substack become feeders, not the home. |
 
@@ -32,7 +32,7 @@
    │  04 PLAN    — map (score × overlay × catalyst) → WATCH / LONG STOCK / LONG CALLS
    │              conservative rules: ≤5% per name, hard stop, calls only ≥2.5 + dated catalyst
    ▼
-   │  05 REPORT  — render templates/daily_report.md (English, Balder's-Position structure)
+   │  05 REPORT  — render templates/daily_report.md (English, ParisYoung's-Position structure)
    │  06 TRACK   — update ledger: 新增 (new) / 持续 (continuing) / 结束 (exited); compute P&L since entry
    │  07 PUBLISH — full docx (skill generator) for the 7 picks only; build site; post
    ▼
@@ -62,7 +62,7 @@
 - Instruments: **long stock**; **long calls** only when score ≥2.5 **and** a dated catalyst inside the expiry (earnings, FDA, guidance event); 60–90 DTE, strike near-the-money, size ≤1% of account per call position.
 - Sizing: ≤5% of account per name; ≤20% per sector.
 - Risk: every position has a **hard stop** (below the breakout base / recent swing low); every WATCH has an **alert level** (pullback entry or breakout confirmation).
-- Exit rule for the ledger: exit when (a) stop hit, (b) score drops ≤1.5 on re-verify, or (c) name leaves the screener for 3 consecutive days *and* relative strength fades (mirrors Balder's "α信号转弱" exit).
+- Exit rule for the ledger: exit when (a) stop hit, (b) score drops ≤1.5 on re-verify, or (c) name leaves the screener for 3 consecutive days *and* relative strength fades (an "α信号转弱" / alpha-signal-weakening exit).
 
 ## 4. Ledger (state) — `data/ledger.json`
 
@@ -76,12 +76,12 @@
 The report's header line (`📈 SMTC tracking +10.44% (added 2026-08-31)`) and the three sections
 (New / Continuing / Exited) are generated **from the ledger**, never hand-written.
 
-## 5. Daily report template — English, Balder's-Position structure
+## 5. Daily report template — English, ParisYoung's-Position structure
 
 Header → market context → **I. New tracking** (per pick: *Signal · Logic · Key levels · Plan · Verdict*) →
 **II. Continuing** → **III. Exited** → alternates → disclaimer. See `templates/daily_report.md`.
 
-## 6. Site (Astro, static, Vercel/GitHub Pages) — modeled on balder-ai.com
+## 6. Site (Astro, static, Vercel/GitHub Pages) — modeled on a public entry-and-exit track-record site
 
 See `site/SITE_STRUCTURE.md`. Core pages: **Position** (the ledger, entry & exit disclosed),
 **Daily** (archive), **Method** (the rubric), **Record** (scored stats), **Reports** (docx library).
@@ -98,7 +98,7 @@ See `site/SITE_STRUCTURE.md`. Core pages: **Position** (the ledger, entry & exit
 1. **v0 (today):** scaffold + Sep-04 sample run (this folder).
 2. **v1:** Claude Code `/daily` command runs 01→06 end-to-end; ledger P&L auto-priced.
 3. **v2:** Astro site live; `/daily` also commits `reports/` and triggers deploy.
-4. **v3:** scoring: weekly "Record" stats (win rate, avg trade, hold time) like balder's 56% / +1.26%.
+4. **v3:** scoring: weekly "Record" stats (win rate, avg trade, hold time).
 5. **v4:** alerts — price-level alerts pushed (email/Discord) when a WATCH level is hit.
 
 ## 9. Risks / honesty notes

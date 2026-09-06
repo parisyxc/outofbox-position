@@ -1,6 +1,6 @@
 # Out-of-the-Box Daily Trading Agent
 
-Daily pipeline: proprietary screener image → fundamentals verification (momentum-verify-fundamentals) → 7 picks → trading plan → Balder's-Position-style report → scored ledger → site.
+Daily pipeline: proprietary screener image → fundamentals verification (momentum-verify-fundamentals) → 7 picks → trading plan → ParisYoung's-Position-style report → scored ledger → site.
 
 Start here: `PLAN.md` (architecture) → `CLAUDE.md` (agent rules) → `.claude/commands/daily.md` (the run).
 Sample run: `reports/2026-09-04/2026-09-04.md` · state: `data/ledger.json` · site IA: `site/SITE_STRUCTURE.md`.

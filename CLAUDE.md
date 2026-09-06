@@ -33,5 +33,5 @@ you verify. Never fabricate a number — every figure comes from a fetched sourc
 8. Not investment advice; you are not a financial advisor — say so in every report.
 
 ## Style
-Plain English, concise, numbers first. Follow the Balder's-Position structure in
+Plain English, concise, numbers first. Follow the ParisYoung's-Position structure in
 `templates/daily_report.md`: Signal → Logic → Key levels → Plan → Verdict per pick.
