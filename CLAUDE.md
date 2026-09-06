@@ -14,6 +14,7 @@ you verify. Never fabricate a number — every figure comes from a fetched sourc
 ## Layout
 - `data/inputs/DATE.csv` — parsed screener (ticker, last, chg, pct, volume, sector)
 - `data/ledger.json` — tracking state; the report's New / Continuing / Exited sections are derived from it
+  (rules: `pipeline/06_track.md` · every field and what may never be rewritten: `pipeline/ledger.schema.md`)
 - `pipeline/0N_*.md` — the rules for each stage; read the relevant stage before executing it
 - `templates/` — report + card templates; fill, never improvise structure
 - `reports/DATE/DATE.md` + `reports/DATE/*.docx` — outputs
