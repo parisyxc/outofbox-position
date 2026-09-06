@@ -8,9 +8,9 @@ const closed = (ledger.history ?? []).filter((h: any) => !h.bookkeeping);
 const bookkeeping = (ledger.history ?? []).filter((h: any) => h.bookkeeping);
 ---
 <Base title="Position" description="The open book and the closed history — every entry and every exit, disclosed.">
-  <h1>Balder's Position</h1>
+  <h1>My Current Out-of-the-Box Position</h1>
   <p class="lede">
-    The whole book, always. <span class="entry">Gold is an entry we disclosed</span>;
+    The whole book, always. <span class="entry">Gold is an entry we disclosed</span>;{' '}
     <span class="exit">cyan is an exit we disclosed</span>. Entry price is the screener's close on the entry
     date, never a fill and never a later price — that rule is what makes the record checkable.
   </p>
