@@ -46,3 +46,6 @@ Out-of-the-Box-Proprietary-Stock/
 # data/inputs/*.csv           parsed screeners
 # data/cards/                 per-ticker triage evidence
 # reports/                    daily reports + generated .docx
+
+# scheduled reprice output
+logs/
