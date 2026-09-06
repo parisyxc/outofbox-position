@@ -1,0 +1,176 @@
+{
+  "ticker": "VSH",
+  "company": "Vishay Intertechnology, Inc.",
+  "sector": "Information Technology  |  Passive & Discrete Semiconductor Components (Capacitors / MLCC, Resistors, MOSFETs, Diodes)",
+  "date": "Friday, May 29, 2026",
+
+  "verdict": {
+    "headline": "TRIM / TAKE PROFITS — DO NOT CHASE AT THE 52-WEEK HIGH",
+    "score": "1.5 / 3.0",
+    "tone": "caution",
+    "subhead": "FUNDAMENTALS IMPROVING (not leading)   |   TECHNICALS EUPHORIC / OVERBOUGHT",
+    "summary": "VSH scores 1.5/3.0 on fundamentals — margins expanding off a thin base, a volume-driven cyclical order recovery, but a follower (not a leader) in the MLCC trend it is associated with. Technicals are euphoric: +255% in 12 months, RSI in the low-80s, trading at the 52-week high (~$51). Meanwhile analyst consensus targets ($24–$28) sit roughly 45–50% BELOW the price. This is the mirror image of a falling knife — momentum has sprinted far ahead of the fundamentals."
+  },
+
+  "zones": [
+    {"label":"TRIM ZONE","value":"$48 – $51","note":"Scale out into strength (at 52-wk high)","tone":"caution"},
+    {"label":"TRAILING STOP","value":"~ $40","note":"Protect gains below the breakout","tone":"bear"},
+    {"label":"STREET TARGET","value":"$24 – $28","note":"Consensus Sell / BofA Underperform (≈ −45-50%)","tone":"neutral"}
+  ],
+
+  "divergence": {
+    "title": "Is VSH in a Momentum Bubble?",
+    "tech": {
+      "title": "TECHNICAL PICTURE — YES, EUPHORIC", "tone": "bear",
+      "bullets": [
+        "+255% total return over the last 12 months",
+        "RSI (14-day) in the 72–84 zone — OVERBOUGHT",
+        "Trading at 52-wk high $50.87 (52-wk low $11.77)",
+        "Accelerating, near-vertical uptrend; institutional buying",
+        "Jumped ~5% on the strong Q2 guide (May 23)"
+      ]
+    },
+    "fund": {
+      "title": "FUNDAMENTAL PICTURE — MIXED", "tone": "bull",
+      "bullets": [
+        "Just turned GAAP-profitable: EPS $0.05",
+        "Gross margin still only 21.0% (→ ~22.0% guide)",
+        "Growth is VOLUME-driven, cyclical recovery",
+        "NOT a pure-play / leader in MLCC",
+        "Strong orders: book-to-bill 1.34, backlog 5.7 mo"
+      ]
+    },
+    "assessment": {
+      "heading": "ASSESSMENT: TECHNICALLY EUPHORIC, FUNDAMENTALLY ONLY OK — a REVERSE DIVERGENCE.",
+      "tone": "info",
+      "text": "When euphoric technicals meet middling fundamentals AND an outright bearish Street, it usually signals late-stage momentum, not the start of a move. The opposite of “buy the falling knife”: here the discipline is to protect gains, not add risk."
+    }
+  },
+
+  "catalyst": {
+    "title": "The MLCC Trend — Real Tailwind, But Is VSH the Right Horse?",
+    "left": {
+      "title": "THE OPPORTUNITY (real & structural)", "tone": "bull",
+      "blocks": [
+        {"heading":"1. AI servers are MLCC monsters","bullets":["An Nvidia GB200 NVL72 rack uses ~440,000 MLCCs vs ~1,000 for a standard server (10–15x). Murata sees AI-server MLCC demand +3.3x by 2030 vs 2025."]},
+        {"heading":"2. Supply tight, pricing firming","bullets":["Lead times stretched from 8 → 24 weeks (high-cap 26–40). Taiyo Yuden +6–13%, Samsung up to +10%; Goldman lifted its 2026 MLCC price view from flat to 0–5%. “Next HBM” structural-shift narrative."]},
+        {"heading":"3. Automotive electrification = 2nd leg","bullets":["Auto MLCC ~19.6% CAGR 2026–31; total MLCC market ~$31.9B (2026) → ~$64B (2031)."]}
+      ]
+    },
+    "right": {
+      "title": "THE CATCH (why VSH ≠ a pure MLCC play)", "tone": "caution",
+      "blocks": [
+        {"heading":"1. Diversified, not concentrated","bullets":["Capacitors are only ~20–25% of VSH revenue, and MLCC is only a slice of that. MOSFETs, diodes, resistors and tantalum dominate the mix."]},
+        {"heading":"2. A follower, not a leader","bullets":["Murata (40%+ share, ~70% of AI-server MLCC), Samsung Electro-Mechanics and Taiyo Yuden hold >60% combined; the high-cap AI tier is ~80% Murata+Samsung."]},
+        {"heading":"3. Exposure is real but indirect","bullets":["VSH benefits via power-management & industrial passives, not the headline high-cap AI-server MLCC where the pricing power sits."]}
+      ]
+    },
+    "verdict": {
+      "tone": "navy",
+      "text": "MLCC VERDICT: GENUINE TAILWIND, INDIRECT EXPOSURE — VSH rides the wake, not the wave. The capacitor line is “the most elastic sub-segment in the current AI demand wave,” but it is too small a share of the company to justify a +255% re-rating on its own."
+    }
+  },
+
+  "earnings": {
+    "title": "Q1 2026 Earnings Performance (reported May 13, 2026)",
+    "widths": [2340,2340,2340,2340],
+    "headers": ["Metric","Q1 2026","vs Prior Period","Q2 2026 Guidance"],
+    "rows": [
+      [{"t":"Revenue","bold":true},{"t":"$839.2M","bold":true,"tone":"bull"},"+17% YoY, +5% QoQ (vol +6%)","$875–905M (≈ +6% QoQ)"],
+      [{"t":"Gross Margin","bold":true},{"t":"21.0%","bold":true,"tone":"bull"},"Beat guide, up QoQ","~22.0% (±50 bps)"],
+      [{"t":"Gross Profit","bold":true},"$177M","Expanding on volume","Growing"],
+      [{"t":"Net Earnings","bold":true},{"t":"$7.2M","tone":"bull"},"vs $0.01/sh prior Q; −$0.03 yr ago","Growing"],
+      [{"t":"EPS (diluted)","bold":true},{"t":"$0.05","bold":true,"tone":"bull"},"Turned profitable","Growing"],
+      [{"t":"Book-to-Bill","bold":true},{"t":"1.34","bold":true,"tone":"bull"},"Semis 1.47 / Passives 1.23","Watch (>1 = tight)"],
+      [{"t":"Backlog","bold":true},"5.7 months","3-yr high (Q4'25 +14% QoQ)","Growing"]
+    ]
+  },
+
+  "parts": [
+    {
+      "title": "Part 1 — Quality Check (Margins & Profitability)",
+      "question": "Is the price move supported by margin trends?",
+      "rows": [
+        [{"t":"Margin Trend","bold":true},{"t":"EXPANDING but THIN — gross margin 21.0% (Q1) → ~22.0% (Q2 guide); just turned GAAP-profitable after a year-ago loss.","tone":"bull"}],
+        [{"t":"Absolute Profitability","bold":true},{"t":"LOW — net earnings of only $7.2M on $839M revenue (≈0.9% net margin). Operating leverage is early-cycle.","tone":"caution"}],
+        [{"t":"Cost Pressure","bold":true},"Metals & materials costs remain a headwind; margin gains are volume-led, not yet structural pricing."],
+        [{"t":"Key Insight","bold":true},{"t":"Margins move the right way but off a depressed base. A +255% stock is pricing margin expansion that has only just begun to appear.","bold":true}]
+      ],
+      "scoreLabel": "QUALITY SCORE",
+      "score": "0.5 / 1.0 — EXPANDING but THIN / EARLY-CYCLE",
+      "scoreTone": "caution"
+    },
+    {
+      "title": "Part 2 — Growth Check (Divisional & Order Momentum)",
+      "question": "Which division is driving growth? Is it sustainable?",
+      "rows": [
+        [{"t":"Growth Type","bold":true},{"t":"VOLUME-DRIVEN CYCLICAL RECOVERY — Q1 revenue +17% YoY driven by +14% volume; a cyclical restock, not (yet) price-led.","tone":"caution"}],
+        [{"t":"Order Momentum","bold":true},{"t":"STRONG — book-to-bill 1.34 (semis 1.47, passives 1.23); backlog 5.7 months at a 3-year high. Demand is real and broad.","tone":"bull"}],
+        [{"t":"Growth Engines","bold":true},"Five sectors guided up QoQ: automotive, industrial power, medical, aerospace & defense, AI computing."],
+        [{"t":"AI / MLCC Optionality","bold":true},"The capacitor line is the most elastic AI sub-segment — genuine upside, but a small slice of total revenue."],
+        [{"t":"Sustainability","bold":true},{"t":"MEDIUM — passives/discretes are classically cyclical; the AI/auto secular leg is promising but unproven at VSH's scale. Volume-led upturns can reverse quickly.","tone":"caution"}]
+      ],
+      "scoreLabel": "GROWTH SCORE",
+      "score": "0.5 / 1.0 — STRONG ORDERS, but VOLUME/CYCLICAL (not price-driven)",
+      "scoreTone": "caution"
+    },
+    {
+      "title": "Part 3 — Peer Check (Relative Strength in the MLCC Trend)",
+      "question": "Is VSH leading or lagging its peer group in the trend it is being bought for?",
+      "headers": ["Player","MLCC Position","AI-Server MLCC","Note"],
+      "widths": [2500,2300,1860,2700],
+      "rows": [
+        [{"t":"Murata","bold":true},"#1 · 40%+ share",{"t":"~70%","tone":"bull"},"Pure-play leader; pricing power"],
+        [{"t":"Samsung Electro-Mech.","bold":true},"#2",{"t":"High","tone":"bull"},"Weighing +10% price hikes"],
+        [{"t":"Taiyo Yuden","bold":true},"#3 · 11–13%","Growing","MLCC = 64% of revenue; +6–13% hikes"],
+        [{"t":"TDK / Kyocera","bold":true},"Mid-tier","Auto-focused","Strong automotive franchises"],
+        [{"t":"Vishay (VSH)","bold":true,"fill":"feebc8"},{"t":"Peripheral","fill":"feebc8"},{"t":"Minimal","tone":"caution","fill":"feebc8"},{"t":"Diversified; MLCC a slice of ~20–25% cap. rev.","fill":"feebc8"}]
+      ],
+      "boxes": [
+        {"title":"Stock vs. Fundamentals","tone":"neutral","bullets":["VSH +255% (1-yr) has OUTPERFORMED on the narrative…","…despite being a follower on the underlying fundamentals."]},
+        {"title":"The Reality","tone":"neutral","bullets":["In the actual MLCC value chain, VSH is a price-taker, not a price-setter.","Pricing power sits with Murata / Samsung / Taiyo Yuden."]}
+      ],
+      "scoreLabel": "PEER SCORE",
+      "score": "0.5 / 1.0 — DIVERSIFIED BENEFICIARY, but a LAGGARD in pure MLCC",
+      "scoreTone": "caution"
+    }
+  ],
+
+  "technicals": {
+    "title": "Technical Analysis — Powerful but Overbought",
+    "widths": [3120,3120,3120],
+    "headers": ["Indicator","Value","Signal"],
+    "rows": [
+      [{"t":"Price","bold":true},"~$48.9 – $50.9",{"t":"At 52-wk high","tone":"bear"}],
+      [{"t":"52-week range","bold":true},"$11.77 – $50.87",{"t":"+255% (1-yr)","tone":"bear"}],
+      [{"t":"RSI (14-day)","bold":true},"72 – 84",{"t":"OVERBOUGHT","tone":"bear"}],
+      [{"t":"Trend","bold":true},"Accelerating uptrend",{"t":"BULLISH (extended)","tone":"caution"}],
+      [{"t":"Analyst consensus","bold":true},"Sell · ~$24 target",{"t":"BEARISH (≈ −50%)","tone":"bear"}],
+      [{"t":"BofA","bold":true},"$28 · Underperform",{"t":"BEARISH","tone":"bear"}],
+      [{"t":"Breakout support","bold":true},"~$40 – $42",{"t":"Trail-stop zone","tone":"caution"}]
+    ]
+  },
+
+  "summary": {
+    "rows": [
+      [{"t":"Part 1: Quality Check (Margins)","bold":true},{"t":"0.5 / 1.0 — EXPANDING but THIN (GM 21%→22%, EPS $0.05)","tone":"caution"}],
+      [{"t":"Part 2: Growth Check (Orders/Divisional)","bold":true},{"t":"0.5 / 1.0 — VOLUME-driven; B2B 1.34; AI optionality","tone":"caution"}],
+      [{"t":"Part 3: Peer Check (MLCC relative strength)","bold":true},{"t":"0.5 / 1.0 — LAGGARD vs Murata/Samsung/Taiyo","tone":"caution"}]
+    ],
+    "total": "1.5 / 3.0",
+    "overlay": "EUPHORIC / OVERBOUGHT — RSI 72–84, +255%, 52-wk high",
+    "overlayTone": "bear"
+  },
+
+  "finalVerdict": {
+    "headline": "TRIM / TAKE PROFITS — DO NOT CHASE",
+    "tone": "caution",
+    "lines": [
+      {"label":"TRIM ZONE","text":"$48–$51 (scale out into strength)"},
+      {"label":"TRAILING STOP","text":"~$40 (protect gains below the breakout)"},
+      {"label":"STREET TARGET","text":"$24–$28 (implies ≈ −45-50% downside)"},
+      {"label":"EXISTING POSITION","text":"HOLD a core with a trailing stop | TRIM the rest"}
+    ],
+    "reasoning": "Fundamentals score only 1.5/3 (NEUTRAL) while technicals are euphoric and the Street is outright bearish (targets near half the price). The MLCC/AI trend is genuine, but VSH is an indirect, follower beneficiary — not the leader the +255% move implies. This is the mirror image of “buy the falling knife”: momentum has sprinted ahead of fundamentals. Discipline says protect the gain — trim into strength, trail a stop, and do NOT initiate new longs at the 52-week high."
+  }
+}

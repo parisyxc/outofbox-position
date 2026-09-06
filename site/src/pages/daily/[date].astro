@@ -1,0 +1,68 @@
+---
+import Base from '../../layouts/Base.astro';
+import DisclaimerBlock from '../../components/DisclaimerBlock.astro';
+import { getCollection, render } from 'astro:content';
+import manifest from '../../generated/manifest.json';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('daily');
+  return posts.map((post) => ({ params: { date: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const hasScreener = manifest.screener.some((s: any) => s.date === post.id);
+
+const all = (await getCollection('daily')).sort((a, b) => +a.data.date - +b.data.date);
+const i = all.findIndex((p) => p.id === post.id);
+const prev = all[i - 1];
+const next = all[i + 1];
+---
+<Base title={`Daily ${post.id}`} description={post.data.summary.slice(0, 180)}>
+  <article>
+    <p class="kicker num">{post.id}</p>
+    <h1>Out-of-the-Box Position</h1>
+    {post.data.headline && <p class="hl num">{post.data.headline}</p>}
+
+    <div class="picks">
+      {post.data.picks.map((p) => (
+        <span class:list={['pk', p.plan.startsWith('WATCH') && 'pk--w']}>
+          <span class="num pk__t">{p.ticker}</span>
+          <span class="num dim">${p.price.toFixed(2)}</span>
+          <span class="num dim">{p.score.toFixed(1)}</span>
+        </span>
+      ))}
+    </div>
+
+    <div class="links">
+      {hasScreener && <a href={`${base}/screener/${post.id}`}>Full screener for this day →</a>}
+      {post.data.docx.map((d) => <span class="dim">{d} <span class="tag">docx · v2</span></span>)}
+    </div>
+
+    <div class="prose"><Content /></div>
+
+    <DisclaimerBlock />
+
+    <nav class="pager">
+      {prev ? <a href={`${base}/daily/${prev.id}`}>← {prev.id}</a> : <span class="dim">← earliest</span>}
+      <a href={`${base}/daily`}>All notes</a>
+      {next ? <a href={`${base}/daily/${next.id}`}>{next.id} →</a> : <span class="dim">latest →</span>}
+    </nav>
+  </article>
+</Base>
+<style>
+  .kicker { font-size: .78rem; letter-spacing: .1em; color: var(--muted); margin: 0 0 .3rem; }
+  .hl { font-size: .9rem; color: var(--up); margin: 0 0 1.4rem; }
+  .picks { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+  .pk { display: inline-flex; gap: .4rem; align-items: baseline; border: 1px solid color-mix(in srgb, var(--entry) 35%, transparent); border-radius: 6px; padding: .25rem .5rem; font-size: .76rem; }
+  .pk--w { border-color: color-mix(in srgb, var(--exit) 35%, transparent); }
+  .pk__t { font-weight: 650; color: var(--entry); }
+  .pk--w .pk__t { color: var(--exit); }
+  .links { display: flex; gap: 1rem; flex-wrap: wrap; font-size: .8rem; margin-bottom: 1.6rem; }
+  .links a { color: var(--exit); }
+  .links a:hover { text-decoration: underline; }
+  .pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid var(--line); font-size: .82rem; }
+  .pager a { color: var(--exit); }
+  .pager a:hover { text-decoration: underline; }
+</style>

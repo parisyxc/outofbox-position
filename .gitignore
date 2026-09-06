@@ -1,0 +1,48 @@
+# ── macOS ─────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ── Node ──────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.npm/
+
+# ── Astro / site build output (v2) ────────────────────────────────────
+site/dist/
+site/.astro/
+site/.vercel/
+.vercel/
+
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ── Secrets — never commit ────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── Editor / scratch ──────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*~
+
+# ── Proprietary screener input — kept local, never versioned ──────────
+# The Out-of-the-Box screener images are the edge; the parsed CSV in
+# data/inputs/ is the versioned, shareable derivative.
+Out-of-the-Box-Proprietary-Stock/
+
+# ── NOT ignored, deliberately ─────────────────────────────────────────
+# data/ledger.json            the track record — the whole point of the repo
+# data/ledger.bak.*.json      pre-git ledger snapshots git has no other copy of
+# data/inputs/*.csv           parsed screeners
+# data/cards/                 per-ticker triage evidence
+# reports/                    daily reports + generated .docx

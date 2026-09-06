@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import manifest from '../../generated/manifest.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="Screener" description="The raw Out-of-the-Box list for each session, with triage score, overlay and target gap.">
+  <h1>Screener</h1>
+  <p class="lede">
+    The full proprietary list for each session — every name, not just the seven — with the triage score, the
+    technical overlay and the gap to the average analyst target. A price above every published target is the
+    single clearest reason not to chase.
+  </p>
+  <ul class="list">
+    {manifest.screener.map((s: any) => (
+      <li>
+        <a class="row panel" href={`${base}/screener/${s.date}`}>
+          <span class="num row__d">{s.date}</span>
+          <span class="dim">{s.count} names · {s.scored} scored</span>
+        </a>
+      </li>
+    ))}
+    {manifest.screener.length === 0 && <li class="dim">No screener sessions parsed yet.</li>}
+  </ul>
+</Base>
+<style>
+  .lede { color: var(--muted); max-width: 72ch; margin: 0 0 2rem; }
+  .list { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .9rem 1.1rem; font-size: .88rem; }
+  .row:hover { border-color: color-mix(in srgb, var(--entry) 35%, var(--line)); }
+  .row__d { font-weight: 650; }
+</style>

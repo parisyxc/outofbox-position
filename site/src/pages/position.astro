@@ -1,0 +1,68 @@
+---
+import Base from '../layouts/Base.astro';
+import PositionTable from '../components/PositionTable.astro';
+import ledger from '../generated/ledger.json';
+
+const open = (ledger.positions ?? []).slice().sort((a: any, b: any) => (b.pnl_pct ?? -Infinity) - (a.pnl_pct ?? -Infinity));
+const closed = (ledger.history ?? []).filter((h: any) => !h.bookkeeping);
+const bookkeeping = (ledger.history ?? []).filter((h: any) => h.bookkeeping);
+---
+<Base title="Position" description="The open book and the closed history — every entry and every exit, disclosed.">
+  <h1>Balder's Position</h1>
+  <p class="lede">
+    The whole book, always. <span class="entry">Gold is an entry we disclosed</span>;
+    <span class="exit">cyan is an exit we disclosed</span>. Entry price is the screener's close on the entry
+    date, never a fill and never a later price — that rule is what makes the record checkable.
+  </p>
+
+  <h2 class="sh">Open <span class="dim num">{open.length}</span></h2>
+  <PositionTable rows={open} kind="open" />
+
+  <h2 class="sh">Closed <span class="dim num">{closed.length}</span></h2>
+  <PositionTable rows={closed} kind="closed" />
+
+  {bookkeeping.length > 0 && (
+    <details class="bk">
+      <summary>{bookkeeping.length} bookkeeping adjustment{bookkeeping.length === 1 ? '' : 's'} — excluded from the record</summary>
+      <p>
+        These rows left the book through a correction to the research, not through a stop or a decision to
+        sell. They were never live trades with a real exit, so counting them would report a win rate off
+        something that never closed. They are listed here rather than deleted.
+      </p>
+      <PositionTable rows={bookkeeping} kind="closed" />
+    </details>
+  )}
+
+  {(ledger.alternates ?? []).length > 0 && (
+    <>
+      <h2 class="sh">Alternates <span class="dim num">{ledger.alternates.length}</span></h2>
+      <p class="lede sm">Names that cleared triage but not selection — published so the near-misses are on the record too.</p>
+      <div class="scroll-x panel">
+        <table class="grid">
+          <thead><tr><th>Ticker</th><th>Score</th><th style="text-align:left">Why not selected</th></tr></thead>
+          <tbody>
+            {ledger.alternates.map((a: any) => (
+              <tr>
+                <td class="num" style="font-weight:650">{a.ticker}</td>
+                <td class="num">{a.score.toFixed(1)}</td>
+                <td class="muted why">{a.reason}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+</Base>
+<style>
+  .lede { color: var(--muted); max-width: 72ch; margin: 0 0 2rem; }
+  .lede.sm { font-size: .85rem; margin-bottom: 1rem; }
+  .entry { color: var(--entry); }
+  .exit { color: var(--exit); }
+  .sh { margin: 2.4rem 0 .9rem; font-size: 1.05rem; text-transform: uppercase; letter-spacing: .06em; font-family: var(--mono); }
+  .sh .num { font-weight: 400; }
+  .why { text-align: left; white-space: normal; min-width: 26ch; font-size: .82rem; }
+  .bk { margin-top: 2.4rem; border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.1rem; background: var(--panel); }
+  .bk summary { cursor: pointer; color: var(--muted); font-size: .85rem; }
+  .bk p { color: var(--muted); font-size: .82rem; max-width: 70ch; }
+</style>

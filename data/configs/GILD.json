@@ -1,0 +1,192 @@
+{
+  "ticker": "GILD",
+  "company": "Gilead Sciences, Inc.",
+  "sector": "Health Care  |  Biopharmaceuticals (HIV / Antivirals, Liver Disease, Oncology)",
+  "date": "Friday, September 4, 2026",
+
+  "verdict": {
+    "headline": "BUY / ADD — FUNDAMENTALS AND TECHNICALS ARE ALIGNED",
+    "score": "3.0 / 3.0",
+    "tone": "bull",
+    "subhead": "FUNDAMENTALS STRONG (all three parts score 1.0)   |   TECHNICALS BULLISH / UPTREND INTACT",
+    "summary": "GILD scores a full 3.0/3.0. Gross margin has expanded every year since FY23 (77.99% to 79.60% ttm) off an already-high base, trailing free cash flow is a record $12.94B, and ROIC is 34.4%. Q2 2026 revenue rose 10% to $7.803B — the strongest second-quarter growth in three years — led by HIV at $5.693B (+12%), and management RAISED full-year HIV growth guidance to 9-10% from 8%. Technicals are bullish and aligned: price $151.22 sits above every major moving average (MA20 144.35 / MA50 136.60 / MA200 133.37) with RSI(14) at 67.7 and the Street's average target ABOVE the price. The catch is not the business — it is the GAAP optics. A $10.5B Q2 net loss and a negative trailing P/E are the product of $11.1B of acquired IPR&D expensed upfront on three acquisitions, plus a $1.75B impairment on assets from the earlier Immunomedics deal. Excluding those charges, management guides FY26 non-GAAP EPS of $8.50-$8.85, roughly 17x the current price."
+  },
+
+  "zones": [
+    {"label":"ACCUMULATE ZONE","value":"$145 - $152","note":"Between MA20 (144.35) and the current price; add on dips, do not chase above 157","tone":"bull"},
+    {"label":"HARD STOP","value":"~ $136","note":"Below verified support 137.55 AND the MA50 at 136.60","tone":"bear"},
+    {"label":"TARGET","value":"$157 consensus  /  $180 Street high","note":"Consensus implies only +4.1% — the near-term reward is modest","tone":"caution"}
+  ],
+
+  "divergence": {
+    "title": "The Real Divergence: GAAP Headline vs. Operating Reality",
+    "tech": {
+      "title": "TECHNICAL PICTURE — BULLISH, ALIGNED", "tone": "bull",
+      "bullets": [
+        "Price $151.22, only 3.9% below the 52-wk high $157.29",
+        "Above every major MA: 5 (149.62), 20 (144.35), 50 (136.60), 200 (133.37)",
+        "RSI(14) 67.7 — upper-neutral, NOT yet overbought (>70)",
+        "MACD(12,26,9) +0.553 — buy signal",
+        "+33.6% over 12 months — a steady re-rate, not a vertical move",
+        "Street target $157.41 sits ABOVE the price (28 analysts, Buy)"
+      ]
+    },
+    "fund": {
+      "title": "FUNDAMENTAL PICTURE — STRONG, MASKED BY CHARGES", "tone": "bull",
+      "bullets": [
+        "Q2 revenue $7.803B, +10% YoY — best Q2 in three years",
+        "Gross margin 79.60% ttm, up every year from 77.99% (FY23)",
+        "Trailing FCF a record $12.94B; ROIC 34.4%; Price/FCF 14.5x",
+        "GAAP EPS -$8.45 — but from $11.1B upfront IPR&D expensing",
+        "Ex-charges FY26 non-GAAP EPS guide $8.50-$8.85 (~17x price)",
+        "RED FLAG: $1.75B impairment on prior Immunomedics assets"
+      ]
+    },
+    "assessment": {
+      "heading": "ASSESSMENT: NOT A DIVERGENCE BETWEEN PRICE AND FUNDAMENTALS — A DIVERGENCE BETWEEN ACCOUNTING AND CASH.",
+      "tone": "info",
+      "text": "The usual actionable setups are strong-fundamentals/weak-tape or weak-fundamentals/euphoric-tape. GILD is neither: fundamentals and technicals agree. The exploitable gap here is mechanical. Screens that rank on GAAP earnings see a company with negative trailing EPS, a negative 20.7% ROE and no P/E, because $11.1B of acquisition cost was expensed in a single quarter rather than capitalised. The same company produced $3.43B of free cash flow in that quarter and $12.94B over the trailing year. Investors who read the GAAP line literally will misprice this; the risk is that the market is already awake to it, since the consensus target sits just 4.1% above the price."
+    }
+  },
+
+  "catalyst": {
+    "title": "Long-Acting HIV Prevention — Is GILD the Right Horse?",
+    "left": {
+      "title": "THE OPPORTUNITY (leader, not follower)", "tone": "bull",
+      "blocks": [
+        {"heading":"1. Yeztugo is winning the PrEP switch market","bullets":["Twice-yearly injectable lenacapavir booked $232M in Q2 2026 against $15M a year earlier, +40% sequentially, beating consensus by $17M (8%). Four full quarters after launch it leads the entire PrEP switch market and is the leading long-acting option for PrEP-naive patients."]},
+        {"heading":"2. The franchise is taking share, not riding a rising tide","bullets":["Total PrEP sales topped $1B in a quarter for the first time ($1.03B), more than doubling YoY against a US PrEP market growing 14%. That gap is share capture. Annual run rate is now ~$4B."]},
+        {"heading":"3. Retention is holding so far","bullets":["More than 70% of users returned for the six-month reinjection, extending protection to a full year. Management raised FY26 HIV growth guidance to 9-10% from 8% on the back of it."]},
+        {"heading":"4. HIV is the core, not a side bet","bullets":["HIV is $5.693B of $7.803B total Q2 revenue — roughly 73%. Unlike a diversified beneficiary, GILD is a pure-play on the trend it is being bought for. Biktarvy alone is $3.772B (+7%)."]}
+      ]
+    },
+    "right": {
+      "title": "THE CATCH (real, and worth sizing for)", "tone": "caution",
+      "blocks": [
+        {"heading":"1. GSK/ViiV has a tolerability edge","bullets":["A head-to-head acceptability study found 4.4x more injection-site reaction events after Yeztugo than after GSK's Apretude, with 69% rating Apretude injections totally or very acceptable versus 48% for Yeztugo. Nine of ten participants preferred Apretude."]},
+        {"heading":"2. Analysts question durability","bullets":["The 70% six-month persistence figure is encouraging but early; it is the single number that decides whether the $4B run rate compounds or plateaus. GSK's long-acting portfolio is also strong — LAIs are now 35% of its US HIV sales, with 77% of Cabenuva switches coming from competitors."]},
+        {"heading":"3. Oncology is the weak leg","bullets":["Oncology grew just 3% to $873M, and the $1.75B impairment was taken against assets acquired from Immunomedics — the Trodelvy deal. That is a prior acquisition being written down while three more are being made."]},
+        {"heading":"4. Capital allocation is now the swing factor","bullets":["$11.1B was committed upfront to Arcellx, Tubulis and Ouro Medicines. The operating business funds it comfortably, but the Immunomedics write-down is evidence that Gilead's deal record is not unblemished."]}
+      ]
+    },
+    "verdict": {
+      "tone": "navy",
+      "text": "HIV VERDICT: GILD IS THE RIGHT HORSE. Unlike a peripheral beneficiary, Gilead sets the pace in the category it is valued for — 73% of revenue, the leading long-acting product, and share gains against a growing market. The honest caveats are Apretude's tolerability advantage, the unproven durability of Yeztugo persistence beyond the first year, and a demonstrated willingness to overpay for oncology assets."
+    }
+  },
+
+  "earnings": {
+    "title": "Q2 2026 Earnings Performance (reported August 4, 2026)",
+    "widths": [2340,2340,2340,2340],
+    "headers": ["Metric","Q2 2026","vs Q2 2025","FY 2026 Guidance"],
+    "rows": [
+      [{"t":"Total Revenue","bold":true},{"t":"$7.803B","bold":true,"tone":"bull"},"+10% (from $7.082B)","Product sales $30.1-30.4B"],
+      [{"t":"HIV","bold":true},{"t":"$5.693B","bold":true,"tone":"bull"},"+12% — the engine","HIV growth RAISED to 9-10%"],
+      [{"t":"Yeztugo (lenacapavir)","bold":true},{"t":"$232M","bold":true,"tone":"bull"},"vs $15M; +40% QoQ","PrEP run rate ~$4B"],
+      [{"t":"Biktarvy","bold":true},"$3.772B","+7%","Core franchise"],
+      [{"t":"Liver Disease","bold":true},"$877M",{"t":"+10%","tone":"bull"},"Growing"],
+      [{"t":"Oncology","bold":true},"$873M",{"t":"+3% — weak leg","tone":"caution"},"$1.75B Immunomedics impairment"],
+      [{"t":"Veklury (COVID)","bold":true},"$23M",{"t":"-81% — runoff","tone":"bear"},"Immaterial"],
+      [{"t":"Product Gross Margin","bold":true},{"t":"79.3%","bold":true,"tone":"bull"},"vs 78.7% — expanding","Non-GAAP 86.9% (flat)"],
+      [{"t":"Free Cash Flow","bold":true},{"t":"$3.432B","bold":true,"tone":"bull"},"vs $720M — sharply higher","TTM $12.94B (record)"],
+      [{"t":"GAAP Diluted EPS","bold":true},{"t":"-$8.45","bold":true,"tone":"bear"},"vs +$1.56 — IPR&D charges","-$3.75 to -$3.40"],
+      [{"t":"Non-GAAP EPS","bold":true},{"t":"-$6.75","tone":"bear"},"vs +$2.01","-$0.65 to -$0.30"],
+      [{"t":"EPS ex-IPR&D charges","bold":true},{"t":"n/a (charge ~$9.15/sh)","tone":"neutral"},"Underlying earnings intact",{"t":"$8.50 - $8.85","bold":true,"tone":"bull"}]
+    ]
+  },
+
+  "parts": [
+    {
+      "title": "Part 1 — Quality Check (Margins & Profitability)",
+      "question": "Is the price move supported by margin trends?",
+      "rows": [
+        [{"t":"Gross Margin Trend","bold":true},{"t":"CLEARLY EXPANDING off a high base — 77.99% (FY23) to 78.26% (FY24) to 78.84% (FY25) to 79.60% (ttm). Q2 product gross margin 79.3% vs 78.7% a year earlier. Roughly +160bps over three years on an already best-in-class base.","tone":"bull"}],
+        [{"t":"Operating Margin","bold":true},{"t":"STRONG — 34.40% (FY23) to 37.17% (FY24) to 40.13% (FY25), 38.88% ttm. The small step down from FY25 reflects higher R&D ($1.764B vs $1.491B) and SG&A ($1.921B vs $1.365B) behind the Yeztugo launch, not pricing erosion.","tone":"bull"}],
+        [{"t":"Cash Generation","bold":true},{"t":"RECORD — trailing FCF $12.94B, up from $9.46B (FY25) and $7.42B (FY23). Q2 alone produced $3.432B against $720M a year earlier. Price/FCF 14.5x; ROIC 34.4%.","tone":"bull"}],
+        [{"t":"The GAAP Problem","bold":true},{"t":"Trailing net income is -$3.24B, profit margin -10.64% and ROE -20.68%. This is entirely $11.1B of acquired IPR&D expensed upfront (Arcellx, Tubulis, Ouro Medicines) plus the $1.75B Immunomedics impairment. It is capital deployment run through the income statement, not margin deterioration.","tone":"caution"}],
+        [{"t":"The Genuine Blemish","bold":true},{"t":"The $1.75B impairment is a write-down of assets from a PRIOR acquisition. Margin quality in the operating business is not in question; the discipline of the acquisition programme is.","tone":"caution"}],
+        [{"t":"Key Insight","bold":true},{"t":"Every operating measure of quality — gross margin, operating margin, free cash flow, ROIC — is strong and improving. The negative headline earnings are an artefact of accounting for acquisitions, and the market can see through it: the stock is 3.9% off its high, not distressed.","bold":true}]
+      ],
+      "scoreLabel": "QUALITY SCORE",
+      "score": "1.0 / 1.0 — MARGINS CLEARLY EXPANDING OFF A HEALTHY BASE, RECORD FCF",
+      "scoreTone": "bull"
+    },
+    {
+      "title": "Part 2 — Growth Check (Divisional & Franchise Momentum)",
+      "question": "Which division is driving growth? Is it sustainable?",
+      "rows": [
+        [{"t":"Growth Type","bold":true},{"t":"SECULAR / NEW-CATEGORY, not cyclical — the driver is a product cycle creating a new treatment category (twice-yearly injectable PrEP), not a restock or a price increase on legacy volume.","tone":"bull"}],
+        [{"t":"Lead Division","bold":true},{"t":"HIV — $5.693B, +12% YoY, ~73% of total revenue. Biktarvy $3.772B (+7%) is the stable base; Yeztugo is the growth vector at $232M from $15M a year ago, +40% sequentially.","tone":"bull"}],
+        [{"t":"Guidance Direction","bold":true},{"t":"RAISED — full-year HIV growth guidance lifted to 9-10% from a prior 8%; base business sales guided to $29.8-30.1B, up $350M at the midpoint versus May. Total Q2 growth of 10% was the strongest second quarter in three years.","tone":"bull"}],
+        [{"t":"Supporting Segments","bold":true},"Liver Disease $877M (+10%) is a solid second leg. Veklury at $23M (-81%) is a COVID runoff now small enough to stop mattering, which removes a drag on FY27 comparisons."],
+        [{"t":"The Weak Leg","bold":true},{"t":"Oncology grew only 3% to $873M and carries the $1.75B Immunomedics impairment. Roughly 11% of revenue is not contributing to the growth case.","tone":"caution"}],
+        [{"t":"Sustainability","bold":true},{"t":"HIGH but not proven beyond year one — the whole thesis rests on Yeztugo persistence. The 70%+ six-month reinjection rate is the number to track each quarter; if it holds, growth compounds, if it decays, the $4B run rate plateaus.","tone":"caution"}]
+      ],
+      "scoreLabel": "GROWTH SCORE",
+      "score": "1.0 / 1.0 — DOUBLE-DIGIT, SECULAR, WITH RAISED GUIDANCE",
+      "scoreTone": "bull"
+    },
+    {
+      "title": "Part 3 — Peer Check (Relative Strength in Long-Acting HIV)",
+      "question": "Is GILD leading or lagging in the trend it is being bought for?",
+      "headers": ["Player","Position in Long-Acting HIV","Share Trend","Note"],
+      "widths": [2500,2300,1860,2700],
+      "rows": [
+        [{"t":"Gilead (GILD)","bold":true,"fill":"c6f6d5"},{"t":"#1 — Yeztugo leads the PrEP switch market","fill":"c6f6d5"},{"t":"GAINING","tone":"bull","bold":true,"fill":"c6f6d5"},{"t":"PrEP +100% YoY vs market +14%; HIV = 73% of revenue","fill":"c6f6d5"}],
+        [{"t":"GSK / ViiV","bold":true},"#2 — Apretude (q2-month) + Cabenuva",{"t":"Growing","tone":"caution"},"LAIs now 35% of US HIV sales; 77% of Cabenuva switches from rivals"],
+        [{"t":"Dosing interval","bold":true},"GILD twice-yearly vs GSK every 2 months",{"t":"GILD edge","tone":"bull"},"Convenience is Gilead's structural advantage"],
+        [{"t":"Tolerability","bold":true},"Apretude preferred 9 of 10 in a study",{"t":"GSK edge","tone":"bear"},"4.4x more injection-site reactions on Yeztugo; 69% vs 48% acceptability"],
+        [{"t":"Efficacy","bold":true},"Indirect comparison: similar",{"t":"Tie","tone":"neutral"},"Neither product wins on prevention efficacy alone"]
+      ],
+      "boxes": [
+        {"title":"Why this is a 1.0","tone":"bull","bullets":["GILD is a pure-play on the trend, not a diversified beneficiary — HIV is 73% of revenue.","It is demonstrably gaining share: PrEP sales doubled while the market grew 14%.","It sets the pace on dosing convenience, the axis patients switch for."]},
+        {"title":"What would break it","tone":"caution","bullets":["Injection-site tolerability is a genuine, measured disadvantage versus Apretude.","If six-month persistence slips below ~70%, the leadership claim weakens fast.","GSK is not retreating — its long-acting franchise is growing and taking switches too."]}
+      ],
+      "scoreLabel": "PEER SCORE",
+      "score": "1.0 / 1.0 — CLEAR LEADER AND SHARE GAINER IN ITS CORE CATEGORY",
+      "scoreTone": "bull"
+    }
+  ],
+
+  "technicals": {
+    "title": "Technical Analysis — Uptrend Intact, Approaching the High",
+    "widths": [3120,3120,3120],
+    "headers": ["Indicator","Value (Sept 4, 2026)","Signal"],
+    "rows": [
+      [{"t":"Price","bold":true},"$151.22",{"t":"3.9% below 52-wk high","tone":"bull"}],
+      [{"t":"52-week range","bold":true},"$108.46 - $157.29",{"t":"+33.6% over 1 year","tone":"bull"}],
+      [{"t":"RSI (14-day)","bold":true},"67.7",{"t":"Upper-neutral, not overbought","tone":"caution"}],
+      [{"t":"MACD (12,26,9)","bold":true},"+0.553",{"t":"BUY","tone":"bull"}],
+      [{"t":"MA20 / MA50 / MA200","bold":true},"144.35 / 136.60 / 133.37",{"t":"Price above all — BULLISH","tone":"bull"}],
+      [{"t":"Resistance","bold":true},"$158.49",{"t":"Just above the 52-wk high","tone":"caution"}],
+      [{"t":"Support","bold":true},"$137.55",{"t":"Stop belongs BELOW this","tone":"caution"}],
+      [{"t":"Analyst consensus","bold":true},"Buy · $157.41 (28 analysts)",{"t":"Only +4.1% upside","tone":"caution"}],
+      [{"t":"Street range","bold":true},"$123 low - $180 high",{"t":"High implies +19%","tone":"bull"}],
+      [{"t":"Forward P/E","bold":true},"16.55x  (Price/FCF 14.5x)",{"t":"Undemanding","tone":"bull"}]
+    ]
+  },
+
+  "summary": {
+    "rows": [
+      [{"t":"Part 1: Quality Check (Margins)","bold":true},{"t":"1.0 / 1.0 — GM 77.99% to 79.60%; record FCF $12.94B; ROIC 34.4%","tone":"bull"}],
+      [{"t":"Part 2: Growth Check (Divisional)","bold":true},{"t":"1.0 / 1.0 — HIV +12%; guidance RAISED to 9-10%; secular driver","tone":"bull"}],
+      [{"t":"Part 3: Peer Check (Long-acting HIV)","bold":true},{"t":"1.0 / 1.0 — LEADER; PrEP +100% vs market +14%","tone":"bull"}]
+    ],
+    "total": "3.0 / 3.0",
+    "overlay": "BULLISH / ALIGNED — above all MAs, RSI 67.7, +33.6% 1-yr, Street target above price",
+    "overlayTone": "bull"
+  },
+
+  "finalVerdict": {
+    "headline": "BUY / ADD — BUT SIZE FOR A MODEST NEAR-TERM TARGET",
+    "tone": "bull",
+    "lines": [
+      {"label":"ACCUMULATE ZONE","text":"$145-$152 (add on dips toward MA20 144.35; do not chase above $157)"},
+      {"label":"HARD STOP","text":"~$136 — below verified support $137.55 and the MA50 at $136.60"},
+      {"label":"CONSENSUS TARGET","text":"$157.41 (+4.1%) · Street high $180 (+19%) · Street low $123 (-19%)"},
+      {"label":"EXISTING POSITION","text":"HOLD and ADD on weakness; the thesis is intact and the tape confirms it"},
+      {"label":"NEW POSITION","text":"BUY in the zone; track Yeztugo six-month persistence each quarter as the thesis check"}
+    ],
+    "reasoning": "All three parts score 1.0 and the technical overlay is bullish rather than euphoric — RSI 67.7 with price above every major moving average and the Street's average target still above the price. Per the rubric's matrix, high fundamentals plus aligned bullish technicals is a Buy/Add, and there is no falling-knife or take-profit divergence to arbitrage here. Two disciplines apply. First, the reward is modest against consensus: $157.41 is only 4.1% away, so the case for size rests on the $180 Street high and on FY26 earnings power of $8.50-$8.85 ex-charges, roughly 17x. Second, the stop must sit below $137.55 — verified support and the MA50 — because a stop placed just above it will be taken out on an ordinary test. Track one number: Yeztugo six-month persistence, currently above 70%. It is the hinge on which both the Growth and Peer scores turn."
+  }
+}

@@ -1,0 +1,50 @@
+---
+// Scrolling tape of currently-tracked names and their P&L since entry.
+// Only names in the ledger appear — we only tape what we own the record for.
+import ledger from '../generated/ledger.json';
+const items = (ledger.positions ?? []).map((p: any) => ({
+  ticker: p.ticker,
+  pnl: p.pnl_pct as number | null,
+  plan: p.plan as string,
+}));
+// duplicated once so the -50% keyframe wraps seamlessly
+const reel = [...items, ...items];
+---
+{items.length > 0 && (
+  <div class="tape" aria-label="Currently tracked positions and P&L since entry">
+    <div class="tape__reel">
+      {reel.map((i, n) => (
+        <span class="tape__item" aria-hidden={n >= items.length ? 'true' : undefined}>
+          <span class="num tape__tkr">{i.ticker}</span>
+          <span class={`num ${i.pnl == null ? 'dim' : i.pnl >= 0 ? 'up' : 'down'}`}>
+            {i.pnl == null ? '—' : `${i.pnl >= 0 ? '+' : ''}${i.pnl.toFixed(2)}%`}
+          </span>
+          {i.plan === 'WATCH' && <span class="tape__w">watch</span>}
+        </span>
+      ))}
+    </div>
+  </div>
+)}
+<style>
+  .tape {
+    border-bottom: 1px solid var(--line);
+    background: #0d1117;
+    overflow: hidden;
+    padding: .4rem 0;
+    mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+  }
+  .tape__reel {
+    display: flex;
+    gap: 1.75rem;
+    width: max-content;
+    animation: tape 42s linear infinite;
+  }
+  .tape:hover .tape__reel { animation-play-state: paused; }
+  .tape__item { display: inline-flex; gap: .45rem; align-items: baseline; font-size: .78rem; }
+  .tape__tkr { color: var(--muted); letter-spacing: .04em; }
+  .tape__w { color: var(--exit); font-size: .62rem; text-transform: uppercase; letter-spacing: .06em; }
+  @keyframes tape { to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) {
+    .tape__reel { animation: none; flex-wrap: wrap; width: auto; padding: 0 20px; }
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+interface Props { p: any; href?: string; }
+const { p, href } = Astro.props;
+const watch = (p.plan ?? '').startsWith('WATCH');
+const upside = p.target && p.entry_price ? ((p.target - p.entry_price) / p.entry_price) * 100 : null;
+const risk = p.stop && p.entry_price ? ((p.stop - p.entry_price) / p.entry_price) * 100 : null;
+---
+<article class="card panel">
+  <header class="card__hd">
+    <span class="num card__tkr">{p.ticker}</span>
+    <span class:list={['tag', watch ? 'tag--watch' : 'tag--buy']}>{(p.plan ?? '').replace(/_/g, ' ')}</span>
+  </header>
+  <div class="card__pnl">
+    <span class:list={['num', p.pnl_pct == null ? 'dim' : p.pnl_pct >= 0 ? 'up' : 'down']}>
+      {p.pnl_pct == null ? '—' : `${p.pnl_pct >= 0 ? '+' : ''}${p.pnl_pct.toFixed(2)}%`}
+    </span>
+    <span class="dim card__since">since entry</span>
+  </div>
+  <dl class="card__dl">
+    <div><dt>Entry</dt><dd class="num entry">${p.entry_price?.toFixed(2)}</dd></div>
+    <div><dt>Stop</dt><dd class="num">{p.stop ? `$${p.stop}` : '—'} {risk != null && <span class="dim">({risk.toFixed(1)}%)</span>}</dd></div>
+    <div><dt>Target</dt><dd class="num">{p.target ? `$${p.target}` : '—'} {upside != null && <span class="dim">(+{upside.toFixed(1)}%)</span>}</dd></div>
+    <div><dt>Score</dt><dd class="num">{p.score?.toFixed(1)}/3.0 <span class="dim">{p.overlay}</span></dd></div>
+  </dl>
+  {p.catalyst && <p class="card__cat"><span class="dim">Catalyst ·</span> {p.catalyst}</p>}
+  {href && <a class="card__link" href={href}>Read the day's note →</a>}
+</article>
+<style>
+  .card { padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: .7rem; }
+  .card__hd { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+  .card__tkr { font-size: 1.15rem; font-weight: 650; letter-spacing: .02em; }
+  .card__pnl { display: flex; align-items: baseline; gap: .45rem; }
+  .card__pnl .num { font-size: 1.5rem; font-weight: 600; letter-spacing: -.02em; }
+  .card__since { font-size: .72rem; }
+  .card__dl { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem .8rem; margin: 0; font-size: .8rem; }
+  .card__dl dt { color: var(--muted); font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; }
+  .card__dl dd { margin: .1rem 0 0; }
+  .entry { color: var(--entry); }
+  .card__cat { margin: 0; font-size: .78rem; color: var(--muted); line-height: 1.45; }
+  .card__link { font-size: .78rem; color: var(--exit); margin-top: auto; }
+  .card__link:hover { text-decoration: underline; }
+</style>

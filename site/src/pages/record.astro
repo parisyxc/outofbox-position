@@ -1,0 +1,154 @@
+---
+import Base from '../layouts/Base.astro';
+import ledger from '../generated/ledger.json';
+import manifest from '../generated/manifest.json';
+
+const s = ledger.stats;
+const closed = (ledger.history ?? []).filter((h: any) => h.pnl_pct != null && !h.bookkeeping);
+const open = ledger.positions ?? [];
+
+// Grouped stats are computed over closed trades only. Open marks are shown separately and
+// never blended in — an unrealised mark is not a result.
+const groupBy = (rows: any[], key: (r: any) => string) => {
+  const m = new Map<string, any[]>();
+  for (const r of rows) m.set(key(r), [...(m.get(key) ?? []), r]);
+  return [...m.entries()].map(([k, v]) => ({
+    k,
+    n: v.length,
+    win: v.filter((x) => x.pnl_pct > 0).length,
+    avg: v.reduce((a, x) => a + x.pnl_pct, 0) / v.length,
+  })).sort((a, b) => b.n - a.n);
+};
+const byPlan = groupBy(closed, (r) => (r.plan ?? 'n/a').replace(/_/g, ' '));
+const bySector = groupBy(closed, (r) => r.sector ?? 'n/a');
+const avgHold = closed.length ? closed.reduce((a, h) => a + (h.days_held ?? 0), 0) / closed.length : null;
+
+// cumulative per-pick return, in entry order
+const curve = closed
+  .slice()
+  .sort((a: any, b: any) => String(a.exit_date).localeCompare(String(b.exit_date)))
+  .reduce((acc: any[], h: any) => [...acc, { ticker: h.ticker, cum: (acc.at(-1)?.cum ?? 0) + h.pnl_pct }], []);
+
+const W = 720, H = 200, PAD = 28;
+const lo = Math.min(0, ...curve.map((c) => c.cum));
+const hi = Math.max(0, ...curve.map((c) => c.cum));
+const span = hi - lo || 1;
+const x = (i: number) => PAD + (i / Math.max(1, curve.length - 1)) * (W - PAD * 2);
+const y = (v: number) => H - PAD - ((v - lo) / span) * (H - PAD * 2);
+---
+<Base title="Record" description="Win rate, average trade and cumulative return — scored on closed picks only.">
+  <h1>The record</h1>
+  <p class="lede">
+    Scored on <strong>closed</strong> picks only — a pick counts once it has both a disclosed entry and a
+    disclosed exit. Open positions are marks, not results, and are never blended into these numbers.
+  </p>
+
+  {closed.length === 0 ? (
+    <div class="empty panel">
+      <p class="empty__h">No closed picks yet.</p>
+      <p>
+        The ledger opened on <span class="num">{manifest.daily.at(-1)?.date ?? '—'}</span> and every one of
+        the <span class="num">{s.openNow}</span> positions is still live. There is no win rate to report:
+        a record with zero closed trades is not a 0% win rate, and this page will not print one.
+      </p>
+      {s.excludedBookkeeping > 0 && (
+        <p class="dim">
+          {s.excludedBookkeeping} row left the book as a research correction rather than a trade. It is
+          listed on the <a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/position`}>position page</a>
+          {' '}and excluded here.
+        </p>
+      )}
+      <p>Come back once a stop, a target or a thesis change closes something.</p>
+    </div>
+  ) : (
+    <>
+      <div class="kpis">
+        <div class="kpi"><span class="num kpi__v">{s.closed}</span><span class="kpi__k">Closed</span></div>
+        <div class="kpi"><span class="num kpi__v">{s.winRatePct?.toFixed(1)}%</span><span class="kpi__k">Win rate</span></div>
+        <div class="kpi"><span class:list={['num kpi__v', (s.avgTradePct ?? 0) >= 0 ? 'up' : 'down']}>{(s.avgTradePct ?? 0) >= 0 ? '+' : ''}{s.avgTradePct?.toFixed(2)}%</span><span class="kpi__k">Avg trade</span></div>
+        <div class="kpi"><span class="num kpi__v">{avgHold?.toFixed(0)}d</span><span class="kpi__k">Avg hold</span></div>
+      </div>
+
+      <h2 class="sh">Cumulative per-pick return</h2>
+      <div class="panel chartbox">
+        <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Cumulative sum of per-pick percentage return, in exit order" class="chart">
+          <line x1={PAD} x2={W - PAD} y1={y(0)} y2={y(0)} stroke="var(--line)" stroke-dasharray="3 3" />
+          <polyline
+            points={curve.map((c, i) => `${x(i)},${y(c.cum)}`).join(' ')}
+            fill="none" stroke="var(--entry)" stroke-width="2" stroke-linejoin="round"
+          />
+          {curve.map((c, i) => (
+            <>
+              <circle cx={x(i)} cy={y(c.cum)} r="3" fill="var(--entry)" />
+              <text x={x(i)} y={y(c.cum) - 9} text-anchor="middle" font-size="9" fill="var(--muted)">{c.ticker}</text>
+            </>
+          ))}
+          <text x={PAD} y={y(hi) - 2} font-size="9" fill="var(--dim)">{hi.toFixed(1)}%</text>
+          <text x={PAD} y={y(lo) + 11} font-size="9" fill="var(--dim)">{lo.toFixed(1)}%</text>
+        </svg>
+        <p class="chart__n dim">
+          Sum of per-pick percentage returns, equally weighted, in exit order. Not a portfolio equity curve:
+          it does not compound, size positions, or model costs.
+        </p>
+      </div>
+
+      <h2 class="sh">By plan type</h2>
+      <div class="scroll-x panel">
+        <table class="grid">
+          <thead><tr><th>Plan</th><th>Picks</th><th>Wins</th><th>Win rate</th><th>Avg</th></tr></thead>
+          <tbody>{byPlan.map((g) => (
+            <tr><td>{g.k}</td><td class="num">{g.n}</td><td class="num">{g.win}</td>
+              <td class="num">{((100 * g.win) / g.n).toFixed(0)}%</td>
+              <td class:list={['num', g.avg >= 0 ? 'up' : 'down']}>{g.avg >= 0 ? '+' : ''}{g.avg.toFixed(2)}%</td></tr>
+          ))}</tbody>
+        </table>
+      </div>
+
+      <h2 class="sh">By sector</h2>
+      <div class="scroll-x panel">
+        <table class="grid">
+          <thead><tr><th>Sector</th><th>Picks</th><th>Wins</th><th>Win rate</th><th>Avg</th></tr></thead>
+          <tbody>{bySector.map((g) => (
+            <tr><td>{g.k}</td><td class="num">{g.n}</td><td class="num">{g.win}</td>
+              <td class="num">{((100 * g.win) / g.n).toFixed(0)}%</td>
+              <td class:list={['num', g.avg >= 0 ? 'up' : 'down']}>{g.avg >= 0 ? '+' : ''}{g.avg.toFixed(2)}%</td></tr>
+          ))}</tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  <h2 class="sh">Open marks <span class="dim num">{open.length}</span></h2>
+  <p class="lede sm">Unrealised, for transparency only — excluded from every number above.</p>
+  <div class="scroll-x panel">
+    <table class="grid">
+      <thead><tr><th>Ticker</th><th>Added</th><th>Entry</th><th>Last</th><th>Mark</th><th>Plan</th></tr></thead>
+      <tbody>{open.map((p: any) => (
+        <tr>
+          <td class="num" style="font-weight:650">{p.ticker}</td>
+          <td class="num muted">{p.entry_date}</td>
+          <td class="num" style="color:var(--entry)">{p.entry_price?.toFixed(2)}</td>
+          <td class="num">{p.last_price?.toFixed(2) ?? '—'}</td>
+          <td class:list={['num', p.pnl_pct == null ? 'dim' : p.pnl_pct >= 0 ? 'up' : 'down']}>
+            {p.pnl_pct == null ? '—' : `${p.pnl_pct >= 0 ? '+' : ''}${p.pnl_pct.toFixed(2)}%`}</td>
+          <td class="muted">{(p.plan ?? '').replace(/_/g, ' ')}</td>
+        </tr>
+      ))}</tbody>
+    </table>
+  </div>
+</Base>
+<style>
+  .lede { color: var(--muted); max-width: 74ch; margin: 0 0 2rem; }
+  .lede.sm { font-size: .84rem; margin-bottom: 1rem; }
+  .empty { padding: 1.6rem 1.7rem; max-width: 74ch; color: var(--muted); }
+  .empty__h { color: var(--text); font-size: 1.05rem; font-weight: 600; margin-top: 0; }
+  .empty a { color: var(--exit); text-decoration: underline; }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: .7rem; }
+  .kpi { border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.1rem; background: var(--panel); }
+  .kpi__v { display: block; font-size: 1.7rem; font-weight: 600; letter-spacing: -.02em; }
+  .kpi__k { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  .sh { margin: 2.4rem 0 .9rem; font-size: 1.05rem; text-transform: uppercase; letter-spacing: .06em; font-family: var(--mono); }
+  .chartbox { padding: 1rem 1.1rem; }
+  .chart { width: 100%; height: auto; display: block; }
+  .chart__n { font-size: .74rem; margin: .6rem 0 0; }
+</style>

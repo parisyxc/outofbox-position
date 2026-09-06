@@ -1,0 +1,43 @@
+---
+import ledger from '../generated/ledger.json';
+import manifest from '../generated/manifest.json';
+
+const s = ledger.stats;
+const tickersCovered = new Set(
+  [...(ledger.positions ?? []), ...(ledger.history ?? [])].map((p: any) => p.ticker)
+).size;
+const screened = manifest.screener.reduce((a: number, d: any) => a + d.count, 0);
+
+const pct = (v: number | null) => (v == null ? '—' : `${v.toFixed(1)}%`);
+const stats = [
+  { k: 'Closed picks', v: String(s.closed), note: s.closed === 0 ? 'none yet' : 'entry + exit disclosed' },
+  { k: 'Win rate', v: pct(s.winRatePct), note: s.closed === 0 ? 'needs a closed trade' : `${s.wins} of ${s.closed}` },
+  { k: 'Avg trade', v: s.avgTradePct == null ? '—' : `${s.avgTradePct > 0 ? '+' : ''}${s.avgTradePct.toFixed(2)}%`, note: 'per closed pick' },
+  { k: 'Open now', v: String(s.openNow), note: 'tracking live' },
+  { k: 'Tickers covered', v: String(tickersCovered), note: 'in the ledger' },
+  { k: 'Names screened', v: String(screened), note: `${manifest.screener.length} session${manifest.screener.length === 1 ? '' : 's'}` },
+];
+---
+<div class="strip">
+  {stats.map((s) => (
+    <div class="strip__cell">
+      <div class="strip__v num">{s.v}</div>
+      <div class="strip__k">{s.k}</div>
+      <div class="strip__n dim">{s.note}</div>
+    </div>
+  ))}
+</div>
+<style>
+  .strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--panel);
+  }
+  .strip__cell { padding: 1rem 1.1rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .strip__v { font-size: 1.65rem; font-weight: 600; letter-spacing: -.02em; }
+  .strip__k { font-size: .74rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-top: .15rem; }
+  .strip__n { font-size: .7rem; margin-top: .2rem; }
+</style>

@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+import DisclaimerBlock from '../components/DisclaimerBlock.astro';
+import ledger from '../generated/ledger.json';
+import manifest from '../generated/manifest.json';
+---
+<Base title="About" description="What this is, how it is produced, and what it explicitly is not.">
+  <h1>About</h1>
+  <p class="lede">
+    <strong>Out-of-the-Box Position</strong> is a published record of a daily stock-selection method. A
+    proprietary screener produces a list every session; a written rubric verifies it; seven names get a plan
+    with a hard stop. The picks are published on entry, and again on exit — including the ones that lose.
+  </p>
+
+  <h2 class="sh">Why publish the losers</h2>
+  <p class="body">
+    A track record only means something if it was published before the outcome was known. Every entry here is
+    dated and priced at the screener's close on the entry date — not at a fill, and never at a price chosen
+    afterwards. Corrections get appended and labelled rather than edited away; the position page lists the
+    research corrections separately so they can never quietly become part of the win rate.
+  </p>
+
+  <h2 class="sh">How the site is produced</h2>
+  <p class="body">
+    Nothing on this site is typed by hand. A sync step reads the pipeline's own outputs —
+    <code>data/ledger.json</code>, the parsed screener CSVs, the per-ticker triage cards and the dated
+    reports — and the pages render from those. If a number is wrong here, it is wrong in the ledger, which is
+    the point.
+  </p>
+  <div class="facts">
+    <div><span class="num facts__v">{manifest.daily.length}</span><span class="facts__k">notes published</span></div>
+    <div><span class="num facts__v">{manifest.screener.reduce((a: number, s: any) => a + s.count, 0)}</span><span class="facts__k">names screened</span></div>
+    <div><span class="num facts__v">{ledger.stats.openNow}</span><span class="facts__k">open now</span></div>
+    <div><span class="num facts__v">{ledger.as_of ?? '—'}</span><span class="facts__k">ledger as of</span></div>
+  </div>
+
+  <h2 class="sh">Coming in v2</h2>
+  <ul class="body list">
+    <li><strong>Reports</strong> — a downloadable library of the full five-page verification analyses.</li>
+    <li><strong>Alerts</strong> — the live WATCH list with the level that would trigger action.</li>
+    <li><strong>Join</strong> — email notification when a note is published.</li>
+    <li>A Chinese-language toggle; the content collection already carries a language field.</li>
+  </ul>
+
+  <h2 class="sh">The disclaimer, in full</h2>
+  <DisclaimerBlock />
+</Base>
+<style>
+  .lede { color: var(--muted); max-width: 74ch; margin: 0 0 1rem; font-size: 1rem; }
+  .lede strong { color: var(--text); }
+  .body { color: var(--muted); max-width: 74ch; font-size: .9rem; }
+  .body strong { color: var(--text); }
+  .list { padding-left: 1.1rem; }
+  .list li { margin-bottom: .35rem; }
+  .sh { margin: 2.4rem 0 .8rem; font-size: 1.05rem; text-transform: uppercase; letter-spacing: .06em; font-family: var(--mono); }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: .7rem; margin-top: 1.2rem; }
+  .facts > div { border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; background: var(--panel); }
+  .facts__v { display: block; font-size: 1.35rem; font-weight: 600; }
+  .facts__k { font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+</style>

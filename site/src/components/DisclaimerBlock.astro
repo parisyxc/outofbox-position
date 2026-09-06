@@ -1,0 +1,34 @@
+---
+const { compact = false } = Astro.props;
+---
+<div class:list={['disc', compact && 'disc--compact']}>
+  <p>
+    <strong>Not investment advice.</strong> The author is not a financial advisor, broker or dealer. Everything
+    here is published research and a self-scored record of a personal method — not a recommendation to buy or
+    sell any security, and not personalised advice.
+  </p>
+  {!compact && (
+    <p>
+      Entry prices are the screener's closing print on the entry date, not fills; no slippage, commissions,
+      financing or taxes are modelled, so the published record is not an achievable return. Figures come from
+      third-party sources fetched on the dates noted and are not independently audited. Past performance does
+      not predict future results. Options carry a risk of total loss. Do your own research.
+    </p>
+  )}
+</div>
+<style>
+  .disc {
+    border: 1px solid var(--line);
+    border-left: 2px solid var(--entry);
+    background: var(--panel);
+    border-radius: 8px;
+    padding: .9rem 1.1rem;
+    color: var(--muted);
+    font-size: .8rem;
+    line-height: 1.55;
+  }
+  .disc p { margin: 0 0 .6rem; }
+  .disc p:last-child { margin-bottom: 0; }
+  .disc strong { color: var(--text); }
+  .disc--compact { border-left-color: var(--line); }
+</style>

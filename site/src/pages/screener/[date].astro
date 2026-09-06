@@ -1,0 +1,52 @@
+---
+import Base from '../../layouts/Base.astro';
+import ScreenerTable from '../../components/ScreenerTable.astro';
+import manifest from '../../generated/manifest.json';
+
+export async function getStaticPaths() {
+  const files = import.meta.glob('../../generated/screener/*.json', { eager: true, import: 'default' });
+  return Object.entries(files).map(([p, rows]) => ({
+    params: { date: p.match(/(\d{4}-\d{2}-\d{2})\.json$/)![1] },
+    props: { rows: rows as any[] },
+  }));
+}
+
+const { rows } = Astro.props;
+const { date } = Astro.params;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sectors = [...new Set(rows.map((r) => r.sector))].sort();
+const cleared = rows.filter((r) => r.score >= 2.5).length;
+const aboveTarget = rows.filter((r) => r.targetGapPct != null && r.targetGapPct <= 0);
+const hasNote = manifest.daily.some((d: any) => d.date === date);
+---
+<Base title={`Screener ${date}`} description={`All ${rows.length} Out-of-the-Box names for ${date}, scored.`}>
+  <p class="kicker num">{date}</p>
+  <h1>Screener · <span class="num">{rows.length}</span> names</h1>
+  <p class="lede">
+    {sectors.length} sectors · <span class="entry num">{cleared}</span> cleared the 2.5 line ·
+    <span class="num down">{aboveTarget.length}</span> closed at or above every published analyst target.
+    Click any column to sort; hover a ticker for its one-line read.
+  </p>
+  {hasNote && <p class="links"><a href={`${base}/daily/${date}`}>Read the written note for this session →</a></p>}
+
+  <ScreenerTable rows={rows} />
+
+  {aboveTarget.length > 0 && (
+    <p class="warn">
+      <strong>Above every target:</strong>{' '}
+      <span class="num">{aboveTarget.map((r) => r.ticker).join(' · ')}</span>{' '}
+      — the screener found them because they moved, which is exactly when the fundamental check matters most.
+    </p>
+  )}
+</Base>
+<style>
+  .kicker { font-size: .78rem; letter-spacing: .1em; color: var(--muted); margin: 0 0 .3rem; }
+  .lede { color: var(--muted); max-width: 74ch; margin: 0 0 1rem; font-size: .9rem; }
+  .entry { color: var(--entry); }
+  .links { font-size: .82rem; margin: 0 0 1.4rem; }
+  .links a { color: var(--exit); }
+  .links a:hover { text-decoration: underline; }
+  .warn { margin-top: 1.4rem; font-size: .82rem; color: var(--muted); max-width: 80ch; }
+  .warn strong { color: var(--text); }
+</style>

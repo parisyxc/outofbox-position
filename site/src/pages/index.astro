@@ -1,0 +1,95 @@
+---
+import Base from '../layouts/Base.astro';
+import StatsStrip from '../components/StatsStrip.astro';
+import PickCard from '../components/PickCard.astro';
+import ledger from '../generated/ledger.json';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const posts = (await getCollection('daily')).sort((a, b) => +b.data.date - +a.data.date);
+const latest = posts[0];
+
+const closed = (ledger.history ?? []).filter((h: any) => h.pnl_pct != null && !h.bookkeeping);
+// Once trades close, the shelf is the best entry-to-exit results. Until then it shows
+// the live book instead, labelled as such — we never present open marks as a result.
+const showingClosed = closed.length > 0;
+const shelf = (showingClosed ? closed : (ledger.positions ?? []))
+  .slice()
+  .sort((a: any, b: any) => (b.pnl_pct ?? -Infinity) - (a.pnl_pct ?? -Infinity))
+  .slice(0, 4);
+---
+<Base title="Home">
+  <section class="hero">
+    <p class="hero__kicker">Out-of-the-Box Position</p>
+    <h1>Identify with momentum.<br /><span class="gold">Verify with fundamentals.</span></h1>
+    <p class="hero__sub">
+      A proprietary daily screener does the identifying. A three-part fundamental rubric — quality, growth,
+      peer strength — does the verifying. Seven names get a written plan with a hard stop. Every pick is
+      published on entry <span class="dim">and</span> on exit, winners and losers alike.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--p" href={`${base}/position`}>See the open book</a>
+      <a class="btn" href={`${base}/method`}>How it's built</a>
+    </div>
+  </section>
+
+  <StatsStrip />
+
+  <section class="sec">
+    <div class="sec__hd">
+      <h2>{showingClosed ? 'Best entry-to-exit' : 'The live book'}</h2>
+      <a class="sec__more" href={`${base}/position`}>All positions →</a>
+    </div>
+    {!showingClosed && (
+      <p class="note">
+        No pick has closed yet, so there is nothing to rank on realised return. These are open marks against
+        the entry print — unrealised, and not a result.
+      </p>
+    )}
+    <div class="cards">
+      {shelf.map((p: any) => <PickCard p={p} href={`${base}/daily/${p.entry_date}`} />)}
+    </div>
+  </section>
+
+  {latest && (
+    <section class="sec">
+      <div class="sec__hd">
+        <h2>Latest daily note</h2>
+        <a class="sec__more" href={`${base}/daily`}>Archive →</a>
+      </div>
+      <a class="latest panel" href={`${base}/daily/${latest.id}`}>
+        <div class="latest__meta">
+          <span class="num tag">{latest.id}</span>
+          {latest.data.focus.map((t: string) => <span class="num latest__t">{t}</span>)}
+          {latest.data.watch.map((t: string) => <span class="num latest__t latest__t--w">{t}</span>)}
+        </div>
+        <p class="latest__sum">{latest.data.summary.slice(0, 340)}{latest.data.summary.length > 340 ? '…' : ''}</p>
+        <span class="latest__go">Read the full note →</span>
+      </a>
+    </section>
+  )}
+</Base>
+<style>
+  .hero { padding: 2rem 0 2.6rem; max-width: 62ch; }
+  .hero__kicker { font-family: var(--mono); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 .8rem; }
+  .gold { color: var(--entry); }
+  .hero__sub { color: var(--muted); font-size: 1.02rem; margin: 1.1rem 0 1.6rem; }
+  .hero__cta { display: flex; gap: .6rem; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: .55rem 1rem; border: 1px solid var(--line); border-radius: 7px; font-size: .86rem; color: var(--muted); }
+  .btn:hover { color: var(--text); background: #ffffff0a; }
+  .btn--p { border-color: color-mix(in srgb, var(--entry) 45%, transparent); color: var(--entry); }
+  .sec { margin-top: 3rem; }
+  .sec__hd { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+  .sec__hd h2 { margin: 0; }
+  .sec__more { font-size: .8rem; color: var(--exit); }
+  .sec__more:hover { text-decoration: underline; }
+  .note { color: var(--muted); font-size: .82rem; margin: 0 0 1rem; max-width: 70ch; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: .8rem; }
+  .latest { display: block; padding: 1.2rem 1.3rem; }
+  .latest:hover { border-color: color-mix(in srgb, var(--entry) 35%, var(--line)); }
+  .latest__meta { display: flex; gap: .4rem; align-items: center; flex-wrap: wrap; margin-bottom: .7rem; }
+  .latest__t { font-size: .74rem; color: var(--entry); letter-spacing: .03em; }
+  .latest__t--w { color: var(--exit); }
+  .latest__sum { margin: 0 0 .8rem; color: var(--muted); font-size: .88rem; }
+  .latest__go { font-size: .78rem; color: var(--exit); }
+</style>

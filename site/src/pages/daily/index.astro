@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const posts = (await getCollection('daily')).sort((a, b) => +b.data.date - +a.data.date);
+---
+<Base title="Daily" description="Every daily Out-of-the-Box note, archived by date.">
+  <h1>Daily notes</h1>
+  <p class="lede">
+    One note per trading session: what the screener surfaced, what survived the fundamental check, and the
+    plan for each of the seven — written before the outcome is known.
+  </p>
+  <ul class="list">
+    {posts.map((p) => (
+      <li>
+        <a class="row panel" href={`${base}/daily/${p.id}`}>
+          <div class="row__hd">
+            <span class="num row__d">{p.id}</span>
+            <span class="dim row__n">{p.data.picks.length} picks</span>
+          </div>
+          <div class="row__t">
+            {p.data.focus.map((t) => <span class="num t">{t}</span>)}
+            {p.data.watch.map((t) => <span class="num t t--w">{t}</span>)}
+          </div>
+          <p class="row__s">{p.data.summary.slice(0, 260)}{p.data.summary.length > 260 ? '…' : ''}</p>
+        </a>
+      </li>
+    ))}
+    {posts.length === 0 && <li class="dim">No notes published yet.</li>}
+  </ul>
+</Base>
+<style>
+  .lede { color: var(--muted); max-width: 72ch; margin: 0 0 2rem; }
+  .list { list-style: none; padding: 0; margin: 0; display: grid; gap: .7rem; }
+  .row { display: block; padding: 1.1rem 1.2rem; }
+  .row:hover { border-color: color-mix(in srgb, var(--entry) 35%, var(--line)); }
+  .row__hd { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+  .row__d { font-weight: 650; }
+  .row__n { font-size: .75rem; }
+  .row__t { display: flex; gap: .45rem; flex-wrap: wrap; margin: .5rem 0; }
+  .t { font-size: .74rem; color: var(--entry); letter-spacing: .03em; }
+  .t--w { color: var(--exit); }
+  .row__s { margin: 0; color: var(--muted); font-size: .85rem; }
+</style>

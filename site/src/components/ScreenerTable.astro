@@ -1,0 +1,93 @@
+---
+// Sortable client-side; ships ~40 rows so no virtualisation is needed.
+interface Props { rows: any[]; }
+const { rows } = Astro.props;
+const cols = [
+  { k: 'ticker', l: 'Ticker', t: 's' },
+  { k: 'sector', l: 'Sector', t: 's' },
+  { k: 'last', l: 'Last', t: 'n' },
+  { k: 'pct', l: 'Chg %', t: 'n' },
+  { k: 'volume', l: 'Volume', t: 'n' },
+  { k: 'score', l: 'Score', t: 'n' },
+  { k: 'overlay', l: 'Overlay', t: 's' },
+  { k: 'target', l: 'Target', t: 'n' },
+  { k: 'targetGapPct', l: 'Gap %', t: 'n' },
+  { k: 'rating', l: 'Rating', t: 's' },
+];
+const fmt = (v: any, k: string) => {
+  if (v == null) return '—';
+  if (k === 'volume') return v.toLocaleString('en-US');
+  if (k === 'score') return v.toFixed(1);
+  if (k === 'pct' || k === 'targetGapPct') return `${v >= 0 ? '+' : ''}${v.toFixed(2)}%`;
+  if (typeof v === 'number') return v.toFixed(2);
+  return v;
+};
+---
+<div class="scroll-x panel">
+  <table class="grid" id="screener">
+    <thead>
+      <tr>
+        {cols.map((c, i) => (
+          <th>
+            <button class="sort" data-col={i} data-type={c.t} type="button">{c.l}<span class="sort__i" aria-hidden="true"></span></button>
+          </th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          {cols.map((c) => {
+            const v = r[c.k];
+            const cls =
+              c.k === 'pct' || c.k === 'targetGapPct' ? (v == null ? 'dim' : v >= 0 ? 'up' : 'down')
+              : c.k === 'score' ? (v >= 2.5 ? 'entry' : v >= 2 ? '' : 'dim')
+              : c.k === 'ticker' ? 'tkr' : c.t === 'n' ? '' : 'muted';
+            return (
+              <td class:list={[c.t === 'n' || c.k === 'ticker' ? 'num' : '', cls]} data-v={c.t === 'n' ? (v ?? '') : undefined} title={c.k === 'ticker' ? r.read ?? undefined : undefined}>
+                {fmt(v, c.k)}
+              </td>
+            );
+          })}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+<style>
+  .sort { all: unset; cursor: pointer; display: inline-flex; gap: .3rem; align-items: center; }
+  .sort:hover { color: var(--text); }
+  .sort__i::after { content: '↕'; opacity: .3; font-size: .8em; }
+  .sort[data-dir="asc"] .sort__i::after { content: '↑'; opacity: 1; }
+  .sort[data-dir="desc"] .sort__i::after { content: '↓'; opacity: 1; }
+  .entry { color: var(--entry); }
+  .tkr { font-weight: 650; }
+</style>
+<script>
+  const table = document.getElementById('screener') as HTMLTableElement | null;
+  if (table) {
+    const tbody = table.tBodies[0];
+    table.querySelectorAll<HTMLButtonElement>('button.sort').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const col = Number(btn.dataset.col);
+        const numeric = btn.dataset.type === 'n';
+        const dir = btn.dataset.dir === 'desc' ? 'asc' : 'desc';
+        table.querySelectorAll<HTMLButtonElement>('button.sort').forEach((b) => delete b.dataset.dir);
+        btn.dataset.dir = dir;
+        const sign = dir === 'asc' ? 1 : -1;
+        const rows = [...tbody.rows].sort((a, b) => {
+          const ca = a.cells[col], cb = b.cells[col];
+          if (numeric) {
+            const va = ca.dataset.v === '' ? null : Number(ca.dataset.v);
+            const vb = cb.dataset.v === '' ? null : Number(cb.dataset.v);
+            if (va == null) return 1;          // nulls always sink
+            if (vb == null) return -1;
+            return sign * (va - vb);
+          }
+          return sign * ca.textContent!.trim().localeCompare(cb.textContent!.trim());
+        });
+        rows.forEach((r) => tbody.appendChild(r));
+      });
+    });
+  }
+</script>

@@ -1,0 +1,85 @@
+---
+import '../styles/global.css';
+import TickerTape from '../components/TickerTape.astro';
+import DisclaimerBlock from '../components/DisclaimerBlock.astro';
+import ledger from '../generated/ledger.json';
+
+interface Props { title: string; description?: string; }
+const { title, description = 'Identify with momentum, verify with fundamentals — every pick published on entry and on exit.' } = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const href = (p: string) => `${base.replace(/\/$/, '')}/${p.replace(/^\//, '')}`.replace(/\/$/, '') || '/';
+const here = Astro.url.pathname.replace(/\/$/, '');
+const isCurrent = (p: string) => here === href(p).replace(/\/$/, '');
+
+const nav = [
+  { label: 'Home', path: '' },
+  { label: 'Position', path: 'position' },
+  { label: 'Daily', path: 'daily' },
+  { label: 'Screener', path: 'screener' },
+  { label: 'Method', path: 'method' },
+  { label: 'Record', path: 'record' },
+  { label: 'About', path: 'about' },
+];
+const soon = ['Reports', 'Alerts', 'Join'];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · Out-of-the-Box Position</title>
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:title" content={`${title} · Out-of-the-Box Position`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>📈</text></svg>" />
+  </head>
+  <body>
+    <TickerTape />
+    <header class="hdr">
+      <div class="wrap hdr__in">
+        <a href={href('')} class="brand">
+          <span class="brand__mark">▚</span>
+          <span>Out-of-the-Box <span class="dim">Position</span></span>
+        </a>
+        <nav aria-label="Primary">
+          {nav.map((n) => (
+            <a href={href(n.path)} class:list={['nav__a', isCurrent(n.path) && 'is-on']} aria-current={isCurrent(n.path) ? 'page' : undefined}>{n.label}</a>
+          ))}
+          {soon.map((s) => <span class="nav__a nav__a--soon" title="Planned for v2">{s}</span>)}
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap main">
+      <slot />
+    </main>
+
+    <footer class="ftr">
+      <div class="wrap">
+        <DisclaimerBlock />
+        <div class="ftr__meta">
+          <span>Ledger as of <span class="num">{ledger.as_of ?? '—'}</span> · {ledger.stats.openNow} open · {ledger.stats.closed} closed</span>
+          <span class="dim">Built from the repo's own data — no figure on this site is hand-entered.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<style>
+  .hdr { border-bottom: 1px solid var(--line); background: #0a0c0fd9; backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 10; }
+  .hdr__in { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 56px; flex-wrap: wrap; }
+  .brand { display: inline-flex; align-items: center; gap: .5rem; font-weight: 650; letter-spacing: -.01em; }
+  .brand__mark { color: var(--entry); }
+  nav { display: flex; gap: .25rem; flex-wrap: wrap; }
+  .nav__a { padding: .35rem .55rem; border-radius: 6px; font-size: .84rem; color: var(--muted); }
+  .nav__a:hover { color: var(--text); background: #ffffff0a; }
+  .nav__a.is-on { color: var(--entry); background: #ffffff08; }
+  .nav__a--soon { color: #3b444f; cursor: default; }
+  .nav__a--soon:hover { background: none; color: #3b444f; }
+  .main { padding: 2.2rem 20px 3.5rem; min-height: 60vh; }
+  .ftr { border-top: 1px solid var(--line); padding: 2rem 0 3rem; background: #080a0d; }
+  .ftr__meta { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; font-size: .76rem; color: var(--muted); }
+</style>

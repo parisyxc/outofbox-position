@@ -1,0 +1,57 @@
+---
+interface Props { rows: any[]; kind: 'open' | 'closed'; }
+const { rows, kind } = Astro.props;
+const n = (v: any, d = 2) => (v == null ? '—' : Number(v).toFixed(d));
+const pnl = (v: any) => (v == null ? '—' : `${v >= 0 ? '+' : ''}${Number(v).toFixed(2)}%`);
+const planTag = (p: string) => (p?.startsWith('WATCH') ? 'tag--watch' : 'tag--buy');
+---
+<div class="scroll-x panel">
+  <table class="grid">
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Sector</th>
+        <th>{kind === 'open' ? 'Added' : 'Entry'}</th>
+        <th>Entry $</th>
+        {kind === 'closed' && <th>Exit</th>}
+        {kind === 'closed' && <th>Exit $</th>}
+        {kind === 'open' && <th>Last $</th>}
+        <th>P&L</th>
+        <th>Score</th>
+        <th>Plan</th>
+        {kind === 'open' && <th>Stop</th>}
+        {kind === 'open' && <th>Target</th>}
+        {kind === 'closed' && <th style="text-align:left">Reason</th>}
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((p) => (
+        <tr>
+          <td><span class="num tkr">{p.ticker}</span></td>
+          <td class="muted">{p.sector}</td>
+          <td class="num muted">{p.entry_date}</td>
+          <td class="num entry">{n(p.entry_price)}</td>
+          {kind === 'closed' && <td class="num muted">{p.exit_date ?? '—'}</td>}
+          {kind === 'closed' && <td class="num exit">{n(p.exit_price)}</td>}
+          {kind === 'open' && <td class="num">{n(p.last_price)}</td>}
+          <td class:list={['num', p.pnl_pct == null ? 'dim' : p.pnl_pct >= 0 ? 'up' : 'down']}>{pnl(p.pnl_pct)}</td>
+          <td class="num">{n(p.score, 1)}</td>
+          <td><span class:list={['tag', planTag(p.plan)]}>{(p.plan ?? '').replace(/_/g, ' ')}</span></td>
+          {kind === 'open' && <td class="num muted">{n(p.stop)}</td>}
+          {kind === 'open' && <td class="num muted">{n(p.target)}</td>}
+          {kind === 'closed' && <td class="muted reason">{p.reason ?? '—'}</td>}
+        </tr>
+      ))}
+      {rows.length === 0 && (
+        <tr><td colspan="12" class="dim empty">No {kind} positions yet.</td></tr>
+      )}
+    </tbody>
+  </table>
+</div>
+<style>
+  .tkr { font-weight: 650; letter-spacing: .02em; }
+  .entry { color: var(--entry); }
+  .exit { color: var(--exit); }
+  .reason { text-align: left; white-space: normal; min-width: 22ch; max-width: 42ch; font-size: .8rem; }
+  .empty { text-align: center; padding: 2rem; }
+</style>

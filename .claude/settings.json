@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read", "Write", "Edit", "Glob", "Grep",
+      "Bash(python3 scripts/reprice.py*)",
+      "Bash(node skill/scripts/generate_report.js*)",
+      "Bash(pip install*)", "Bash(npm install*)", "Bash(ls*)", "Bash(cat*)", "Bash(date*)",
+      "WebFetch(domain:stockanalysis.com)", "WebFetch(domain:finance.yahoo.com)",
+      "WebFetch(domain:sec.gov)", "WebFetch(domain:www.sec.gov)", "WebFetch(domain:investing.com)",
+      "WebFetch(domain:www.investing.com)", "WebFetch(domain:prnewswire.com)", "WebFetch(domain:www.prnewswire.com)",
+      "WebFetch(domain:businesswire.com)", "WebFetch(domain:www.businesswire.com)", "WebFetch(domain:tipranks.com)",
+      "WebFetch(domain:www.tipranks.com)", "WebFetch(domain:stocktitan.net)", "WebFetch(domain:www.stocktitan.net)",
+      "WebSearch"
+    ]
+  }
+}

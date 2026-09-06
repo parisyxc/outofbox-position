@@ -1,0 +1,8 @@
+{
+  "name": "momentum-verify-fundamentals-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Config-driven .docx renderer for Momentum Verification Analysis reports.",
+  "bin": { "mvf-report": "generate_report.js" },
+  "dependencies": { "docx": "^9.0.0" }
+}

@@ -1,0 +1,137 @@
+---
+import Base from '../layouts/Base.astro';
+import DisclaimerBlock from '../components/DisclaimerBlock.astro';
+
+const parts = [
+  { n: 'Part 1', t: 'Quality', q: 'Is the price move supported by margin trends?',
+    one: 'Margins clearly expanding off a healthy base; pricing power evident; strong FCF.',
+    half: 'Expanding but thin or early-cycle, or healthy but flat — right direction, low base.',
+    zero: 'Margins contracting; profitability deteriorating with no clear path up.' },
+  { n: 'Part 2', t: 'Growth', q: 'Which division drives growth, and is it sustainable?',
+    one: 'Price/mix-driven or secular growth with a clear, repeatable engine.',
+    half: 'Volume-driven or cyclical; decelerating but still solid, or in transition.',
+    zero: 'Stalling, one-off, or driven by something unsustainable.' },
+  { n: 'Part 3', t: 'Peer strength', q: 'Is it the leader or a share-gainer in its niche?',
+    one: 'Clear leader or demonstrable share gainer against named peers.',
+    half: 'Competitive but not differentiated; growing with the category.',
+    zero: 'Losing share; a laggard riding a sector move.' },
+];
+
+const matrix = [
+  ['≥ 2.5', 'constructive · target > price by ≥3%', 'LONG STOCK', 'buy'],
+  ['≥ 2.5', 'constructive + dated catalyst inside 90 days', 'LONG STOCK + LONG CALLS', 'buy'],
+  ['≥ 2.5', 'extended · at the high, target ≈ price', 'WATCH — alert at pullback level', 'watch'],
+  ['≥ 2.5', 'euphoric · price above every target', 'WATCH — do not chase', 'watch'],
+  ['2.0', 'any', 'WATCH', 'watch'],
+  ['≤ 1.5', 'any', 'not selected', 'no'],
+];
+
+const stages = [
+  ['01 Ingest', 'Vision-read the screener image into data/inputs/DATE.csv. The parsed table is echoed back for a human OCR check before anything else runs.'],
+  ['02 Triage', 'A light pass on every name — the three-part rubric, a technical overlay, and analyst target vs price — one card per ticker.'],
+  ['03 Select', 'Seven picks: score ≥2.0, max four per sector, prefer target above price, extended names flagged WATCH rather than BUY.'],
+  ['04 Plan', 'Entry zone, hard stop, target and alert level for every pick. Calls only at ≥2.5 with a dated catalyst.'],
+  ['05 Report', 'The written note: signal → logic → key levels → plan → verdict, per pick.'],
+  ['06 Track', 'Ledger update. Entry price is always the screener close on the entry date — never a fill, never a later price.'],
+  ['07 Publish', 'Full five-page verification docx for the seven, then this site.'],
+];
+---
+<Base title="Method" description="The three-part rubric, the verdict matrix, and the trading-plan rules — written down so the method is auditable.">
+  <h1>Method</h1>
+  <p class="lede">
+    <strong>Identify with momentum, verify with fundamentals.</strong> The screener surfaces the candidate;
+    three equally-weighted checks decide whether the move was earned. The divergence between the two is
+    where the signal lives.
+  </p>
+
+  <h2 class="sh">The three parts</h2>
+  <p class="sub">Each scores 0, 0.5 or 1.0. Total out of 3.0.</p>
+  <div class="parts">
+    {parts.map((p) => (
+      <div class="part panel">
+        <div class="part__hd"><span class="dim num">{p.n}</span><h3>{p.t}</h3></div>
+        <p class="part__q">{p.q}</p>
+        <dl>
+          <div><dt class="num s1">1.0</dt><dd>{p.one}</dd></div>
+          <div><dt class="num s5">0.5</dt><dd>{p.half}</dd></div>
+          <div><dt class="num s0">0.0</dt><dd>{p.zero}</dd></div>
+        </dl>
+      </div>
+    ))}
+  </div>
+
+  <h2 class="sh">Technical overlay</h2>
+  <p class="sub max">
+    Not scored — layered on top. <strong>Constructive</strong>, <strong>extended</strong>,
+    <strong>euphoric</strong> or <strong>oversold</strong>, plus the single best tell:
+    the average analyst target against the price. A price above every published target means WATCH, never BUY.
+  </p>
+
+  <h2 class="sh">Verdict matrix</h2>
+  <div class="scroll-x panel">
+    <table class="grid">
+      <thead><tr><th>Score</th><th style="text-align:left">Overlay</th><th style="text-align:left">Plan</th></tr></thead>
+      <tbody>
+        {matrix.map(([score, overlay, plan, kind]) => (
+          <tr>
+            <td class="num">{score}</td>
+            <td class="muted l">{overlay}</td>
+            <td class="l"><span class:list={['tag', kind === 'buy' ? 'tag--buy' : kind === 'watch' ? 'tag--watch' : '']}>{plan}</span></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="sh">Risk rules</h2>
+  <ul class="rules">
+    <li>≤ <strong>5%</strong> of the account per name; ≤ <strong>20%</strong> per sector.</li>
+    <li>Every pick gets all four levels: entry zone, <strong>hard stop</strong>, target, alert level.</li>
+    <li>Stop sits below the breakout base or the last swing low — typically 7–10% for stock.</li>
+    <li>Target is the analyst average; the Street high is noted as the stretch, never as the target.</li>
+    <li>Calls only when the plan is LONG STOCK + CALLS: 60–90 DTE, expiry after the catalyst, strike ATM to +5%, ≤ <strong>1%</strong> of the account, premium treated as fully at risk.</li>
+    <li>No naked short options. No margin.</li>
+  </ul>
+
+  <h2 class="sh">The pipeline</h2>
+  <ol class="stages">
+    {stages.map(([s, d]) => (
+      <li><span class="num stages__n">{s}</span><span class="stages__d">{d}</span></li>
+    ))}
+  </ol>
+
+  <h2 class="sh">What this does not do</h2>
+  <ul class="rules">
+    <li>It does not forecast prices, and it does not model a portfolio — the record sums per-pick returns, equally weighted, without compounding.</li>
+    <li>It does not model slippage, commissions, financing or tax, so the published record is not an achievable return.</li>
+    <li>It does not use a number that was not fetched from a cited source. Every triage card carries its source URL and fetch date.</li>
+    <li>It does not revise a published entry price. Corrections are appended and labelled, never overwritten.</li>
+  </ul>
+
+  <DisclaimerBlock />
+</Base>
+<style>
+  .lede { color: var(--muted); max-width: 74ch; margin: 0 0 2rem; font-size: 1rem; }
+  .lede strong, .sub strong { color: var(--text); }
+  .sub { color: var(--muted); font-size: .86rem; margin: -.4rem 0 1rem; }
+  .sub.max { max-width: 74ch; }
+  .sh { margin: 2.6rem 0 .9rem; font-size: 1.05rem; text-transform: uppercase; letter-spacing: .06em; font-family: var(--mono); }
+  .parts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .8rem; }
+  .part { padding: 1.1rem 1.2rem; }
+  .part__hd { display: flex; align-items: baseline; gap: .6rem; }
+  .part__hd h3 { margin: 0; }
+  .part__q { color: var(--muted); font-size: .84rem; font-style: italic; margin: .4rem 0 .9rem; }
+  .part dl { margin: 0; display: grid; gap: .5rem; font-size: .82rem; }
+  .part dl > div { display: grid; grid-template-columns: 2.4rem 1fr; gap: .5rem; }
+  .part dt { font-weight: 650; }
+  .part dd { margin: 0; color: var(--muted); }
+  .s1 { color: var(--up); } .s5 { color: var(--entry); } .s0 { color: var(--down); }
+  td.l { text-align: left; white-space: normal; }
+  .rules { max-width: 76ch; color: var(--muted); font-size: .88rem; padding-left: 1.1rem; }
+  .rules li { margin-bottom: .4rem; }
+  .rules strong { color: var(--text); }
+  .stages { list-style: none; padding: 0; margin: 0; max-width: 80ch; }
+  .stages li { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid var(--line); font-size: .86rem; }
+  .stages__n { color: var(--entry); font-size: .78rem; letter-spacing: .04em; }
+  .stages__d { color: var(--muted); }
+</style>
