@@ -56,6 +56,11 @@ function parseCard(md) {
     score: score ? Number(score[4]) : null,
     overlay: score?.[5] ?? null,
     read: md.match(/\*\*One-line read:\*\*\s*(.+)$/m)?.[1] ?? null,
+    // A card may carry a later full-analysis re-score. The triage number stays the
+    // headline here (this page IS the triage pass); the re-score is surfaced beside it
+    // so the screener never silently disagrees with the ledger.
+    reverifiedDate: md.match(/\*\*Re-verified (\d{4}-\d{2}-\d{2}):\*\*/)?.[1] ?? null,
+    reverifiedScore: num(md.match(/\*\*Re-verified \d{4}-\d{2}-\d{2}:\*\* score \*\*([\d.]+)\*\*/)?.[1]),
     source: md.match(/\*\*Source:\*\*\s*(\S+)/)?.[1] ?? null,
   };
 }

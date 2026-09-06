@@ -45,7 +45,9 @@ const fmt = (v: any, k: string) => {
               : c.k === 'ticker' ? 'tkr' : c.t === 'n' ? '' : 'muted';
             return (
               <td class:list={[c.t === 'n' || c.k === 'ticker' ? 'num' : '', cls]} data-v={c.t === 'n' ? (v ?? '') : undefined} title={c.k === 'ticker' ? r.read ?? undefined : undefined}>
-                {fmt(v, c.k)}
+                {fmt(v, c.k)}{c.k === 'score' && r.reverifiedScore != null && r.reverifiedScore !== v && (
+                  <span class="rv" title={`Re-verified ${r.reverifiedDate}: ${r.reverifiedScore.toFixed(1)} on the full analysis. The triage score is shown.`}>*</span>
+                )}
               </td>
             );
           })}
@@ -62,6 +64,7 @@ const fmt = (v: any, k: string) => {
   .sort[data-dir="desc"] .sort__i::after { content: '↓'; opacity: 1; }
   .entry { color: var(--entry); }
   .tkr { font-weight: 650; }
+  .rv { color: var(--exit); cursor: help; margin-left: .15rem; }
 </style>
 <script>
   const table = document.getElementById('screener') as HTMLTableElement | null;

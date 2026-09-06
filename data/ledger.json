@@ -29,7 +29,7 @@
       "entry_date": "2026-09-04",
       "entry_price": 290.85,
       "sector": "Energy",
-      "score": 3.0,
+      "score": 2.5,
       "overlay": "constructive",
       "plan": "LONG_STOCK",
       "entry_zone": "282-292",
@@ -38,12 +38,24 @@
       "street_high": 340.0,
       "alert_level": null,
       "catalyst": "FY26 adj EBITDA guide raised to $7.9-8.4B; exports +20%",
-      "notes": "Q2 adj EBITDA $1.8B; net income >$3B; DCF guide $5.3-5.8B | re-derived 2026-09-06 from triage card; score/target refreshed.",
+      "notes": "Q2 adj EBITDA $1.8B; net income >$3B; DCF guide $5.3-5.8B | re-derived 2026-09-06 from triage card; score/target refreshed | 2026-09-06 re-verified: score 3.0 -> 2.5. Quality cut to 0.5 — reported gross margin 83.87% (FY23) to 36.85% (ttm) and FCF $2.79B vs $6.30B (FY23) on $3.35B Stage 3 capex; both explicable (IFM derivative marks, growth capex) but no reported margin series is expanding. Growth 1.0, Peer 1.0. Plan, entry, stop and target unchanged. See reports/2026-09-04/LNG_Momentum_Verification_Analysis.docx.",
       "last_price": 292.0,
       "last_price_date": "2026-09-04",
       "pnl_pct": 0.4,
       "days_held": 0,
-      "screener_absent_days": 0
+      "screener_absent_days": 0,
+      "score_history": [
+        {
+          "date": "2026-09-04",
+          "score": 3.0,
+          "basis": "triage card (light pass)"
+        },
+        {
+          "date": "2026-09-06",
+          "score": 2.5,
+          "basis": "full momentum-verify-fundamentals analysis"
+        }
+      ]
     },
     {
       "ticker": "COR",
