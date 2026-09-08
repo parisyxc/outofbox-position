@@ -1,0 +1,692 @@
+{
+  "ticker": "LEA",
+  "company": "Lear Corporation",
+  "sector": "Consumer Discretionary  |  Automotive Seating & E-Systems (Tier-1 Supplier)",
+  "date": "Tuesday, September 8, 2026",
+  "philosophy": "Identify with Momentum, Verify with Fundamentals",
+  "verdict": {
+    "headline": "WATCH — POSITION-SIZE CAREFULLY, BUY THE LEVEL NOT THE STORY",
+    "score": "2.0 / 3.0",
+    "tone": "caution",
+    "subhead": "FUNDAMENTALS SOLID BUT THIN-MARGINED   |   TECHNICALS CONSTRUCTIVE, PULLING BACK   |   NO DIVERGENCE TO EXPLOIT",
+    "summary": "Lear scores 2.0/3.0. The quarter was a genuine beat-and-raise — Q2 adjusted EPS $4.28 vs $3.98 consensus, core operating margin 5.0% vs 4.8%, free cash flow +69% to $288M, and full-year guidance midpoints raised. It is the global seating leader, growing ~2pp over market (3pp in Seating), and it is out-executing both of its closest peers by a wide margin. What it is not is a high-quality compounder: operating margin improved 14 bps over the full year to 4.60%, the gain came from automation and restructuring rather than pricing power, revenue grew 3.5%, and management itself guides to 'limited growth in 2027'. At 8.3x forward earnings with the entire published analyst range sitting at or above spot, the value case is real — but a 2.0 is a WATCH under the rubric, and Tuesday's 3.19% decline argues for waiting on the $126.61 support test rather than paying up."
+  },
+  "zones": [
+    {
+      "label": "ACCUMULATE ZONE",
+      "value": "$126.50 – $130.50",
+      "note": "Buy the test of long-term MA support, not the breakout",
+      "tone": "bull"
+    },
+    {
+      "label": "HARD STOP",
+      "value": "~ $120",
+      "note": "Below the $126.61 shelf; ~8% risk from spot",
+      "tone": "bear"
+    },
+    {
+      "label": "TARGET",
+      "value": "$150.50",
+      "note": "Analyst consensus; Street high $179 (Citi)",
+      "tone": "neutral"
+    }
+  ],
+  "divergence": {
+    "title": "Is There a Divergence to Trade in LEA?",
+    "tech": {
+      "title": "TECHNICAL PICTURE — CONSTRUCTIVE, LOSING STEAM",
+      "tone": "caution",
+      "bullets": [
+        "$130.39 (Sep 9), down 3.19% on the day and down from the $134.68 Sep 8 screener close.",
+        "13.3% below the 52-week high of $150.33; 35.8% above the 52-week low of $96.04 — upper half of the range, not the top.",
+        "RSI(14) 66.0 and all six moving averages on buy — but that reading is dated July 28, 2026 and the stock has since pulled back.",
+        "Support ~$126.61 (long-term MA); resistance ~$136.55 (short-term MA), then the $150.33 high.",
+        "Beta 1.27, short interest 4.30% — neither crowded nor washed out."
+      ]
+    },
+    "fund": {
+      "title": "FUNDAMENTAL PICTURE — GOOD EXECUTION, THIN BASE",
+      "tone": "bull",
+      "bullets": [
+        "Q2 2026 beat: adjusted EPS $4.28 vs $3.98 consensus, on revenue of $6.2B (+3%).",
+        "Core operating earnings $313M at a 5.0% margin, up from $292M at 4.8%.",
+        "FY guidance raised: sales $23.54–24.01B, core operating earnings $1.08–1.20B (midpoint +$25M), FCF $590–690M.",
+        "TTM free cash flow $849.4M, up 77.6% — the single strongest number in the file.",
+        "But TTM operating margin is 4.60% against 4.46% for FY2025 — 14 bps, not several hundred."
+      ]
+    },
+    "assessment": {
+      "heading": "ASSESSMENT: NO DIVERGENCE — FUNDAMENTALS AND TECHNICALS AGREE, AND THEY BOTH SAY 'GOOD, NOT GREAT'",
+      "tone": "info",
+      "text": "The two setups this framework is built to catch are strong fundamentals against bearish technicals (buy weakness) and weak fundamentals against euphoric technicals (sell strength). LEA is neither. A 2.0 fundamental score sits alongside a chart in the upper half of its range that has just rolled over 3% — the two readings agree, which is exactly why there is no edge to press here. That is a finding, not a failure of the analysis: the actionable version of this name is a limit order at support, not a position taken today. If the stock breaks $126.61 and stabilizes, the score becomes interesting against a lower price; if it reclaims $136.55 on volume, the trend has resumed and a confirmation entry is defensible."
+    }
+  },
+  "catalyst": {
+    "title": "Automation and the China-OEM Shift — Real Levers, Long Fuses",
+    "left": {
+      "title": "THE OPPORTUNITY (real & measurable)",
+      "tone": "bull",
+      "blocks": [
+        {
+          "heading": "1. Automation is converting to margin today",
+          "bullets": [
+            "200 automated sewing cells globally, cutting labor in those applications by 50%.",
+            "40 automated end-of-line testing cells, $14M in combined annual savings.",
+            "'Idea by Lear' delivered $35M through H1 against a $75M full-year target."
+          ]
+        },
+        {
+          "heading": "2. Restructuring is ahead of schedule",
+          "bullets": [
+            "$50M of savings realized through Q2 — more than half of the $80M annual goal.",
+            "E-Systems margin +90 bps YoY to 5.8%, of which 155 bps came from net performance."
+          ]
+        },
+        {
+          "heading": "3. Winning the customers that are actually growing",
+          "bullets": [
+            "$550M of new awards from Chinese automakers YTD — ~20% of total awards from a base under 10% of revenue.",
+            "Chinese OEMs are 44% of Lear's China revenue, expected to exceed 50% in 2027.",
+            "$2.9B of YTD awards, over 50% new and conquest programs; 2026–2028 backlog up $400M since year-start."
+          ]
+        }
+      ]
+    },
+    "right": {
+      "title": "THE CATCH (why this is a 2029 story)",
+      "tone": "caution",
+      "blocks": [
+        {
+          "heading": "1. Management has told you the payoff is late",
+          "bullets": [
+            "Guidance is for 'limited growth in 2027'; 2029 is named as the year the full revenue and earnings power of recent awards materializes.",
+            "Three years is a long fuse for a stock with a 1.27 beta in a cyclical end-market."
+          ]
+        },
+        {
+          "heading": "2. China is a headwind before it is a tailwind",
+          "bullets": [
+            "China domestic sales fell 20% in H1 2026.",
+            "Management raised its assumption for share lost by global customers to Chinese automakers from 1.5% to 3%.",
+            "The conquest awards are real, but they are replacing revenue that is leaving, not adding to it."
+          ]
+        },
+        {
+          "heading": "3. The margin base stays structurally thin",
+          "bullets": [
+            "Gross margin 7.70% TTM — still below FY2023's 7.85%.",
+            "Net margin 2.35%; ~$40M of 301/232 tariff revenue headwind in 2026.",
+            "Altman Z-score 2.83, which stockanalysis.com flags as an elevated-risk reading."
+          ]
+        }
+      ]
+    },
+    "verdict": {
+      "tone": "navy",
+      "text": "CATALYST VERDICT: THE LEVERS ARE REAL AND ALREADY IN THE NUMBERS — automation and restructuring are why margins rose at all this year. But the revenue engine they are attached to does not spin up until 2029 on management's own timeline, and China subtracts before it adds. This supports the valuation; it does not create urgency."
+    }
+  },
+  "earnings": {
+    "title": "Q2 2026 Earnings Performance (reported August 3, 2026)",
+    "widths": [
+      2340,
+      2340,
+      2340,
+      2340
+    ],
+    "headers": [
+      "Metric",
+      "Q2 2026",
+      "Comparison",
+      "Read"
+    ],
+    "rows": [
+      [
+        {
+          "t": "Revenue",
+          "bold": true
+        },
+        {
+          "t": "$6.2B",
+          "bold": true,
+          "tone": "bull"
+        },
+        {
+          "t": "$6.0B (Q2 2025)",
+          "tone": "neutral"
+        },
+        {
+          "t": "+3% YoY; TTM $23.7B (+3.5%)",
+          "tone": "caution"
+        }
+      ],
+      [
+        {
+          "t": "Adjusted EPS",
+          "bold": true
+        },
+        {
+          "t": "$4.28",
+          "bold": true,
+          "tone": "bull"
+        },
+        {
+          "t": "$3.98 consensus",
+          "tone": "neutral"
+        },
+        {
+          "t": "BEAT by 7.5%; +23% vs $3.47 LY",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Core operating earnings",
+          "bold": true
+        },
+        {
+          "t": "$313M — 5.0%",
+          "bold": true,
+          "tone": "bull"
+        },
+        {
+          "t": "$292M — 4.8%",
+          "tone": "neutral"
+        },
+        {
+          "t": "+7% in dollars, +20 bps in margin",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Seating segment",
+          "bold": true
+        },
+        {
+          "t": "$4.6B — 6.7% margin",
+          "tone": "neutral"
+        },
+        {
+          "t": "~3pp growth over market",
+          "tone": "bull"
+        },
+        {
+          "t": "The profit engine; 74% of sales",
+          "tone": "neutral"
+        }
+      ],
+      [
+        {
+          "t": "E-Systems segment",
+          "bold": true
+        },
+        {
+          "t": "$1.6B — 5.8% margin",
+          "tone": "bull"
+        },
+        {
+          "t": "4.9% (Q2 2025)",
+          "tone": "neutral"
+        },
+        {
+          "t": "+90 bps, incl. 155 bps net performance",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Free cash flow",
+          "bold": true
+        },
+        {
+          "t": "$288M",
+          "bold": true,
+          "tone": "bull"
+        },
+        {
+          "t": "$171M (Q2 2025)",
+          "tone": "neutral"
+        },
+        {
+          "t": "+69%; TTM $849.4M (+77.6%)",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Capital returned",
+          "bold": true
+        },
+        {
+          "t": "$139M",
+          "tone": "bull"
+        },
+        {
+          "t": "$100M buyback + $39M dividend",
+          "tone": "neutral"
+        },
+        {
+          "t": "2.36% dividend yield",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "FY2026 guidance",
+          "bold": true
+        },
+        {
+          "t": "RAISED",
+          "bold": true,
+          "tone": "bull"
+        },
+        {
+          "t": "Sales $23.54–24.01B",
+          "tone": "neutral"
+        },
+        {
+          "t": "Core op earn. $1.08–1.20B; FCF $590–690M",
+          "tone": "bull"
+        }
+      ]
+    ]
+  },
+  "parts": [
+    {
+      "title": "Part 1 — Quality Check (Margins & Profitability)",
+      "question": "Is the price move supported by margin trends?",
+      "rows": [
+        [
+          {
+            "t": "Margin Trend",
+            "bold": true
+          },
+          {
+            "t": "EXPANDING but BARELY — operating margin 4.46% (FY25) → 4.60% (TTM), a 14 bps gain. Gross margin 7.70% TTM is still below FY2023's 7.85%. The rubric reserves 1.0 for expansion measured in hundreds of basis points; this is not that.",
+            "tone": "caution"
+          }
+        ],
+        [
+          {
+            "t": "Absolute Profitability",
+            "bold": true
+          },
+          {
+            "t": "STRUCTURALLY THIN — 2.35% net margin, 4.60% operating margin. Tier-1 auto supply is a low-margin business by construction, so the improvement is real but the base gives it almost no cushion against a volume shock.",
+            "tone": "caution"
+          }
+        ],
+        [
+          {
+            "t": "Why margins moved",
+            "bold": true
+          },
+          {
+            "t": "COST-OUT, NOT PRICING — $50M of restructuring savings through Q2 (of an $80M goal), $35M from 'Idea by Lear' (of $75M), 200 automated sewing cells cutting labor 50% in those applications. Durable and management-controlled, but it is efficiency, not pricing power.",
+            "tone": "caution"
+          }
+        ],
+        [
+          {
+            "t": "Earnings trajectory",
+            "bold": true
+          },
+          {
+            "t": "STRONG — TTM EPS $10.67, +24.5%; Q2 adjusted EPS $4.28 vs $3.47 a year ago (+23%) and vs $3.98 consensus. Net margin has recovered from 1.88% (FY25) to 2.35% TTM.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "Free cash flow",
+            "bold": true
+          },
+          {
+            "t": "THE STANDOUT — TTM FCF $849.4M, up 77.6%; Q2 FCF $288M, up 69% from $171M. FCF margin 3.58% now exceeds net margin, and it funded $100M of buybacks plus $39M of dividends in the quarter alone.",
+            "tone": "bull"
+          }
+        ]
+      ],
+      "scoreLabel": "QUALITY SCORE",
+      "score": "0.5 / 1.0 — EXPANDING but THIN, and COST-DRIVEN not PRICE-DRIVEN",
+      "scoreTone": "caution"
+    },
+    {
+      "title": "Part 2 — Growth Check (Divisional & Backlog)",
+      "question": "Which division is driving growth, and is it sustainable?",
+      "rows": [
+        [
+          {
+            "t": "Growth Type",
+            "bold": true
+          },
+          {
+            "t": "VOLUME / SHARE-DRIVEN, CYCLICAL — revenue +3.5% TTM and +3% in Q2, delivered as ~2pp of growth over market (3pp in Seating). Lear is taking share in a flat-to-down global build environment. That is real, but it is share capture in a cyclical end-market, not price/mix or secular demand.",
+            "tone": "caution"
+          }
+        ],
+        [
+          {
+            "t": "Divisional split",
+            "bold": true
+          },
+          {
+            "t": "SEATING CARRIES IT — $4.6B of $6.2B (74%) at a 6.7% margin, running ~3pp above market despite program roll-offs. E-Systems is $1.6B at 5.8%, and it supplied the quarter's margin improvement (+90 bps YoY) rather than its growth.",
+            "tone": "neutral"
+          }
+        ],
+        [
+          {
+            "t": "Order momentum",
+            "bold": true
+          },
+          {
+            "t": "SOLID — $2.9B of YTD awards ($2.3B Seating, $500M E-Systems), more than 50% new and conquest programs. The 2026–2028 backlog is up $400M since the start of the year. Named wins include ComfortFlex/FlexAir with Audi and BMW, a North American EV maker, Leapmotor and BAIC.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "The timing problem",
+            "bold": true
+          },
+          {
+            "t": "MANAGEMENT GUIDES TO A GAP — 'limited growth in 2027' on their own call, with 2029 named as the year the full revenue and earnings power of these awards materializes. The backlog is genuine and the payoff is three years out.",
+            "tone": "bear"
+          }
+        ],
+        [
+          {
+            "t": "Headwinds",
+            "bold": true
+          },
+          {
+            "t": "CHINA AND TARIFFS — China domestic sales fell 20% in H1 2026, and the assumed share shift from global customers to Chinese automakers was revised from 1.5% to 3%. Tariff (301/232) revenue impact is ~$40M for 2026.",
+            "tone": "bear"
+          }
+        ],
+        [
+          {
+            "t": "Guidance",
+            "bold": true
+          },
+          {
+            "t": "RAISED — FY2026 sales $23.54–24.01B, core operating earnings $1.08–1.20B with the midpoint up $25M to $1.14B (4.8% margin), FCF $590–690M. A raise into a soft market is a credible signal.",
+            "tone": "bull"
+          }
+        ]
+      ],
+      "scoreLabel": "GROWTH SCORE",
+      "score": "0.5 / 1.0 — REAL BACKLOG and a GUIDANCE RAISE, but VOLUME/CYCLICAL and back-end loaded",
+      "scoreTone": "caution"
+    },
+    {
+      "title": "Part 3 — Peer Check (Relative Strength)",
+      "question": "Is Lear leading or lagging its peer group?",
+      "headers": [
+        "Company",
+        "Read"
+      ],
+      "rows": [
+        [
+          {
+            "t": "Category position",
+            "bold": true
+          },
+          {
+            "t": "LEADER — Lear is consistently ranked first or second in global automotive seating alongside Adient, with the top seven suppliers holding ~75% of the market. Named 2025 General Motors Supplier of the Year. This is a price-setter in its core segment, not a price-taker.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "Share gains",
+            "bold": true
+          },
+          {
+            "t": "GAINING — ~2pp of growth over market company-wide and ~3pp in Seating, achieved while absorbing program roll-offs. Share capture is the growth story, and it is working.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "vs. ADNT (seating peer)",
+            "bold": true
+          },
+          {
+            "t": "LEAR IS WINNING DECISIVELY — Adient: $1.46B market cap (down 25.8%), 0.32% net margin ($48M on $15.13B), trading at $18.96 within 7% of its 52-week low and 30.6% below its high, with analysts cutting targets after a Q3 miss. Lear earns 7x the net margin and sits 13.3% off its high.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "vs. APTV (E-Systems peer)",
+            "bold": true
+          },
+          {
+            "t": "LEAR IS WINNING — Aptiv: market cap down 45.0%, net income down 78.3% to $220M, trading at $45.95 essentially at its 52-week low ($44.52) and 48.3% below its high, on China execution problems and delayed launches. Lear's E-Systems margin rose 90 bps in the same period.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "Relative stock strength",
+            "bold": true
+          },
+          {
+            "t": "BEST IN GROUP — 13.3% below its 52-week high versus 30.6% for Adient and 48.3% for Aptiv. On a tape where the whole tier-1 complex has been sold, Lear is the one holding the upper half of its range.",
+            "tone": "bull"
+          }
+        ],
+        [
+          {
+            "t": "The honest caveat",
+            "bold": true
+          },
+          {
+            "t": "A SMALL LEADER — $6.43B market cap makes Lear smaller than Aptiv ($9.54B) and far smaller than Magna. Leading the seating category is not the same as leading the sector, and E-Systems remains the follower business in a segment where the incumbents are much larger.",
+            "tone": "caution"
+          }
+        ]
+      ],
+      "scoreLabel": "PEER SCORE",
+      "score": "1.0 / 1.0 — CLEAR CATEGORY LEADER and SHARE GAINER, out-executing both closest peers",
+      "scoreTone": "bull"
+    }
+  ],
+  "technicals": {
+    "title": "Technical Analysis — Upper Half of the Range, Momentum Cooling",
+    "widths": [
+      2600,
+      3380,
+      3380
+    ],
+    "headers": [
+      "Indicator",
+      "Reading",
+      "Interpretation"
+    ],
+    "rows": [
+      [
+        {
+          "t": "Price",
+          "bold": true
+        },
+        {
+          "t": "$130.39 (Sep 9, 2026)",
+          "bold": true
+        },
+        {
+          "t": "Down 3.19% on the day; below the $134.68 Sep 8 screener close",
+          "tone": "caution"
+        }
+      ],
+      [
+        {
+          "t": "52-week range",
+          "bold": true
+        },
+        {
+          "t": "$96.04 – $150.33"
+        },
+        {
+          "t": "13.3% below the high, 35.8% above the low — upper half, not extended",
+          "tone": "neutral"
+        }
+      ],
+      [
+        {
+          "t": "RSI (14)",
+          "bold": true
+        },
+        {
+          "t": "66.0 — as of Jul 28, 2026",
+          "tone": "caution"
+        },
+        {
+          "t": "Neutral-to-warm, NOT overbought. Six weeks stale; treat as directional only",
+          "tone": "caution"
+        }
+      ],
+      [
+        {
+          "t": "Moving averages",
+          "bold": true
+        },
+        {
+          "t": "All six (5/10/20/50/100/200) on buy — Jul 28",
+          "tone": "bull"
+        },
+        {
+          "t": "Uptrend was intact at the last published reading; MACD +2.258",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Support / Resistance",
+          "bold": true
+        },
+        {
+          "t": "Support ~$126.61 · Resistance ~$136.55"
+        },
+        {
+          "t": "Long-term MA support is the level that matters; then $150.33",
+          "tone": "neutral"
+        }
+      ],
+      [
+        {
+          "t": "Valuation",
+          "bold": true
+        },
+        {
+          "t": "12.2x trailing · 8.3x forward · 5.25x EV/EBITDA",
+          "tone": "bull"
+        },
+        {
+          "t": "Cheapest forward multiple among the names on this screener",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Analyst consensus",
+          "bold": true
+        },
+        {
+          "t": "BUY — 16 analysts · avg target $150.50",
+          "tone": "bull"
+        },
+        {
+          "t": "+15.4% implied; high $179 (Citi), low $130 — the whole range sits at or above spot",
+          "tone": "bull"
+        }
+      ],
+      [
+        {
+          "t": "Risk markers",
+          "bold": true
+        },
+        {
+          "t": "Beta 1.27 · short interest 4.30% · Altman Z 2.83",
+          "tone": "caution"
+        },
+        {
+          "t": "Not crowded; Z-score flagged by the source as elevated-risk",
+          "tone": "caution"
+        }
+      ]
+    ]
+  },
+  "summary": {
+    "rows": [
+      [
+        {
+          "t": "Part 1: Quality Check (Margins)",
+          "bold": true
+        },
+        {
+          "t": "0.5 / 1.0 — EXPANDING but THIN (op margin 4.46%→4.60%, cost-driven)",
+          "tone": "caution"
+        }
+      ],
+      [
+        {
+          "t": "Part 2: Growth Check (Divisional)",
+          "bold": true
+        },
+        {
+          "t": "0.5 / 1.0 — VOLUME/CYCLICAL; +2pp over market, backlog pays out 2029",
+          "tone": "caution"
+        }
+      ],
+      [
+        {
+          "t": "Part 3: Peer Check (Relative Strength)",
+          "bold": true
+        },
+        {
+          "t": "1.0 / 1.0 — CATEGORY LEADER; crushing ADNT and APTV",
+          "tone": "bull"
+        }
+      ]
+    ],
+    "total": "2.0 / 3.0",
+    "overlay": "CONSTRUCTIVE, COOLING — RSI 66 (stale), 13.3% below high, just rolled over 3.19%",
+    "overlayTone": "caution"
+  },
+  "finalVerdict": {
+    "headline": "WATCH — POSITION-SIZE CAREFULLY, BUY THE LEVEL",
+    "tone": "caution",
+    "lines": [
+      {
+        "label": "ACCUMULATE ZONE",
+        "text": "$126.50–$130.50 (buy the long-term MA support test)"
+      },
+      {
+        "label": "HARD STOP",
+        "text": "~$120 (below the $126.61 shelf; ~8% risk)"
+      },
+      {
+        "label": "TARGET",
+        "text": "$150.50 consensus; $179 Street high (Citi)"
+      },
+      {
+        "label": "CONFIRMATION",
+        "text": "Reclaim of $136.55 on above-average volume"
+      },
+      {
+        "label": "EXISTING POSITION",
+        "text": "Hold. Nothing in the quarter argues for selling; the 8.3x forward multiple and $849M TTM FCF do the work while you wait."
+      },
+      {
+        "label": "NEW POSITION",
+        "text": "Wait for $126.61 or the $136.55 reclaim. Size at or below 5% — a 1.27 beta on a 2.35% net margin is not a core holding."
+      }
+    ],
+    "reasoning": "A 2.0/3.0 lands on the rubric's 'mid score, mixed technicals' row, which reads WATCH / position-size carefully — wait for confirmation. That is the right answer here for a specific reason: there is no divergence to exploit. Quality is 0.5 because 14 bps of annual operating-margin gain off a 4.60% base is expansion in direction only, and it came from automation and restructuring rather than pricing power. Growth is 0.5 because 3.5% revenue growth is share capture in a cyclical market, and management has explicitly guided to limited growth in 2027 with the backlog paying out in 2029. Peer is a clear 1.0 — Lear leads global seating, is running 2–3pp over market, and is beating Adient and Aptiv on margin, on awards and on the tape by an enormous margin. The chart agrees with all of that: upper half of the range, not overbought, and cooling. Both readings say the same thing, so there is no mispricing to press — only a level worth waiting for. Note for the record: the September 8 light triage also scored this 2.0, but with Quality at 1.0 and Peer at 0.5; the deeper work moved a half-point from Quality to Peer without changing the total or the verdict."
+  },
+  "disclaimer": "This report is a point-in-time fundamentals check on a momentum-identified candidate, prepared September 8–9, 2026. Every figure is sourced from the references listed and was cross-checked across at least two sources where it is a headline number. Technical readings marked as of July 28, 2026 are the most recent published values found and are explicitly stale. This is not investment advice and the author is not a financial advisor; the framework score is not a forecast of returns."
+}

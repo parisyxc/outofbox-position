@@ -1,0 +1,13 @@
+ticker,name,sector,last,chg,pct,volume
+SHEL,SHELL PLC ADR,Energy,92.95,,,
+BP,BP P L C ADR,Energy,43.81,,,
+RRC,RANGE RES CORP,Energy,42.00,,,
+LEA,LEAR CORP,Consumer Discretionary,134.68,,,
+GPC,GENUINE PARTS CO,Consumer Discretionary,138.08,,,
+EL,LAUDER ESTEE COS INC Class A,Consumer Staples,103.86,,,
+VERA,VERA THERAPEUTICS IN A,Health Care,35.89,,,
+BEAM,BEAM THERAPEUTICS IN,Health Care,29.66,,,
+IQV,IQVIA HLDGS INC,Health Care,267.77,,,
+UNM,UNUM GROUP,Financials,95.85,,,
+NVDA,NVIDIA CORP,Information Technology,230.36,,,
+RCI,ROGERS COMMUNICATION B,Communication Services,37.1601,,,
