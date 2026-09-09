@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-04",
+  "as_of": "2026-09-09",
   "positions": [
     {
       "ticker": "GILD",
@@ -17,11 +17,11 @@
       "alert_level": null,
       "catalyst": "3 near-term regulatory decisions; FY HIV guide raised to 9-10%",
       "notes": "Q2 rev $7.8B beat $7.4B; HIV +12%; Yeztugo $232M (+40% QoQ) | re-derived 2026-09-06 from triage card; score/target refreshed.",
-      "last_price": 151.0,
-      "last_price_date": "2026-09-04",
-      "pnl_pct": -0.15,
-      "days_held": 0,
-      "screener_absent_days": 0
+      "last_price": 146.45,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -3.15,
+      "days_held": 5,
+      "screener_absent_days": 1
     },
     {
       "ticker": "LNG",
@@ -38,12 +38,12 @@
       "street_high": 340.0,
       "alert_level": null,
       "catalyst": "FY26 adj EBITDA guide raised to $7.9-8.4B; exports +20%",
-      "notes": "Q2 adj EBITDA $1.8B; net income >$3B; DCF guide $5.3-5.8B | re-derived 2026-09-06 from triage card; score/target refreshed | 2026-09-06 re-verified: score 3.0 -> 2.5. Quality cut to 0.5 — reported gross margin 83.87% (FY23) to 36.85% (ttm) and FCF $2.79B vs $6.30B (FY23) on $3.35B Stage 3 capex; both explicable (IFM derivative marks, growth capex) but no reported margin series is expanding. Growth 1.0, Peer 1.0. Plan, entry, stop and target unchanged. See reports/2026-09-04/LNG_Momentum_Verification_Analysis.docx.",
-      "last_price": 292.0,
-      "last_price_date": "2026-09-04",
-      "pnl_pct": 0.4,
-      "days_held": 0,
-      "screener_absent_days": 0,
+      "notes": "Q2 adj EBITDA $1.8B; net income >$3B; DCF guide $5.3-5.8B | re-derived 2026-09-06 from triage card; score/target refreshed | 2026-09-06 re-verified: score 3.0 -> 2.5. Quality cut to 0.5 \u2014 reported gross margin 83.87% (FY23) to 36.85% (ttm) and FCF $2.79B vs $6.30B (FY23) on $3.35B Stage 3 capex; both explicable (IFM derivative marks, growth capex) but no reported margin series is expanding. Growth 1.0, Peer 1.0. Plan, entry, stop and target unchanged. See reports/2026-09-04/LNG_Momentum_Verification_Analysis.docx.",
+      "last_price": 277.58,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -4.56,
+      "days_held": 5,
+      "screener_absent_days": 1,
       "score_history": [
         {
           "date": "2026-09-04",
@@ -73,11 +73,11 @@
       "alert_level": null,
       "catalyst": "FY26 adj EPS guide raised to $17.75-17.95; OneOncology integration",
       "notes": "FQ3 double-digit adj OI & EPS growth; ~11% below 52w high = constructive pullback | re-derived 2026-09-06 from triage card; score/target refreshed.",
-      "last_price": 330.95,
-      "last_price_date": "2026-09-04",
-      "pnl_pct": -1.86,
-      "days_held": 0,
-      "screener_absent_days": 0
+      "last_price": 326.02,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -3.32,
+      "days_held": 5,
+      "screener_absent_days": 1
     },
     {
       "ticker": "ASND",
@@ -90,15 +90,15 @@
       "plan": "LONG_STOCK+CALLS",
       "entry_zone": "262-275",
       "stop": 245,
-      "target": 313.84,
+      "target": 314.84,
       "street_high": 361.68,
       "alert_level": null,
-      "catalyst": "Yorvipath blockbuster run-rate; Yuviwel US launch; >€500M OCF guide",
-      "notes": "Q2 product rev €315M, +105% YoY; Strong Buy (20 analysts) | re-derived 2026-09-06 from triage card; score/target refreshed.",
-      "last_price": 270.56,
-      "last_price_date": "2026-09-04",
-      "pnl_pct": -0.21,
-      "days_held": 0,
+      "catalyst": "Yorvipath blockbuster run-rate; Yuviwel US launch; >\u20ac500M OCF guide",
+      "notes": "Q2 product rev \u20ac315M, +105% YoY; Strong Buy (20 analysts) | re-derived 2026-09-06 from triage card; score/target refreshed. | re-triaged 2026-09-09 from the 09-09 screener (reappeared at $270.09): score held at 3.0, rev ttm now $1.20B +113.4%, net income $847.43M vs a -$228.03M loss in 2025. Consensus average target refreshed 313.84 -> 314.84 (Strong Buy, 20 analysts). Plan, entry zone, stop unchanged.",
+      "last_price": 263.87,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -2.67,
+      "days_held": 5,
       "screener_absent_days": 0
     },
     {
@@ -116,12 +116,12 @@
       "street_high": 300.0,
       "alert_level": 258,
       "catalyst": "Raised FY26 guide; organic growth 6% (3x prior yr)",
-      "notes": "Breakout to ATH on +2.95%; avg target ≈ price → do not chase; buy the retest of $265 prior high | re-derived 2026-09-06 from triage card; score/target refreshed.",
-      "last_price": 267.77,
-      "last_price_date": "2026-09-04",
-      "pnl_pct": -1.42,
-      "days_held": 0,
-      "screener_absent_days": 0
+      "notes": "Breakout to ATH on +2.95%; avg target \u2248 price \u2192 do not chase; buy the retest of $265 prior high | re-derived 2026-09-06 from triage card; score/target refreshed.",
+      "last_price": 255.31,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -6.0,
+      "days_held": 5,
+      "screener_absent_days": 1
     },
     {
       "ticker": "FAF",
@@ -137,13 +137,13 @@
       "target": 87.67,
       "street_high": 99.0,
       "alert_level": null,
-      "catalyst": "Fed rate cuts → title/mortgage volume; Q2 EPS $2.08 beat by 13.7%",
-      "notes": "Q2 rev +15%; note sharp post-screener session (-4.9%) — volatile, respect the stop | re-derived 2026-09-06 from triage card; score/target refreshed.",
-      "last_price": 72.75,
-      "last_price_date": "2026-09-04",
-      "pnl_pct": -4.91,
-      "days_held": 0,
-      "screener_absent_days": 0
+      "catalyst": "Fed rate cuts \u2192 title/mortgage volume; Q2 EPS $2.08 beat by 13.7%",
+      "notes": "Q2 rev +15%; note sharp post-screener session (-4.9%) \u2014 volatile, respect the stop | re-derived 2026-09-06 from triage card; score/target refreshed.",
+      "last_price": 71.39,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -6.69,
+      "days_held": 5,
+      "screener_absent_days": 1
     },
     {
       "ticker": "RELY",
@@ -161,9 +161,131 @@
       "alert_level": null,
       "catalyst": "none dated visible - no calls",
       "notes": "Added by 2026-09-06 re-derivation; absent from the originally published 09-04 report. Rev +23.8% ttm, GAAP profitable, Strong Buy (10 analysts), 2.0% below 52w high.",
-      "last_price": 26.17,
-      "last_price_date": "2026-09-04",
-      "pnl_pct": -2.79,
+      "last_price": 24.4,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -9.36,
+      "days_held": 5,
+      "screener_absent_days": 1
+    },
+    {
+      "ticker": "WMB",
+      "status": "tracking",
+      "entry_date": "2026-09-09",
+      "entry_price": 75.83,
+      "sector": "Energy",
+      "score": 2.5,
+      "overlay": "constructive",
+      "plan": "LONG_STOCK",
+      "entry_zone": "70.50-75.00",
+      "stop": 69.5,
+      "target": 85.47,
+      "street_high": 103.0,
+      "alert_level": null,
+      "catalyst": "FY EBITDA guide raised to $8.3-8.5B and long-term growth target lifted to 11%+ CAGR through 2030; $5.5B Momentum Midstream acquisition closed Sept 2026. No dated forward event confirmed inside 90 days, so no calls.",
+      "notes": "Q2 rev $3.05B beat $2.82B; adj EPS $0.50 met. Rev ttm $12.32B +8.4%, net income $3.07B +26.5% (~25% net margin) - earnings compounding 3x revenue. Strong Buy, 20 analysts, range $69-103. PE 30.2 is the premium for Transco. Q 1.0 / G 1.0 / P 1.0. | 2026-09-09 re-verified on the full framework: score 3.0 -> 2.5. Quality cut to 0.5 - trailing FCF is -$174M against +$3,371M (FY23), +$2,296M (FY24) and +$899M (FY25), on capex of $6,168M with $7.3-7.9B guided for 2026; leverage to 3.9x vs a 4.0x ceiling, payout 83.67%, debt $30.79B, debt/equity 2.00. Margins ARE expanding (operating 31.41% -> 37.45% -> 38.14%; net 20.66% -> 22.11% -> 24.91%; ROE 15.78% -> 21.50%), which is what separates this from the LNG case, but the rubric's 1.0 requires strong FCF alongside expanding margins. Growth 1.0, Peer 1.0. CORRECTION to the triage: Q2 revenue $3.00B narrowly MISSED the $3.002B consensus and adj EPS $0.50 MISSED $0.52 - the stockanalysis.com summary reporting a beat against a $2.82B estimate is contradicted by segment-level coverage (T&G $959M vs $971M est and West $359M vs $389M est both missed; Northeast G&P $540M vs $518M beat). Entry zone tightened 73.50-78.10 -> 70.50-75.00 on the technical work (200-day ~$70.3, EMA-50 ~$75.0). Plan LONG_STOCK, stop 69.50 and target 85.47 unchanged. See reports/2026-09-09/WMB_Momentum_Verification_Analysis.docx.",
+      "last_price": 75.0,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -1.09,
+      "days_held": 0,
+      "screener_absent_days": 0,
+      "score_history": [
+        {
+          "date": "2026-09-09",
+          "score": 3.0,
+          "basis": "triage card (light pass)"
+        },
+        {
+          "date": "2026-09-09",
+          "score": 2.5,
+          "basis": "full momentum-verify-fundamentals analysis"
+        }
+      ]
+    },
+    {
+      "ticker": "RSI",
+      "status": "tracking",
+      "entry_date": "2026-09-09",
+      "entry_price": 27.02,
+      "sector": "Consumer Discretionary",
+      "score": 3.0,
+      "overlay": "constructive",
+      "plan": "LONG_STOCK+CALLS",
+      "entry_zone": "26.20-27.80",
+      "stop": 24.3,
+      "target": 36.0,
+      "street_high": 40.0,
+      "alert_level": null,
+      "catalyst": "Q3 earnings 2026-10-28 (dated, inside 90 days); FY26 guidance raised twice - revenue to $1.56-1.6B, adj EBITDA to $245-265M",
+      "notes": "Q2 record rev $393.8M +46% beat; adj EPS $0.15 met; record adj EBITDA $64.6M +61%. Rev ttm $1.37B +34.3% and accelerating into the quarter. Strong Buy, 11 analysts, range $30-40. Trailing PE 85.9 / forward 35.9 is the risk. Q 1.0 / G 1.0 / P 1.0.",
+      "last_price": 27.0,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -0.07,
+      "days_held": 0,
+      "screener_absent_days": 0
+    },
+    {
+      "ticker": "CECO",
+      "status": "tracking",
+      "entry_date": "2026-09-09",
+      "entry_price": 79.13,
+      "sector": "Industrials",
+      "score": 2.5,
+      "overlay": "constructive",
+      "plan": "LONG_STOCK+CALLS",
+      "entry_zone": "76.70-81.50",
+      "stop": 71.2,
+      "target": 109.14,
+      "street_high": 130.0,
+      "alert_level": null,
+      "catalyst": "Q3 earnings 2026-10-27 (dated, inside 90 days)",
+      "notes": "Q2 rev $284.96M beat, EPS $0.47 beat $0.33; orders $798.5M +191%, backlog >$1.8B; 54% rev and 73% adj EBITDA growth. Rev ttm $903.17M +37.6%. Quality capped at 0.5: GAAP ttm net income is -$30.61M (EPS -$0.82) on Thermon acquisition costs, so the expansion is only visible on an adjusted schedule. Strong Buy, 7 analysts, range $85-130. Beta 1.51. Q 0.5 / G 1.0 / P 1.0.",
+      "last_price": 77.64,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -1.88,
+      "days_held": 0,
+      "screener_absent_days": 0
+    },
+    {
+      "ticker": "SHEL",
+      "status": "tracking",
+      "entry_date": "2026-09-09",
+      "entry_price": 95.32,
+      "sector": "Energy",
+      "score": 2.5,
+      "overlay": "extended",
+      "plan": "WATCH",
+      "entry_zone": "88.00-90.50",
+      "stop": 83.0,
+      "target": 99.81,
+      "street_high": 120.6,
+      "alert_level": 89.5,
+      "catalyst": "Q3 earnings 2026-10-29",
+      "notes": "Rev ttm $296.60B +9.0%, EPS $9.07 +103.1%, net income $25.97B +90.9%. Buy, 16 analysts, range $83-120.60. WATCH not LONG: price is 0.99% from the 52-week high ($96.27) with only a 4.71% average-target gap. Overlay marked extended by judgment - the written test is a gap <3% and this is 4.71%, but at 1% from the high that is not 'below high with room'. Alert 89.50 restores a ~11% gap. Q 1.0 / G 0.5 / P 1.0.",
+      "last_price": 95.26,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -0.06,
+      "days_held": 0,
+      "screener_absent_days": 0
+    },
+    {
+      "ticker": "BKV",
+      "status": "tracking",
+      "entry_date": "2026-09-09",
+      "entry_price": 26.76,
+      "sector": "Energy",
+      "score": 2.5,
+      "overlay": "constructive",
+      "plan": "WATCH",
+      "entry_zone": "22.50-24.00",
+      "stop": 19.8,
+      "target": 34.09,
+      "street_high": 39.0,
+      "alert_level": 26.0,
+      "catalyst": "$400M convertible senior notes offering announced 2026-09-09 - dilutive against a $2.65B market cap; ERCOT power capacity to double, carbon capture to 1.5M tons/yr by 2028",
+      "notes": "Rev ttm $1.05B +24.5%, net income $263.54M (~25% net margin), PE 8.92. Q2 adj EBITDAX $142M, net income $51M. Strong Buy, 11 analysts, range $28-39. DOCUMENTED PLAN DEVIATION: score 2.5 + constructive overlay maps to LONG_STOCK in 04_plan.md; overridden to WATCH because the screener flagged the +2.69% move on the same session the $400M convert was announced, and the stock closed -9.4% at $24.25 the next day. Entering at the mandated screener price of $26.76 would be buying the anomaly the framework exists to detect. Alert 26.00 = reclaim of the pre-announcement level on volume. Quality capped at 0.5: prior-year net income is not disclosed on the source page, so margin direction is unverified. Q 0.5 / G 1.0 / P 1.0.",
+      "last_price": 24.23,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": -9.45,
       "days_held": 0,
       "screener_absent_days": 0
     }
@@ -172,17 +294,17 @@
     {
       "ticker": "UNM",
       "score": 2.0,
-      "reason": "Breakout on +4.06% with new $1B buyback, but avg target ≈ price and mid-single-digit growth — WATCH"
+      "reason": "Breakout on +4.06% with new $1B buyback, but avg target \u2248 price and mid-single-digit growth \u2014 WATCH"
     },
     {
       "ticker": "BOX",
       "score": 2.0,
-      "reason": "Box AI momentum, FY guide raised, but 9-10% growth and target only +4% above price — WATCH"
+      "reason": "Box AI momentum, FY guide raised, but 9-10% growth and target only +4% above price \u2014 WATCH"
     },
     {
       "ticker": "CRBG",
       "score": 1.5,
-      "reason": "At 52w high on +3.61% but Q2 revenue missed by 9.5% — not selected"
+      "reason": "At 52w high on +3.61% but Q2 revenue missed by 9.5% \u2014 not selected"
     }
   ],
   "history": [
@@ -210,17 +332,43 @@
       "exit_price": 56.16,
       "reason": "removed in 2026-09-06 re-derivation - re-scored 2.0 (ttm revenue -4.8%); demoted to alternate",
       "bookkeeping": true
+    },
+    {
+      "ticker": "NTR",
+      "status": "exited",
+      "entry_date": "2026-09-09",
+      "entry_price": 80.68,
+      "sector": "Materials",
+      "score": 2.5,
+      "overlay": "euphoric",
+      "plan": "WATCH",
+      "entry_zone": "70.00-73.00",
+      "stop": 66.0,
+      "target": 76.43,
+      "street_high": 90.0,
+      "alert_level": 72.0,
+      "catalyst": "Ex-dividend 2026-09-29 ($2.20, 2.72% yield); no dated near-term operating event",
+      "notes": "Rev ttm $27.29B +9.1%, EPS $4.93 +78.3%, net income $2.38B +74.6%. Q2 revenue $10.812B beat $10.4B but adj EPS $2.61 missed $2.72; record potash volumes. Buy, 24 analysts, range $59-90. WATCH by rule: at $80.68 the price is 5.27% ABOVE the $76.43 average target (euphoric overlay). It is not above every target - the street high is $90 - but it is above the consensus, which caps it at WATCH. Alert 72.00 is where the average target offers room again. Q 1.0 / G 0.5 / P 1.0. | 2026-09-09 marked bookkeeping:true. The plan was WATCH - do not chase - so no position was ever taken. reprice.py closed it the same session under exit rule 4 (last_price 80.92 >= target 76.43 AND overlay euphoric), which is what rule 4 is written to do, but a euphoric name is BY DEFINITION already above its average target, so any euphoric WATCH pick auto-closes on the day it is added. Counting that as a closed trade would publish a 100% win rate on a trade that was never entered - the FLR failure in 06_track.md. Not a trade; excluded from the record.",
+      "last_price": 80.92,
+      "last_price_date": "2026-09-09",
+      "pnl_pct": 0.29,
+      "days_held": 0,
+      "screener_absent_days": 0,
+      "exit_date": "2026-09-09",
+      "exit_price": 80.92,
+      "reason": "target reached (euphoric)",
+      "bookkeeping": true
     }
   ],
   "best_tracking": {
-    "ticker": "LNG",
-    "pnl_pct": 0.4,
-    "entry_date": "2026-09-04"
+    "ticker": "SHEL",
+    "pnl_pct": -0.06,
+    "entry_date": "2026-09-09"
   },
   "record": {
     "closed": 0,
     "win_rate_pct": null,
     "avg_trade_pct": null,
-    "open_now": 7
+    "open_now": 12
   }
 }

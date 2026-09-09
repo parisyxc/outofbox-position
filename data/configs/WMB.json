@@ -1,0 +1,192 @@
+{
+  "ticker": "WMB",
+  "company": "The Williams Companies, Inc.",
+  "sector": "Energy  |  Natural Gas Midstream & Interstate Pipelines (Transco, Gulf of America, Northeast G&P, West)",
+  "date": "Wednesday, September 9, 2026",
+
+  "verdict": {
+    "headline": "BUY / ADD — MOMENTUM IS EARNED, BUT IT IS BEING BOUGHT WITH DEBT",
+    "score": "2.5 / 3.0",
+    "tone": "bull",
+    "subhead": "FUNDAMENTALS STRONG (margins expanding, guidance raised twice)   |   TECHNICALS BULLISH & CONSOLIDATING",
+    "summary": "WMB scores 2.5/3.0. Growth and Peer are unambiguous 1.0s: management raised FY26 adjusted EBITDA guidance by $200M to $8.3-8.5B AND lifted the long-term target to 11%+ CAGR through 2030, on secular LNG and data-center demand that is contracted rather than cyclical, from the operator of Transco — the largest interstate gas pipeline in the United States. Quality is held at 0.5 for one reason: trailing free cash flow is NEGATIVE $174M, down from +$3,371M in FY2023, because capex has run to $6.17B with $7.3-7.9B guided for 2026. Margins are genuinely expanding (operating 31.4% to 38.1%, net 20.7% to 24.9% over two years) but the growth is being funded with debt and equity, not cash generation. Technicals are aligned and unstretched: price above both the 50- and 200-day, RSI in the neutral 46-54 band, 6.5% below the 52-week high, with a $85.47 consensus target 12.7% above the price."
+  },
+
+  "zones": [
+    {"label":"ACCUMULATE ZONE","value":"$70.50 - $75.00","note":"Between the 200-day (~$70.3) and the EMA-50 (~$75.0)","tone":"bull"},
+    {"label":"HARD STOP","value":"$69.50","note":"Below the 200-day MA and the $69.09 support shelf","tone":"bear"},
+    {"label":"STREET TARGET","value":"$85.47","note":"Consensus of 20 analysts (+12.7%) | Street high $103","tone":"neutral"}
+  ],
+
+  "divergence": {
+    "title": "Is the Move Earned? Fundamentals vs. the Chart",
+    "tech": {
+      "title": "TECHNICAL PICTURE — BULLISH, NOT STRETCHED", "tone": "bull",
+      "bullets": [
+        "+33.03% total return over the last 12 months",
+        "RSI (14-day) 45.7 - 53.8 — NEUTRAL, not overbought",
+        "$75.83 close vs 52-wk range $56.19 - $80.08 (6.5% below high)",
+        "Above the 50-day ($73.34) and 200-day ($67.17 - $70.32)",
+        "Range-bound $70.5 - $75.6; consolidation, not a vertical advance",
+        "Street target $85.47 sits ABOVE price (+12.7%) — the crowd is not yet ahead of itself"
+      ]
+    },
+    "fund": {
+      "title": "FUNDAMENTAL PICTURE — STRONG, WITH ONE HOLE", "tone": "caution",
+      "bullets": [
+        "Operating margin 31.4% (FY24) to 37.5% (FY25) to 38.1% (TTM)",
+        "Net margin 20.7% to 22.1% to 24.9%; ROE 15.8% to 21.5%",
+        "FY26 EBITDA guide RAISED $200M to $8.3 - $8.5B",
+        "Long-term CAGR target RAISED from 10%+ to 11%+ through 2030",
+        "BUT free cash flow is -$174M TTM (from +$3,371M in FY23)",
+        "Capex $6.17B TTM, guided $7.3 - $7.9B for 2026; leverage to 3.9x",
+        "Payout ratio 83.67%; debt $30.79B, debt/equity 2.00"
+      ]
+    },
+    "assessment": {
+      "heading": "ASSESSMENT: ALIGNMENT, NOT DIVERGENCE — the risk here is the balance sheet, not the chart.",
+      "tone": "info",
+      "text": "This is the rarer, less dramatic setup: fundamentals and technicals point the same way, so there is no divergence to arbitrage. The framework's job is then to find what the alignment hides — and it is the funding gap. Williams is converting an 11%+ growth target into $7-8B of annual capex while paying out 84% of earnings, which turns free cash flow negative and pushes leverage to 3.9x against a 4.0x internal ceiling. The margin expansion is real and the demand is contracted; the question is not whether the projects earn, but what the equity costs while they are built. That is a 0.5 on Quality, not a 1.0 — and it is why this is a 2.5 rather than the 3.0 the light triage assigned."
+    }
+  },
+
+  "catalyst": {
+    "title": "Data-Center Power & LNG — Is Williams the Right Horse?",
+    "left": {
+      "title": "THE OPPORTUNITY (structural, and contracted)", "tone": "bull",
+      "blocks": [
+        {"heading":"1. LNG exports double within the decade","bullets":["Management expects US LNG exports to roughly double, with Haynesville production growing 10+ Bcf/d to feed it. Williams' Louisiana Energy Gateway and the new Momentum assets sit directly on that path from wellhead to Gulf Coast liquefaction."]},
+        {"heading":"2. Transco is the data-center toll road","bullets":["Transco Power Express was upsized to an 800 Mcf/d expansion serving Virginia data centers and power demand. Southeast Supply Enhancement and Power Express are both described by management as purely organic — no acquisition required to capture them."]},
+        {"heading":"3. Behind-the-meter, already in service","bullets":["Socrates Phase 1 reached 200 MW in service in under 18 months, and management reports discussions with multiple customers beyond the initial hyperscaler. Blackstone committed $5.34B to the Power Innovation JV, including $4.4B for 49% of growth capex at a capped 6.35% cost of equity."]}
+      ]
+    },
+    "right": {
+      "title": "THE CATCH (what the growth costs)", "tone": "caution",
+      "blocks": [
+        {"heading":"1. The growth is volume-led, not rate-led","bullets":["Management characterised growth as coming primarily through new infrastructure connections rather than rate increases. The framework's heuristic scores price/mix-led growth above volume-led — mitigated here because the volume is take-or-pay contracted against new structural demand, not a cyclical restock."]},
+        {"heading":"2. Free cash flow has gone negative","bullets":["TTM FCF is -$174M against +$3,371M in FY2023. Operating cash flow is healthy at $5.99B; the gap is $6.17B of capex, guided to $7.3-7.9B in 2026. Every dollar of the 11%+ CAGR is being pre-funded."]},
+        {"heading":"3. Paid for with debt and equity","bullets":["The $5.5B Momentum acquisition was $3.5B cash/debt plus $2B equity at ~8.5x projected 2027 EBITDA. Year-end leverage is guided to 3.9x against a 4.0x internal ceiling, leaving just over $2B of headroom."]}
+      ]
+    },
+    "verdict": {
+      "tone": "navy",
+      "text": "TREND VERDICT: RIGHT HORSE, FULL PRICE — Williams is a pure-play on gas-fired power and LNG feedgas, not a peripheral beneficiary, and Blackstone underwriting 49% of growth capex at a capped 6.35% is third-party validation of that position. Unlike a narrative trade, the exposure is contracted and already partly in service. The discipline is on entry price and size, not on whether the thesis is real."
+    }
+  },
+
+  "earnings": {
+    "title": "Q2 2026 Earnings Performance (reported August 2026)",
+    "widths": [2340,2340,2340,2340],
+    "headers": ["Metric","Q2 2026","vs Prior / Consensus","FY 2026 Guidance"],
+    "rows": [
+      [{"t":"Revenue","bold":true},{"t":"$3.00B","bold":true},{"t":"+9.8% YoY | narrow MISS vs $3.002B","tone":"caution"},"—"],
+      [{"t":"Adjusted EBITDA","bold":true},{"t":"$1.921B","bold":true,"tone":"bull"},{"t":"+6% YoY | YTD $4.175B, +10%","tone":"bull"},{"t":"$8.3 - $8.5B (RAISED $200M)","tone":"bull"}],
+      [{"t":"Adjusted EPS","bold":true},{"t":"$0.50","bold":true},{"t":"+8.7% YoY ($0.46) | MISS vs $0.52","tone":"caution"},"—"],
+      [{"t":"Net Income","bold":true},{"t":"$827M","tone":"bull"},{"t":"vs $546M a year ago (+51%)","tone":"bull"},"—"],
+      [{"t":"AFFO","bold":true},{"t":"$1.5B","tone":"bull"},{"t":"+10% YoY | 2.26x dividend coverage","tone":"bull"},"—"],
+      [{"t":"Capex","bold":true},{"t":"$6.17B TTM","tone":"caution"},{"t":"Drives FCF to -$174M TTM","tone":"bear"},{"t":"$7.3 - $7.9B","tone":"caution"}],
+      [{"t":"Leverage","bold":true},"3.75x run-rate",{"t":"Year-end guided 3.9x vs 4.0x ceiling","tone":"caution"},">$2B headroom"]
+    ]
+  },
+
+  "parts": [
+    {
+      "title": "Part 1 — Quality Check (Margins & Profitability)",
+      "question": "Is the price move supported by margin trends?",
+      "rows": [
+        [{"t":"Margin Trend","bold":true},{"t":"CLEARLY EXPANDING — operating margin 31.41% (FY24) to 37.45% (FY25) to 38.14% (TTM); net margin 20.66% to 22.11% to 24.91%. Roughly 670bps of operating margin in two years.","tone":"bull"}],
+        [{"t":"Returns","bold":true},{"t":"IMPROVING off a healthy base — ROE 15.78% (FY24) to 18.55% (FY25) to 21.50%; ROIC 6.53% to 7.84% to 7.95%.","tone":"bull"}],
+        [{"t":"Free Cash Flow","bold":true},{"t":"NEGATIVE — -$174M TTM, against +$899M (FY25), +$2,296M (FY24) and +$3,371M (FY23). Operating cash flow is healthy at $5,994M; capex of $6,168M is the entire gap.","tone":"bear"}],
+        [{"t":"Balance Sheet","bold":true},{"t":"STRETCHING — total debt $30.79B, debt/equity 2.00, payout ratio 83.67%, leverage guided to 3.9x against a 4.0x internal ceiling.","tone":"caution"}],
+        [{"t":"Why margins moved","bold":true},"Structural, not cost-cutting: Transmission & Gulf expansion projects entering service plus higher natural gas storage revenues — contracted capacity, which is why the gain has held for two consecutive years."],
+        [{"t":"Key Insight","bold":true},{"t":"The margin series is genuinely expanding off a healthy base — this is not the LNG case where no reported series was moving. But the rubric's 1.0 requires strong FCF alongside expanding margins, and FCF is negative. Growth is being pre-funded with debt and equity while 84% of earnings goes out as dividends.","bold":true}]
+      ],
+      "scoreLabel": "QUALITY SCORE",
+      "score": "0.5 / 1.0 — MARGINS EXPANDING, but FCF NEGATIVE ON A $7-8B CAPEX CYCLE",
+      "scoreTone": "caution"
+    },
+    {
+      "title": "Part 2 — Growth Check (Segment & Contract Momentum)",
+      "question": "Which division is driving growth? Is it sustainable?",
+      "headers": ["Segment","Q2 2026 Adj. EBITDA","Growth","Driver"],
+      "widths": [2600,2200,1700,3000],
+      "rows": [
+        [{"t":"Transmission & Gulf of America","bold":true},{"t":"$959M","bold":true},{"t":"+6%","tone":"bull"},"Gulf business +23%; higher gas storage revenue"],
+        [{"t":"Northeast G&P","bold":true},{"t":"$540M","bold":true},{"t":"+8%","tone":"bull"},"Rich gas volume growth; Blue Racer Midstream"],
+        [{"t":"West","bold":true},{"t":"$359M","bold":true},{"t":"+5%","tone":"bull"},"Haynesville incl. Louisiana Energy Gateway"],
+        [{"t":"Gas & NGL Marketing","bold":true},{"t":"-$1M","tone":"caution"},{"t":"Improved","tone":"bull"},"Loss narrowed from -$15M a year ago"],
+        [{"t":"TOTAL","bold":true,"fill":"d9f0d9"},{"t":"$1.921B","bold":true,"fill":"d9f0d9","tone":"bull"},{"t":"+6%","fill":"d9f0d9","tone":"bull"},{"t":"All four segments positive or improving","fill":"d9f0d9"}]
+      ],
+      "boxes": [
+        {"title":"Guidance raised TWICE","tone":"bull","bullets":["FY26 adjusted EBITDA lifted $200M to $8.3-8.5B.","Long-term CAGR target lifted from 10%+ to 11%+ through 2030 — and management noted the 11% EXCLUDES commercialisation of any additional power or pipeline projects."]},
+        {"title":"The one caveat","tone":"caution","bullets":["Management describes growth as primarily volume-driven through new infrastructure connections rather than rate increases.","The rubric normally caps volume-led growth at 0.5 — overridden here because the volume is take-or-pay contracted (Momentum adds 4+ Bcf/d of take-or-pay capacity) against secular LNG and data-center demand, not a cyclical restock."]}
+      ],
+      "scoreLabel": "GROWTH SCORE",
+      "score": "1.0 / 1.0 — SECULAR & CONTRACTED; GUIDANCE RAISED ON BOTH THE YEAR AND THE DECADE",
+      "scoreTone": "bull"
+    },
+    {
+      "title": "Part 3 — Peer Check (Relative Strength in Gas Infrastructure)",
+      "question": "Is Williams leading or lagging its peer group in the demand trend it is being bought for?",
+      "headers": ["Player","Position","Data-Center / LNG Exposure","Note"],
+      "widths": [2400,2400,1900,2800],
+      "rows": [
+        [{"t":"Williams (WMB)","bold":true,"fill":"d9f0d9"},{"t":"Operator of Transco — largest US interstate gas pipeline by volume","fill":"d9f0d9"},{"t":"Direct / pure-play","tone":"bull","fill":"d9f0d9"},{"t":"200MW behind-the-meter already in service; Blackstone JV","fill":"d9f0d9"}],
+        [{"t":"Kinder Morgan (KMI)","bold":true},"Largest US gas network by mileage","Direct","The closest comparable on scale and franchise"],
+        [{"t":"ONEOK (OKE)","bold":true},"NGL-weighted midstream","Indirect","More NGL/liquids exposure than gas transmission"],
+        [{"t":"Energy Transfer (ET)","bold":true},"Diversified midstream MLP","Direct","Competing for the same LNG feedgas and power contracts"],
+        [{"t":"Targa (TRGP)","bold":true},"Permian G&P and NGL","Peripheral","Gathering-led; not an interstate transmission franchise"]
+      ],
+      "boxes": [
+        {"title":"Evidence of leadership","tone":"bull","bullets":["Socrates Phase 1: 200 MW in service in under 18 months — execution, not a press release.","Blackstone committed $5.34B including $4.4B for 49% of growth capex at a CAPPED 6.35% cost of equity. A counterparty of that quality accepting a capped return is third-party underwriting of the franchise.","Southeast Supply Enhancement and Transco Power Express are organic expansions of an asset competitors cannot replicate."]},
+        {"title":"Relative performance","tone":"neutral","bullets":["+33.03% over 12 months with a Strong Buy consensus from 20 analysts — the broadest coverage in the energy names on this screener.","Momentum Midstream acquired at ~8.5x projected 2027 EBITDA, expected to compress through synergies — a disciplined multiple for 6 Bcf/d of gathering capacity."]}
+      ],
+      "scoreLabel": "PEER SCORE",
+      "score": "1.0 / 1.0 — CLEAR LEADER; PURE-PLAY, NOT A NARRATIVE BENEFICIARY",
+      "scoreTone": "bull"
+    }
+  ],
+
+  "technicals": {
+    "title": "Technical Analysis — Bullish and Consolidating",
+    "widths": [3120,3120,3120],
+    "headers": ["Indicator","Value","Signal"],
+    "rows": [
+      [{"t":"Price (09-09 close)","bold":true},"$75.83",{"t":"6.5% below 52-wk high","tone":"bull"}],
+      [{"t":"52-week range","bold":true},"$56.19 - $80.08",{"t":"+33.03% (1-yr)","tone":"bull"}],
+      [{"t":"RSI (14-day)","bold":true},"45.7 - 53.8",{"t":"NEUTRAL — room either way","tone":"bull"}],
+      [{"t":"50-day MA","bold":true},"$73.34",{"t":"Price ABOVE","tone":"bull"}],
+      [{"t":"200-day MA","bold":true},"$67.17 - $70.32",{"t":"Price ABOVE","tone":"bull"}],
+      [{"t":"Support","bold":true},"$71.53 / $70.65 / $69.09",{"t":"Stop sits below all three","tone":"neutral"}],
+      [{"t":"Resistance","bold":true},"$75.53 / $76.41 / $80.08",{"t":"Range top, then the high","tone":"caution"}],
+      [{"t":"Analyst consensus","bold":true},"Strong Buy (20) · $85.47 avg",{"t":"BULLISH (+12.7%)","tone":"bull"}],
+      [{"t":"Target range","bold":true},"$69 low - $103 high",{"t":"Low target sits AT our stop","tone":"caution"}],
+      [{"t":"Beta / Yield","bold":true},"0.62 · 2.81%",{"t":"Defensive profile","tone":"bull"}],
+      [{"t":"Valuation","bold":true},"PE 30.21 · EV/EBITDA 17.36",{"t":"RICH for midstream","tone":"caution"}]
+    ]
+  },
+
+  "summary": {
+    "rows": [
+      [{"t":"Part 1: Quality Check (Margins & FCF)","bold":true},{"t":"0.5 / 1.0 — Margins expanding (op 31.4%→38.1%), but FCF -$174M","tone":"caution"}],
+      [{"t":"Part 2: Growth Check (Segment & Contracts)","bold":true},{"t":"1.0 / 1.0 — Secular, contracted; guidance raised twice","tone":"bull"}],
+      [{"t":"Part 3: Peer Check (Gas infrastructure)","bold":true},{"t":"1.0 / 1.0 — Transco franchise; pure-play leader","tone":"bull"}]
+    ],
+    "total": "2.5 / 3.0",
+    "overlay": "BULLISH & CONSOLIDATING — RSI 46-54, above 50/200-day, 6.5% below high",
+    "overlayTone": "bull"
+  },
+
+  "finalVerdict": {
+    "headline": "BUY / ADD — ALIGNMENT, SIZED FOR THE BALANCE SHEET",
+    "tone": "bull",
+    "lines": [
+      {"label":"ACCUMULATE ZONE","text":"$70.50 - $75.00 (between the 200-day and the EMA-50)"},
+      {"label":"HARD STOP","text":"$69.50 (below the 200-day and the $69.09 shelf)"},
+      {"label":"STREET TARGET","text":"$85.47 consensus (+12.7%) | stretch $103"},
+      {"label":"POSITION SIZE","text":"Maximum 5% of account; no options — no dated catalyst inside 90 days is confirmed"},
+      {"label":"EXISTING POSITION","text":"HOLD and add on weakness toward the 200-day | do not add above $76.41"}
+    ],
+    "reasoning": "Fundamentals score 2.5/3 and technicals are bullish without being stretched, which the rubric maps directly to BUY / ADD. There is no divergence to exploit here — the two sides agree — so the discipline moves from timing to sizing. The single reservation is Quality: free cash flow has swung from +$3.37B (FY23) to -$174M on a capex programme guided at $7.3-7.9B for 2026, with leverage heading to 3.9x against a 4.0x ceiling and 84% of earnings paid out. That is a deliberate, contracted, well-underwritten build — Blackstone is funding 49% of growth capex at a capped 6.35% — but it means the equity carries construction risk until those projects earn. Buy it toward the 200-day rather than at the range top, keep the stop at $69.50, and note that the lowest Street target ($69) sits exactly there: if the low case is right, the stop is the trade."
+  }
+}
