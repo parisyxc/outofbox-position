@@ -72,7 +72,9 @@ def reprice(ledger, asof=None, screener_tickers=None, dry=False):
             continue
         last, pdate = got
         p["last_price"], p["last_price_date"] = round(last, 2), pdate
-        p["pnl_pct"] = round((last / p["entry_price"] - 1) * 100, 2)
+        # compute P&L from the *stored* rounded price so check_ledger.py, which
+        # recomputes from last_price, agrees by construction rather than by tolerance.
+        p["pnl_pct"] = round((p["last_price"] / p["entry_price"] - 1) * 100, 2)
         p["days_held"] = days_between(p["entry_date"], pdate)
         if p["status"] == "new": p["status"] = "tracking"
         # screener-absence counter
