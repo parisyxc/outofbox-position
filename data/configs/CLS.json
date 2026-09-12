@@ -1,0 +1,218 @@
+{
+  "ticker": "CLS",
+  "company": "Celestica Inc.",
+  "sector": "Information Technology  |  Electronics Manufacturing Services (EMS/ODM) — AI & Cloud Infrastructure Hardware",
+  "date": "Friday, September 11, 2026",
+  "verdict": {
+    "headline": "BUY — GUIDANCE RAISED INTO A 27% DRAWDOWN",
+    "score": "3.0 / 3.0",
+    "tone": "bull",
+    "subhead": "FUNDAMENTALS LEADING (margins + segment + peer all 1.0)   |   TECHNICALS CONSTRUCTIVE, NOT STRETCHED",
+    "summary": "CLS scores a full 3.0/3.0. Trailing revenue is up 47.3% to $15.60B, EPS is up 109.7% to $9.62, operating margin has expanded from 6.37% (FY24) to 8.88% (TTM), and management RAISED the 2026 outlook to $20.5B revenue and $11.30 adjusted EPS. Twenty analysts sit at Strong Buy with a $477.22 average target and a $415 low target — 20% above today's price. Yet the stock trades 26.89% BELOW its 52-week high of $474.03, with RSI at 58.4 and price above both the 50-day and 200-day moving averages. The de-rating is explained: an $3.45B equity raise at $310/share closed August 7. This is the mirror image of a momentum bubble — the fundamentals were raised while the price fell, and the offering that caused the fall priced 11% below where the stock trades now."
+  },
+  "zones": [
+    { "label": "ACCUMULATE ZONE", "value": "$336 – $353", "note": "Above the 50-day ($325.97) and the $310 offering price", "tone": "bull" },
+    { "label": "HARD STOP", "value": "$312", "note": "Below the 200-day ($328.86) and at the offering price", "tone": "bear" },
+    { "label": "STREET TARGET", "value": "$477.22 avg", "note": "Strong Buy (20) · range $415 – $550 · stretch +58.7%", "tone": "neutral" }
+  ],
+  "divergence": {
+    "title": "Is CLS Diverging? — Yes, and in the Investor's Favour",
+    "tech": {
+      "title": "TECHNICAL PICTURE — CONSTRUCTIVE, NOT EUPHORIC",
+      "tone": "bull",
+      "bullets": [
+        "+36.96% over the last 12 months — strong, not vertical",
+        "RSI (14-day) 58.39 — MODERATE, nowhere near overbought",
+        "Price $346.55 vs 52-wk range $227.00 – $474.03",
+        "26.89% BELOW the 52-week high — a real correction, already taken",
+        "Above the 50-day ($325.97) AND the 200-day ($328.86)",
+        "Short interest only 3.01% of shares out — no crowded bear case",
+        "+6.56% on Sep 11 on 2.55M shares"
+      ]
+    },
+    "fund": {
+      "title": "FUNDAMENTAL PICTURE — LEADING AND ACCELERATING",
+      "tone": "bull",
+      "bullets": [
+        "Revenue ttm $15.60B, +47.3%; FY24 $9.65B → FY25 $12.39B → $20.5B guided",
+        "EPS $9.62, +109.7%; net income $1,116M vs $428M (FY24)",
+        "Operating margin 6.37% → 8.61% → 8.88%; net 4.44% → 6.72% → 7.16%",
+        "Q2'26 revenue $4.70B, +62% YoY; adj. EPS $2.54 — both BEAT guidance",
+        "2026 outlook RAISED: $20.5B rev, $11.30 adj EPS, $600M FCF, op margin 8.1% → 8.4%",
+        "Forward PE 22.25 vs trailing 35.65 — earnings outrunning the price",
+        "Strong Buy (20 analysts); LOW target $415 is +19.75% from here"
+      ]
+    },
+    "assessment": {
+      "heading": "ASSESSMENT: FUNDAMENTALS RAISED, PRICE DE-RATED — a TRUE (FAVOURABLE) DIVERGENCE.",
+      "tone": "info",
+      "text": "The usual momentum trap is a price that has sprinted past the fundamentals. CLS is the opposite: management raised full-year revenue, EPS, margin and free-cash-flow guidance in Q2, and the stock is still 27% below its high because an equity raise in August diluted holders by roughly 10%. The dilution is a real cost and it is now in the share count. What it is not is a deterioration in the business. When the Street's LOWEST target sits 20% above the price and RSI is 58, the discipline is to buy the correction — carefully sized, because the same growth that justifies the multiple is what required the capital."
+    }
+  },
+  "catalyst": {
+    "title": "The AI Infrastructure Buildout — Is CLS the Right Horse?",
+    "left": {
+      "title": "THE OPPORTUNITY (real & structural)",
+      "tone": "bull",
+      "blocks": [
+        {
+          "heading": "1. CCS is compounding at 84%",
+          "bullets": [
+            "Connectivity & Cloud Solutions did $3.81B in Q2'26, +84% YoY, at an 8.7% segment margin (up from 8.3%). This is hyperscaler networking and compute hardware — the physical layer of the AI buildout."
+          ]
+        },
+        {
+          "heading": "2. Margins expand WITH volume, not despite it",
+          "bullets": [
+            "Record adjusted operating margin of 8.2% in Q2, and the full-year guide was lifted from 8.1% to 8.4%. For a contract manufacturer historically stuck near 3-4%, margin expansion on 62% revenue growth is the whole thesis."
+          ]
+        },
+        {
+          "heading": "3. Capacity is funded and visibility extends to 2027",
+          "bullets": [
+            "The $3.45B raise (11,129,031 shares at $310, closed Aug 7 2026) pre-funds working capital and capex against what management calls expanding multi-year visibility; the outlook calls for accelerated growth in 2027. UBS upgraded to Buy citing ~50% earnings growth to 2028."
+          ]
+        }
+      ]
+    },
+    "right": {
+      "title": "THE CATCH (what you are underwriting)",
+      "tone": "caution",
+      "blocks": [
+        {
+          "heading": "1. Dilution is permanent",
+          "bullets": [
+            "11.1M new shares at $310 is roughly 10% of the pre-deal count, and the stock fell on the pricing. Every future EPS figure is measured against the larger base. The offset: the deal priced at $310 and the stock is $346.55 — buyers of the deal are up."
+          ]
+        },
+        {
+          "heading": "2. Customer concentration inside CCS",
+          "bullets": [
+            "CCS is ~81% of Q2 revenue and growing 84%, which means the company's fortunes are tied to a short list of hyperscaler capex budgets. ATS — the diversified, industrial/aero/medical half — grew only 8%. A single hyperscaler deferral is a guidance event."
+          ]
+        },
+        {
+          "heading": "3. Thin gross margin, and a leadership change",
+          "bullets": [
+            "Gross margin is 11.95% TTM, essentially flat against 12.06% in FY25 — the earnings leverage comes below the gross line, so there is little cushion if mix or pricing turns. Mandeep Chawla moves to group president and Todd Ankenmann becomes CFO effective Oct 1."
+          ]
+        }
+      ]
+    },
+    "verdict": {
+      "tone": "navy",
+      "text": "AI BUILDOUT VERDICT: DIRECT EXPOSURE, GENUINE LEADERSHIP — CLS rides the wave, not the wake. Unlike an indirect beneficiary, 81% of revenue is the AI/cloud hardware itself, and CLS is growing it faster (+47.3% ttm) than Jabil (+17.8%) or Flex (+12.2%) while earning a better net margin (7.16% vs Flex's ~3.3%). The risk is not whether the exposure is real — it is that the exposure is concentrated and was funded with equity."
+    }
+  },
+  "earnings": {
+    "title": "Q2 2026 Earnings Performance — reported late July 2026, guidance RAISED",
+    "widths": [2340, 2340, 2340, 2340],
+    "headers": ["Metric", "Q2 2026", "vs Prior Year", "FY2026 Outlook (raised)"],
+    "rows": [
+      [{"t":"Revenue","bold":true},{"t":"$4.70B","bold":true,"tone":"bull"},"+62% YoY — beat guidance","$20.5B (≈ +37% on FY25)"],
+      [{"t":"Adj. EPS","bold":true},{"t":"$2.54","bold":true,"tone":"bull"},"Beat guidance","$11.30"],
+      [{"t":"Adj. Operating Margin","bold":true},{"t":"8.2%","bold":true,"tone":"bull"},"RECORD","8.4% (raised from 8.1%)"],
+      [{"t":"CCS segment revenue","bold":true},{"t":"$3.81B","bold":true,"tone":"bull"},"+84% YoY","~81% of total revenue"],
+      [{"t":"CCS segment margin","bold":true},{"t":"8.7%","tone":"bull"},"vs 8.3% in Q2'25","Expanding"],
+      [{"t":"ATS segment revenue","bold":true},"$0.89B",{"t":"+8% YoY","tone":"caution"},"The diversified half is flat-ish"],
+      [{"t":"ATS segment margin","bold":true},{"t":"6.3%","tone":"bull"},"vs 5.3% in Q2'25","Expanding"],
+      [{"t":"Free Cash Flow","bold":true},"—","Funded by the Aug raise",{"t":"$600M guided","tone":"bull"}]
+    ]
+  },
+  "parts": [
+    {
+      "title": "Part 1 — Quality Check (Margins & Profitability)",
+      "question": "Is the price move supported by margin trends?",
+      "rows": [
+        [{"t":"Margin Trend","bold":true},{"t":"CLEARLY EXPANDING — operating margin 6.37% (FY24) → 8.61% (FY25) → 8.88% (TTM); net margin 4.44% → 6.72% → 7.16%. Roughly 251bps of operating margin and 272bps of net margin in two years, on a business that tripled revenue.","tone":"bull"}],
+        [{"t":"Gross Margin","bold":true},{"t":"FLAT — 10.72% (FY24) → 12.06% (FY25) → 11.95% (TTM). The TTM figure is 11bps BELOW FY25. All the earnings leverage is coming below the gross line, from operating scale and mix, not from pricing power.","tone":"caution"}],
+        [{"t":"Absolute Profitability","bold":true},{"t":"COMPOUNDING — operating income $614.6M (FY24) → $1,067M (FY25) → $1,385M (TTM); net income $428M → $832.5M → $1,116M. Net income has more than doubled in two years.","tone":"bull"}],
+        [{"t":"Free Cash Flow","bold":true},{"t":"GUIDED POSITIVE — $600M for FY2026 per the raised outlook, alongside the capex needed for AI capacity. Not the WMB case of negative FCF on a capex cycle.","tone":"bull"}],
+        [{"t":"Capital Structure","bold":true},{"t":"EQUITY-FUNDED, DILUTIVE — 11,129,031 shares issued at $310 (≈$3.45B gross, closed Aug 7 2026), roughly 10% of the pre-deal count. Shares outstanding now 114.98M. Growth was funded with equity rather than leverage, which protects the balance sheet and costs the shareholder.","tone":"caution"}],
+        [{"t":"Why margins moved","bold":true},"Operating leverage on AI/cloud hardware volume plus favourable mix — CCS margin went 8.3% → 8.7% and ATS 5.3% → 6.3%, so BOTH segments improved. Management then raised the full-year adjusted operating margin guide from 8.1% to 8.4%, which is the tell that the gain is expected to hold rather than being a single good quarter."],
+        [{"t":"Key Insight","bold":true},{"t":"This clears the 1.0 bar the way WMB did not: margins are expanding at the operating and net line, absolute profit is compounding, AND free cash flow is guided positive. The honest caveat is that gross margin is flat at ~12% — the model is thin-margin-at-enormous-scale, so the quality is real but it is operational quality, not pricing power.","bold":true}]
+      ],
+      "scoreLabel": "QUALITY SCORE",
+      "score": "1.0 / 1.0 — OPERATING MARGIN +251bps IN TWO YEARS, FCF GUIDED POSITIVE",
+      "scoreTone": "bull"
+    },
+    {
+      "title": "Part 2 — Growth Check (Segment & Contract Momentum)",
+      "question": "Which division is driving growth? Is it sustainable?",
+      "headers": ["Segment", "Q2 2026 Revenue", "Growth", "Margin & Driver"],
+      "widths": [2600, 2200, 1700, 3000],
+      "rows": [
+        [{"t":"CCS — Connectivity & Cloud","bold":true},{"t":"$3.81B","bold":true},{"t":"+84%","tone":"bull"},"8.7% (was 8.3%) — hyperscaler AI networking & compute"],
+        [{"t":"ATS — Advanced Technology","bold":true},{"t":"$0.89B","bold":true},{"t":"+8%","tone":"caution"},"6.3% (was 5.3%) — industrial, aero/defence, medical"],
+        [{"t":"TOTAL","bold":true},{"t":"$4.70B","bold":true},{"t":"+62%","tone":"bull"},"Record 8.2% adjusted operating margin"],
+        [{"t":"FY2026 guided","bold":true},{"t":"$20.5B","bold":true},{"t":"≈ +37%","tone":"bull"},"RAISED, with $11.30 adj EPS and 8.4% op margin"],
+        [{"t":"Sustainability","bold":true},{"t":"Management guides ACCELERATED growth in 2027; UBS underwrites ~50% earnings growth to 2028 on AI-driven demand. The $3.45B raise pre-funds the capacity, so the growth is not capital-constrained.","tone":"bull"}],
+        [{"t":"The concentration risk","bold":true},{"t":"CCS is ~81% of revenue and supplies the growth; ATS grew only 8%. This is a bet on a short list of hyperscaler capex budgets, and a single large-customer deferral would be a guidance event. Diversification is NOT the reason to own this.","tone":"caution"}],
+        [{"t":"Key Insight","bold":true},{"t":"Growth is concentrated but it is real, contracted enough to raise a full-year guide mid-year, margin-accretive in BOTH segments, and now funded. Revenue tripled from $9.65B (FY24) toward $20.5B guided — that is a value migration, not a cyclical bounce.","bold":true}]
+      ],
+      "scoreLabel": "GROWTH SCORE",
+      "score": "1.0 / 1.0 — CCS +84%, FULL-YEAR GUIDE RAISED, BOTH SEGMENTS MARGIN-ACCRETIVE",
+      "scoreTone": "bull"
+    },
+    {
+      "title": "Part 3 — Peer Check (Relative Strength vs EMS/ODM)",
+      "question": "Is CLS the leader in the AI hardware trend, or a follower?",
+      "headers": ["Company", "Rev growth (ttm)", "EPS growth", "PE / Fwd PE", "Consensus & target gap"],
+      "widths": [2200, 1900, 1800, 1800, 2100],
+      "rows": [
+        [{"t":"CLS — Celestica","bold":true},{"t":"+47.3%","bold":true,"tone":"bull"},{"t":"+109.7%","bold":true,"tone":"bull"},{"t":"35.65 / 22.25","tone":"bull"},{"t":"Strong Buy · +37.71%","tone":"bull"}],
+        [{"t":"JBL — Jabil","bold":true},"+17.8%",{"t":"+56.5%","tone":"bull"},"39.76 / 20.13","Strong Buy · +35.05%"],
+        [{"t":"FLEX — Flex Ltd","bold":true},{"t":"+12.2%","tone":"caution"},{"t":"+13.6%","tone":"caution"},"44.70 / 22.17","Strong Buy · +38.63%"],
+        [{"t":"SANM — Sanmina","bold":true},"Infrastructure seg. +72.2% (Q1'26)",{"t":"Sub-scale","tone":"caution"},"—","Lower margin, lower quality mix"],
+        [{"t":"Net margin","bold":true},{"t":"CLS 7.16% vs FLEX ~3.3% — CLS earns more than twice the net margin of the largest Western EMS peer.","tone":"bull"}],
+        [{"t":"Relative position","bold":true},{"t":"LEADER — CLS is growing revenue 2.7x faster than Jabil and 3.9x faster than Flex, with the best net margin of the group and the cheapest trailing multiple. Flex is buying its way in ($4.4B EPC Power) and spinning out its cloud/power unit; Sanmina is a sub-scale #4-5 with a thinner mix.","tone":"bull"}],
+        [{"t":"Key Insight","bold":true},{"t":"This is the cleanest of the three checks. On the one metric that separates a leader from a beneficiary — growth per unit of margin — CLS is first in its peer set, not associated with the trend but central to it. All four peers carry Strong Buy ratings with 35-39% target gaps, which says the Street likes the industry; CLS wins on the fundamentals inside it.","bold":true}]
+      ],
+      "scoreLabel": "PEER SCORE",
+      "score": "1.0 / 1.0 — FASTEST GROWTH AND BEST NET MARGIN IN THE PEER SET",
+      "scoreTone": "bull"
+    }
+  ],
+  "technicals": {
+    "title": "Technical Analysis — Constructive After a Real Correction",
+    "widths": [3120, 3120, 3120],
+    "headers": ["Indicator", "Value", "Signal"],
+    "rows": [
+      [{"t":"Price (09-11 close)","bold":true},"$346.55 (+6.56%)",{"t":"26.89% BELOW 52-wk high","tone":"bull"}],
+      [{"t":"52-week range","bold":true},"$227.00 – $474.03",{"t":"+36.96% (1-yr)","tone":"bull"}],
+      [{"t":"RSI (14-day)","bold":true},"58.39",{"t":"MODERATE — not overbought","tone":"bull"}],
+      [{"t":"50-day MA","bold":true},"$325.97",{"t":"Price ABOVE (+6.3%)","tone":"bull"}],
+      [{"t":"200-day MA","bold":true},"$328.86",{"t":"Price ABOVE (+5.4%)","tone":"bull"}],
+      [{"t":"Support","bold":true},"$336 / $328.86 / $310",{"t":"Offering price is the floor to watch","tone":"neutral"}],
+      [{"t":"Resistance","bold":true},"$360 / $415 / $474.03",{"t":"Street low target, then the high","tone":"caution"}],
+      [{"t":"Analyst consensus","bold":true},"Strong Buy (20) · $477.22 avg",{"t":"BULLISH (+37.71%)","tone":"bull"}],
+      [{"t":"Target range","bold":true},"$415 low – $550 high",{"t":"LOW target is +19.75% — no bear case","tone":"bull"}],
+      [{"t":"Short interest","bold":true},"3.76M sh · 3.01% of float",{"t":"No crowded short","tone":"bull"}],
+      [{"t":"Valuation","bold":true},"PE 35.65 · Fwd PE 22.25",{"t":"Forward multiple does the work","tone":"bull"}],
+      [{"t":"Shares outstanding","bold":true},"114.98M",{"t":"11.1M issued at $310 in August","tone":"caution"}]
+    ]
+  },
+  "summary": {
+    "rows": [
+      [{"t":"Part 1: Quality Check (Margins & Profitability)","bold":true},{"t":"1.0 / 1.0 — Op margin 6.37%→8.88%, FCF guided +$600M","tone":"bull"}],
+      [{"t":"Part 2: Growth Check (Segment & Contracts)","bold":true},{"t":"1.0 / 1.0 — CCS +84%; FY guide raised to $20.5B / $11.30","tone":"bull"}],
+      [{"t":"Part 3: Peer Check (EMS/ODM)","bold":true},{"t":"1.0 / 1.0 — Fastest growth and best net margin vs JBL/FLEX/SANM","tone":"bull"}]
+    ],
+    "total": "3.0 / 3.0",
+    "overlay": "CONSTRUCTIVE — RSI 58.4, above 50/200-day, 26.89% below the high, Street low target +19.75%",
+    "overlayTone": "bull"
+  },
+  "finalVerdict": {
+    "headline": "BUY / LONG STOCK + LONG CALLS — ALIGNMENT AT A DISCOUNT",
+    "tone": "bull",
+    "lines": [
+      { "label": "ACCUMULATE ZONE", "text": "$336 – $353 (above the 50-day and the $310 offering price)" },
+      { "label": "HARD STOP", "text": "$312 — below the 200-day ($328.86) and at the August offering price" },
+      { "label": "STREET TARGET", "text": "$477.22 consensus (+37.71%) | stretch $550 (+58.7%) | low $415 (+19.75%)" },
+      { "label": "POSITION SIZE", "text": "Maximum 5% of account; ≤20% total Information Technology exposure" },
+      { "label": "OPTIONS", "text": "Permitted: score ≥2.5, constructive, dated catalyst inside 90 days (Q3 earnings Oct 26). December 2026 expiry, strike $350–$365, ≤1% of account, premium fully at risk" },
+      { "label": "ALERT", "text": "Add-on confirmation above $360 on volume; re-assess if $312 closes through" }
+    ],
+    "reasoning": "Fundamentals score a full 3.0/3.0 and the technical overlay is constructive rather than stretched, which the rubric maps directly to BUY — and unusually, the two sides do not merely agree, they disagree in the investor's favour. Management raised full-year revenue, EPS, operating margin and free-cash-flow guidance in Q2 while the stock sat 27% below its 52-week high, because a $3.45B equity offering priced at $310 in August knocked it down. That dilution is a genuine, permanent cost of about 10% of the share count, and it is the single reason to size this at 5% rather than more. But the offering priced 11% below today's price, the Street's LOWEST target of $415 is still 20% above the price, RSI is 58, and price sits above both major moving averages. The thing to watch is not valuation — the forward multiple of 22.25 against 47% revenue growth is not demanding — it is concentration: CCS is 81% of revenue growing 84%, so this is an underwriting of hyperscaler capex, and the ATS segment's +8% will not cushion a deferral. Buy the correction, keep the stop at the offering price where the marginal buyer's cost basis sits, and treat the Oct 26 print as the event that either confirms the raised guide or ends the thesis."
+  }
+}

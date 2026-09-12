@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-09",
+  "as_of": "2026-09-11",
   "positions": [
     {
       "ticker": "GILD",
@@ -17,11 +17,11 @@
       "alert_level": null,
       "catalyst": "3 near-term regulatory decisions; FY HIV guide raised to 9-10%",
       "notes": "Q2 rev $7.8B beat $7.4B; HIV +12%; Yeztugo $232M (+40% QoQ) | re-derived 2026-09-06 from triage card; score/target refreshed.",
-      "last_price": 146.45,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -3.15,
-      "days_held": 5,
-      "screener_absent_days": 1
+      "last_price": 143.72,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": -4.96,
+      "days_held": 7,
+      "screener_absent_days": 2
     },
     {
       "ticker": "LNG",
@@ -39,11 +39,11 @@
       "alert_level": null,
       "catalyst": "FY26 adj EBITDA guide raised to $7.9-8.4B; exports +20%",
       "notes": "Q2 adj EBITDA $1.8B; net income >$3B; DCF guide $5.3-5.8B | re-derived 2026-09-06 from triage card; score/target refreshed | 2026-09-06 re-verified: score 3.0 -> 2.5. Quality cut to 0.5 \u2014 reported gross margin 83.87% (FY23) to 36.85% (ttm) and FCF $2.79B vs $6.30B (FY23) on $3.35B Stage 3 capex; both explicable (IFM derivative marks, growth capex) but no reported margin series is expanding. Growth 1.0, Peer 1.0. Plan, entry, stop and target unchanged. See reports/2026-09-04/LNG_Momentum_Verification_Analysis.docx.",
-      "last_price": 277.58,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -4.56,
-      "days_held": 5,
-      "screener_absent_days": 1,
+      "last_price": 278.34,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": -4.3,
+      "days_held": 7,
+      "screener_absent_days": 2,
       "score_history": [
         {
           "date": "2026-09-04",
@@ -73,11 +73,11 @@
       "alert_level": null,
       "catalyst": "FY26 adj EPS guide raised to $17.75-17.95; OneOncology integration",
       "notes": "FQ3 double-digit adj OI & EPS growth; ~11% below 52w high = constructive pullback | re-derived 2026-09-06 from triage card; score/target refreshed.",
-      "last_price": 326.02,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -3.32,
-      "days_held": 5,
-      "screener_absent_days": 1
+      "last_price": 321.57,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": -4.64,
+      "days_held": 7,
+      "screener_absent_days": 2
     },
     {
       "ticker": "ASND",
@@ -95,11 +95,11 @@
       "alert_level": null,
       "catalyst": "Yorvipath blockbuster run-rate; Yuviwel US launch; >\u20ac500M OCF guide",
       "notes": "Q2 product rev \u20ac315M, +105% YoY; Strong Buy (20 analysts) | re-derived 2026-09-06 from triage card; score/target refreshed. | re-triaged 2026-09-09 from the 09-09 screener (reappeared at $270.09): score held at 3.0, rev ttm now $1.20B +113.4%, net income $847.43M vs a -$228.03M loss in 2025. Consensus average target refreshed 313.84 -> 314.84 (Strong Buy, 20 analysts). Plan, entry zone, stop unchanged.",
-      "last_price": 263.87,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -2.67,
-      "days_held": 5,
-      "screener_absent_days": 0
+      "last_price": 263.52,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": -2.8,
+      "days_held": 7,
+      "screener_absent_days": 1
     },
     {
       "ticker": "IQV",
@@ -117,11 +117,11 @@
       "alert_level": 258,
       "catalyst": "Raised FY26 guide; organic growth 6% (3x prior yr)",
       "notes": "Breakout to ATH on +2.95%; avg target \u2248 price \u2192 do not chase; buy the retest of $265 prior high | re-derived 2026-09-06 from triage card; score/target refreshed.",
-      "last_price": 255.31,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -6.0,
-      "days_held": 5,
-      "screener_absent_days": 1
+      "last_price": 261.77,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": -3.63,
+      "days_held": 7,
+      "screener_absent_days": 2
     },
     {
       "ticker": "FAF",
@@ -139,33 +139,11 @@
       "alert_level": null,
       "catalyst": "Fed rate cuts \u2192 title/mortgage volume; Q2 EPS $2.08 beat by 13.7%",
       "notes": "Q2 rev +15%; note sharp post-screener session (-4.9%) \u2014 volatile, respect the stop | re-derived 2026-09-06 from triage card; score/target refreshed.",
-      "last_price": 71.39,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -6.69,
-      "days_held": 5,
-      "screener_absent_days": 1
-    },
-    {
-      "ticker": "RELY",
-      "status": "tracking",
-      "entry_date": "2026-09-04",
-      "entry_price": 26.92,
-      "sector": "Financials",
-      "score": 3.0,
-      "overlay": "constructive",
-      "plan": "LONG_STOCK",
-      "entry_zone": "26.10-27.50",
-      "stop": 24.2,
-      "target": 32.33,
-      "street_high": 36.0,
-      "alert_level": null,
-      "catalyst": "none dated visible - no calls",
-      "notes": "Added by 2026-09-06 re-derivation; absent from the originally published 09-04 report. Rev +23.8% ttm, GAAP profitable, Strong Buy (10 analysts), 2.0% below 52w high.",
-      "last_price": 24.4,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -9.36,
-      "days_held": 5,
-      "screener_absent_days": 1
+      "last_price": 71.78,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": -6.18,
+      "days_held": 7,
+      "screener_absent_days": 2
     },
     {
       "ticker": "WMB",
@@ -183,11 +161,11 @@
       "alert_level": null,
       "catalyst": "FY EBITDA guide raised to $8.3-8.5B and long-term growth target lifted to 11%+ CAGR through 2030; $5.5B Momentum Midstream acquisition closed Sept 2026. No dated forward event confirmed inside 90 days, so no calls.",
       "notes": "Q2 rev $3.05B beat $2.82B; adj EPS $0.50 met. Rev ttm $12.32B +8.4%, net income $3.07B +26.5% (~25% net margin) - earnings compounding 3x revenue. Strong Buy, 20 analysts, range $69-103. PE 30.2 is the premium for Transco. Q 1.0 / G 1.0 / P 1.0. | 2026-09-09 re-verified on the full framework: score 3.0 -> 2.5. Quality cut to 0.5 - trailing FCF is -$174M against +$3,371M (FY23), +$2,296M (FY24) and +$899M (FY25), on capex of $6,168M with $7.3-7.9B guided for 2026; leverage to 3.9x vs a 4.0x ceiling, payout 83.67%, debt $30.79B, debt/equity 2.00. Margins ARE expanding (operating 31.41% -> 37.45% -> 38.14%; net 20.66% -> 22.11% -> 24.91%; ROE 15.78% -> 21.50%), which is what separates this from the LNG case, but the rubric's 1.0 requires strong FCF alongside expanding margins. Growth 1.0, Peer 1.0. CORRECTION to the triage: Q2 revenue $3.00B narrowly MISSED the $3.002B consensus and adj EPS $0.50 MISSED $0.52 - the stockanalysis.com summary reporting a beat against a $2.82B estimate is contradicted by segment-level coverage (T&G $959M vs $971M est and West $359M vs $389M est both missed; Northeast G&P $540M vs $518M beat). Entry zone tightened 73.50-78.10 -> 70.50-75.00 on the technical work (200-day ~$70.3, EMA-50 ~$75.0). Plan LONG_STOCK, stop 69.50 and target 85.47 unchanged. See reports/2026-09-09/WMB_Momentum_Verification_Analysis.docx.",
-      "last_price": 75.0,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -1.09,
-      "days_held": 0,
-      "screener_absent_days": 0,
+      "last_price": 72.85,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": -3.93,
+      "days_held": 2,
+      "screener_absent_days": 1,
       "score_history": [
         {
           "date": "2026-09-09",
@@ -217,11 +195,11 @@
       "alert_level": null,
       "catalyst": "Q3 earnings 2026-10-28 (dated, inside 90 days); FY26 guidance raised twice - revenue to $1.56-1.6B, adj EBITDA to $245-265M",
       "notes": "Q2 record rev $393.8M +46% beat; adj EPS $0.15 met; record adj EBITDA $64.6M +61%. Rev ttm $1.37B +34.3% and accelerating into the quarter. Strong Buy, 11 analysts, range $30-40. Trailing PE 85.9 / forward 35.9 is the risk. Q 1.0 / G 1.0 / P 1.0.",
-      "last_price": 27.0,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -0.07,
-      "days_held": 0,
-      "screener_absent_days": 0
+      "last_price": 26.43,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": -2.18,
+      "days_held": 2,
+      "screener_absent_days": 1
     },
     {
       "ticker": "CECO",
@@ -239,11 +217,11 @@
       "alert_level": null,
       "catalyst": "Q3 earnings 2026-10-27 (dated, inside 90 days)",
       "notes": "Q2 rev $284.96M beat, EPS $0.47 beat $0.33; orders $798.5M +191%, backlog >$1.8B; 54% rev and 73% adj EBITDA growth. Rev ttm $903.17M +37.6%. Quality capped at 0.5: GAAP ttm net income is -$30.61M (EPS -$0.82) on Thermon acquisition costs, so the expansion is only visible on an adjusted schedule. Strong Buy, 7 analysts, range $85-130. Beta 1.51. Q 0.5 / G 1.0 / P 1.0.",
-      "last_price": 77.64,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -1.88,
-      "days_held": 0,
-      "screener_absent_days": 0
+      "last_price": 78.34,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": -1.0,
+      "days_held": 2,
+      "screener_absent_days": 1
     },
     {
       "ticker": "SHEL",
@@ -261,10 +239,10 @@
       "alert_level": 89.5,
       "catalyst": "Q3 earnings 2026-10-29",
       "notes": "Rev ttm $296.60B +9.0%, EPS $9.07 +103.1%, net income $25.97B +90.9%. Buy, 16 analysts, range $83-120.60. WATCH not LONG: price is 0.99% from the 52-week high ($96.27) with only a 4.71% average-target gap. Overlay marked extended by judgment - the written test is a gap <3% and this is 4.71%, but at 1% from the high that is not 'below high with room'. Alert 89.50 restores a ~11% gap. Q 1.0 / G 0.5 / P 1.0.",
-      "last_price": 95.26,
-      "last_price_date": "2026-09-09",
-      "pnl_pct": -0.06,
-      "days_held": 0,
+      "last_price": 96.77,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": 1.52,
+      "days_held": 2,
       "screener_absent_days": 0
     },
     {
@@ -284,27 +262,159 @@
       "catalyst": "$400M convertible senior notes offering announced 2026-09-09 - dilutive against a $2.65B market cap; ERCOT power capacity to double, carbon capture to 1.5M tons/yr by 2028",
       "notes": "Rev ttm $1.05B +24.5%, net income $263.54M (~25% net margin), PE 8.92. Q2 adj EBITDAX $142M, net income $51M. Strong Buy, 11 analysts, range $28-39. DOCUMENTED PLAN DEVIATION: score 2.5 + constructive overlay maps to LONG_STOCK in 04_plan.md; overridden to WATCH because the screener flagged the +2.69% move on the same session the $400M convert was announced, and the stock closed -9.4% at $24.25 the next day. Entering at the mandated screener price of $26.76 would be buying the anomaly the framework exists to detect. Alert 26.00 = reclaim of the pre-announcement level on volume. Quality capped at 0.5: prior-year net income is not disclosed on the source page, so margin direction is unverified. Q 0.5 / G 1.0 / P 1.0.",
       "last_price": 24.23,
-      "last_price_date": "2026-09-09",
+      "last_price_date": "2026-09-11",
       "pnl_pct": -9.45,
+      "days_held": 2,
+      "screener_absent_days": 1
+    },
+    {
+      "ticker": "CLS",
+      "status": "tracking",
+      "entry_date": "2026-09-11",
+      "entry_price": 346.55,
+      "sector": "Information Technology",
+      "score": 3.0,
+      "overlay": "constructive",
+      "plan": "LONG_STOCK+CALLS",
+      "entry_zone": "336.00-353.00",
+      "stop": 312.0,
+      "target": 477.22,
+      "street_high": 550.0,
+      "alert_level": null,
+      "catalyst": "Q3 earnings 2026-10-26",
+      "notes": "Rev ttm $15.59B +47.3%, EPS $9.62 +109.7%, net income growth 109.7%. Strong Buy, 20 analysts, range $415-550. PE 35.65 trailing vs 22.25 forward. Q 1.0 / G 1.0 / P 1.0. Highest target gap on the sheet (+37.71%) and 26.89% below its own 52-week high of $474.03. Risks: $3.45B equity offering (dilution) funding AI capacity; CFO transition effective Oct 1. Calls allowed: score >=2.5, constructive, dated catalyst inside 90 days.",
+      "last_price": 346.55,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": 0.0,
+      "days_held": 0,
+      "screener_absent_days": 0
+    },
+    {
+      "ticker": "WFC",
+      "status": "tracking",
+      "entry_date": "2026-09-11",
+      "entry_price": 90.29,
+      "sector": "Financials",
+      "score": 3.0,
+      "overlay": "constructive",
+      "plan": "LONG_STOCK+CALLS",
+      "entry_zone": "87.60-92.10",
+      "stop": 83.0,
+      "target": 100.63,
+      "street_high": 115.0,
+      "alert_level": null,
+      "catalyst": "Q3 earnings 2026-10-13",
+      "notes": "Rev ttm $83.03B +7.0%, EPS $6.88 +18.1%, PE 13.12. Buy, 26 analysts (13 Strong Buy / 3 Buy / 10 Hold), range $90-115. Q 1.0 / G 1.0 / P 1.0. Street LOW target of $90 sits essentially at entry, which puts a consensus floor under the position. 7.64% below 52-week high $97.76. Calls allowed: score >=2.5, constructive, dated catalyst inside 90 days.",
+      "last_price": 90.29,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": 0.0,
+      "days_held": 0,
+      "screener_absent_days": 0
+    },
+    {
+      "ticker": "GEN",
+      "status": "tracking",
+      "entry_date": "2026-09-11",
+      "entry_price": 30.26,
+      "sector": "Information Technology",
+      "score": 3.0,
+      "overlay": "constructive",
+      "plan": "LONG_STOCK",
+      "entry_zone": "29.35-30.95",
+      "stop": 27.8,
+      "target": 33.0,
+      "street_high": 46.0,
+      "alert_level": null,
+      "catalyst": "No confirmed date - fiscal Q2 FY27 print expected early Nov but not published; NO CALLS on that basis",
+      "notes": "Rev ttm +20.2% (FY26 $5.00B, +27.06%), EPS +78.5%, net income $973M +51.3%, PE 17.66. Buy, 10 analysts, range $25-46. Q 1.0 / G 1.0 / P 1.0. Consumer-cyber leader (Norton/Avast/LifeLock). LONG_STOCK not LONG_STOCK+CALLS despite scoring 3.0 constructive: pipeline/04_plan.md requires a DATED catalyst inside 90 days for calls and stockanalysis.com still lists the stale Aug 6 2026 date. Declining to invent an earnings date rather than fabricate the gate.",
+      "last_price": 30.26,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": 0.0,
+      "days_held": 0,
+      "screener_absent_days": 0
+    },
+    {
+      "ticker": "NXPI",
+      "status": "tracking",
+      "entry_date": "2026-09-11",
+      "entry_price": 236.62,
+      "sector": "Information Technology",
+      "score": 2.5,
+      "overlay": "constructive",
+      "plan": "LONG_STOCK+CALLS",
+      "entry_zone": "229.50-241.40",
+      "stop": 215.0,
+      "target": 311.1,
+      "street_high": 400.0,
+      "alert_level": null,
+      "catalyst": "Q3 earnings 2026-10-27",
+      "notes": "Rev ttm $13.19B +8.8%, EPS $11.72 +39.6%, net income $2.98B +38.5%, PE 20.19 trailing vs 14.15 forward. Buy, 30 analysts, range $190-400. Q 0.5 / G 1.0 / P 1.0. Quality marked to 0.5 for the Q3 guide-down: EPS guided $3.21-3.64 vs $4.03 consensus, drew target cuts in early August. 30.40% below 52-week high $339.95 with +31.48% target gap. Calls qualify on the rule (>=2.5 + constructive + dated catalyst) but sized at the low end of the <=1% cap - buying calls into a print that already guided down is the worst version of this trade.",
+      "last_price": 236.62,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": 0.0,
+      "days_held": 0,
+      "screener_absent_days": 0
+    },
+    {
+      "ticker": "CRBG",
+      "status": "tracking",
+      "entry_date": "2026-09-11",
+      "entry_price": 34.67,
+      "sector": "Financials",
+      "score": 2.0,
+      "overlay": "constructive",
+      "plan": "WATCH",
+      "entry_zone": "32.00-32.90 (pullback shelf)",
+      "stop": 30.5,
+      "target": 38.83,
+      "street_high": 46.0,
+      "alert_level": 32.5,
+      "catalyst": "Equitable Holdings merger in progress - no dated event captured",
+      "notes": "Rev ttm +21.9%, EPS $1.80, PE 19.29. Buy, 14 analysts (8 Strong Buy / 3 Buy / 3 Hold), range $32-46. Q 0.5 / G 1.0 / P 0.5. Quality 0.5 because no margin-direction datapoint was captured; Peer 0.5 because with the Equitable merger live the stock trades to deal terms, not operating results. WATCH at 2.0 per the plan table. Alert 32.50 is the pullback level that restores a ~19% target gap. 0.94% from 52-week high $35.00.",
+      "last_price": 34.67,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": 0.0,
+      "days_held": 0,
+      "screener_absent_days": 0
+    },
+    {
+      "ticker": "QCOM",
+      "status": "tracking",
+      "entry_date": "2026-09-11",
+      "entry_price": 181.97,
+      "sector": "Information Technology",
+      "score": 2.0,
+      "overlay": "constructive",
+      "plan": "WATCH",
+      "entry_zone": "170.00-174.00 (pullback shelf)",
+      "stop": 165.0,
+      "target": 194.43,
+      "street_high": 400.0,
+      "alert_level": 172.0,
+      "catalyst": "$60B Amazon custom-AI-chip partnership, revenue begins Dec quarter; $5B FY27 data-center target - no dated event",
+      "notes": "Rev ttm $44.07B +1.9%, EPS $8.59 -17.1%, PE 21.17. Hold, 37 analysts, range $100-400. Q 0.5 / G 0.5 / P 1.0. Peer 1.0 - still the share leader in smartphone modems and application processors. Quality and Growth 0.5 each: earnings down 17.1% on flat revenue. 29.99% below 52-week high $259.92. The $100-to-$400 target range is the tell that the Street cannot price the Amazon deal yet. WATCH at 2.0; alert 172.00. Wait for the December quarter to show data-center revenue is real.",
+      "last_price": 181.97,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": 0.0,
       "days_held": 0,
       "screener_absent_days": 0
     }
   ],
   "alternates": [
     {
-      "ticker": "UNM",
+      "ticker": "BBY",
       "score": 2.0,
-      "reason": "Breakout on +4.06% with new $1B buyback, but avg target \u2248 price and mid-single-digit growth \u2014 WATCH"
+      "reason": "Only promotable alternate: Q2 comps +4.1%, EPS +65.7%, FY guidance raised - but price is 4.52% ABOVE the $86.70 average target and 0.62% off its 52-week high, so euphoric caps it at WATCH. Promote on a pullback below ~$82 that re-opens a target gap."
     },
     {
-      "ticker": "BOX",
-      "score": 2.0,
-      "reason": "Box AI momentum, FY guide raised, but 9-10% growth and target only +4% above price \u2014 WATCH"
-    },
-    {
-      "ticker": "CRBG",
+      "ticker": "MTCH",
       "score": 1.5,
-      "reason": "At 52w high on +3.61% but Q2 revenue missed by 9.5% \u2014 not selected"
+      "reason": "Below the 2.0 gate, not promotable without a re-score. Hinge +22% and improving Tinder DAU/MAU are real, but total revenue is +0.22%, Q3 guided to the low end, and price is above the average target."
+    },
+    {
+      "ticker": "HPQ",
+      "score": 1.5,
+      "reason": "Below the 2.0 gate. Recorded because it was the day's biggest move (+8.40% on 26.5M shares) and was declined anyway: EPS -4.9%, 16% PC shipment decline, memory-cost margin squeeze, price 16.97% above the average target."
     }
   ],
   "history": [
@@ -358,17 +468,42 @@
       "exit_price": 80.92,
       "reason": "target reached (euphoric)",
       "bookkeeping": true
+    },
+    {
+      "ticker": "RELY",
+      "status": "exited",
+      "entry_date": "2026-09-04",
+      "entry_price": 26.92,
+      "sector": "Financials",
+      "score": 3.0,
+      "overlay": "constructive",
+      "plan": "LONG_STOCK",
+      "entry_zone": "26.10-27.50",
+      "stop": 24.2,
+      "target": 32.33,
+      "street_high": 36.0,
+      "alert_level": null,
+      "catalyst": "none dated visible - no calls",
+      "notes": "Added by 2026-09-06 re-derivation; absent from the originally published 09-04 report. Rev +23.8% ttm, GAAP profitable, Strong Buy (10 analysts), 2.0% below 52w high.",
+      "last_price": 21.99,
+      "last_price_date": "2026-09-11",
+      "pnl_pct": -18.31,
+      "days_held": 7,
+      "screener_absent_days": 2,
+      "exit_date": "2026-09-11",
+      "exit_price": 21.99,
+      "reason": "stop hit"
     }
   ],
   "best_tracking": {
     "ticker": "SHEL",
-    "pnl_pct": -0.06,
+    "pnl_pct": 1.52,
     "entry_date": "2026-09-09"
   },
   "record": {
-    "closed": 0,
-    "win_rate_pct": null,
-    "avg_trade_pct": null,
-    "open_now": 12
+    "closed": 1,
+    "win_rate_pct": 0.0,
+    "avg_trade_pct": -18.31,
+    "open_now": 17
   }
 }
